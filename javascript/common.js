@@ -175,6 +175,7 @@
       size: [1,1],
       type: "iframe",
       v2: {
+        resize    : true,
         min_height: 1,
         min_width : 1,
         max_height: 3,
