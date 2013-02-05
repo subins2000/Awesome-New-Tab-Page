@@ -122,6 +122,9 @@
   "ui_config_shbmb": {
     "message": "Show Bookmark Bar"
   },
+  "ui_config_shbmb_tip": {
+    "message": "Show the Bookmark Bar at the top of the page"
+  },
   "ui_config_shtlb": {
     "message": "Show top left buttons only on area-hover"
   },
