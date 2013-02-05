@@ -107,7 +107,7 @@ $(document).ready(function($) {
         } else {
           pin.appendTo(open_temp).html( "<img src='unpin.png' title='Unpin'>" ).addClass("unpin");
         }
-        $("<span></span>").appendTo(open_temp).html( "<img src='close.png' title='Close'>" )
+        $("<span></span>").appendTo(open_temp).html( "<img src='x.png' title='Close'>" )
           .attr("id", tab.id).addClass("close button");
 
         open_tabs_html.push( open_temp );
