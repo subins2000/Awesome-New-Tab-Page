@@ -360,6 +360,7 @@ var
           }
           $(".ui-2#editor #invisible-tile-img").attr("src", widgets[id].img);
           $("#widget-holder #"+id + ", #preview-tile").css("background-image", $scope.backgroundimage).css("background-color", $scope.backgroundcolor);
+          IconResizing.previewTileUpdated();
           break;
         case "name":
         case "name_show":

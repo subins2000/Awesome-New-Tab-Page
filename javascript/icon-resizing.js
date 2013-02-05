@@ -41,8 +41,7 @@ IconResizing = {
           IconResizing.imgHeight = newImgHeight;
           IconResizing.sizeRatio = IconResizing.imgWidth / IconResizing.imgHeight;
           IconResizing.resetTileIcon();
-        }
-        else {
+        } else {
           IconResizing.imgWidth = newImgWidth;
           IconResizing.imgHeight = newImgHeight;
           IconResizing.sizeRatio = IconResizing.imgWidth / IconResizing.imgHeight;
@@ -65,8 +64,7 @@ IconResizing = {
     var slider = $("#icon-resize-scale-controls #zoom-slider");
     if (IconResizing.imgWidth >= IconResizing.tileWidth) {
       slider.val(slider.attr("max"));
-    }
-    else {
+    } else {
       slider.val(slider.attr("min"));
     }
     IconResizing.savePosition();
@@ -80,32 +78,28 @@ IconResizing = {
 
 
   // change tile's background position to cover
-  changeBackgroundSize: function(changeTo){
+  changeBackgroundSize: function(changeTo) {
     var imgWidth;
     var imgHeight;
     if (changeTo == "cover"){
       if (IconResizing.sizeRatio >= 1) {
         imgHeight = IconResizing.tileHeight;
         imgWidth = imgHeight * IconResizing.sizeRatio;
-      }
-      else {
+      } else {
         imgWidth = IconResizing.tileWidth;
         imgHeight = imgWidth / IconResizing.sizeRatio;
       }
-    }
-    else if (changeTo == "contain"){
-      if (IconResizing.sizeRatio >= 1){
+    } else if (changeTo == "contain") {
+      if (IconResizing.sizeRatio >= 1) {
         imgWidth = IconResizing.tileWidth;
         imgHeight = imgWidth / IconResizing.sizeRatio;
-      }
-      else {
+      } else {
         imgHeight = IconResizing.tileHeight;
         imgWidth = imgHeight * IconResizing.sizeRatio;
       }
     }
 
     IconResizing.previewTile.css("background-size", imgWidth + "px " + imgHeight + "px, 100% 100%");
-
     IconResizing.updateSlider();
     IconResizing.savePosition();
   },
@@ -117,20 +111,17 @@ IconResizing = {
     if (backgroundWidth == "auto,") {
       if (IconResizing.imgWidth > IconResizing.tileWidth) {
         slider.val(slider.attr("max"));
-      }
-      else {
+      } else {
         slider.val(slider.attr("min"));
       }
 
-    }
-    else {
+    } else {
       var currentImgWidth = extractNumber(backgroundWidth);
       var zoomPerStep = IconResizing.getZoomPerStep(slider.attr("max"));
       var step;
       if (IconResizing.imgWidth >= IconResizing.tileWidth) {
         step = (currentImgWidth - IconResizing.tileWidth) / zoomPerStep;
-      }
-      else {
+      } else {
         step = (currentImgWidth - IconResizing.imgWidth) / zoomPerStep;
       }
       slider.val(step);
@@ -143,8 +134,7 @@ IconResizing = {
     var imgWidth;
     if (IconResizing.imgWidth < IconResizing.tileWidth) {
       imgWidth = IconResizing.imgWidth + (step * zoomPerStep);
-    }
-    else {
+    } else {
       imgWidth = IconResizing.tileWidth + (step * zoomPerStep);
     }
     var imgHeight = imgWidth / IconResizing.sizeRatio;
@@ -163,9 +153,11 @@ IconResizing = {
   // save tile's position and scale to localstorage
   savePosition: function() {
     widgets = JSON.parse(localStorage.getItem("widgets"));
-    widgets[IconResizing.id].backgroundPosition = IconResizing.previewTile.filter(":eq(0)").css("background-position");
-    widgets[IconResizing.id].backgroundSize = IconResizing.previewTile.filter(":eq(0)").css("background-size");
-    localStorageSync(false);
+    if (widgets[IconResizing.id]) {
+      widgets[IconResizing.id].backgroundPosition = IconResizing.previewTile.filter(":eq(0)").css("background-position");
+      widgets[IconResizing.id].backgroundSize = IconResizing.previewTile.filter(":eq(0)").css("background-size");
+      localStorageSync(false);
+    }
   }
 }
 
@@ -185,8 +177,7 @@ IconDragging = {
     $(document).mousedown(function(event) {
       if (IconResizing.id && event.button == 0 && widgets[IconResizing.id] && widgets[IconResizing.id].type == "shortcut") {
         var previewTile = $(event.target).parents("#preview-tile");
-        if (previewTile.length > 0) // if user clicked within preview tile then start dragging
-        {
+        if (previewTile.length > 0) { // if user clicked within preview tile then start dragging
           $(event.target).css("cursor", "move");
           IconDragging.startDragging(event, previewTile);
         }
@@ -195,7 +186,7 @@ IconDragging = {
 
     // stop dragging if dragging is in progress
     $(document).mouseup(function(event) {
-      if (IconDragging.dragging){
+      if (IconDragging.dragging) {
         IconDragging.stopDragging();
       }
     });
