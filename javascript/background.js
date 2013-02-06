@@ -50,6 +50,7 @@
   chrome.tabs.onMoved.addListener( getAllTabs );
   chrome.tabs.onCreated.addListener( getAllTabs );
   chrome.tabs.onUpdated.addListener( getAllTabs );
+  chrome.tabs.onRemoved.addListener( getAllTabs );
   //chrome.tabs.onHighlighted.addListener( getAllTabs );
 
   function getAllTabs() {
