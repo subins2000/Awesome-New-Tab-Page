@@ -51,7 +51,6 @@
   chrome.tabs.onCreated.addListener( getAllTabs );
   chrome.tabs.onUpdated.addListener( getAllTabs );
   chrome.tabs.onRemoved.addListener( getAllTabs );
-  //chrome.tabs.onHighlighted.addListener( getAllTabs );
 
   function getAllTabs() {
     chrome.tabs.getAllInWindow(null, getAllTabs_callback);
@@ -59,7 +58,7 @@
   function getAllTabs_callback(tabs) {
     localStorage.setItem("open_tabs", JSON.stringify( tabs ));
   }
-  chrome.tabs.getAllInWindow(null, getAllTabs_callback);
+  getAllTabs();
 
   /* END :: Recently Closed Tabs */
 
