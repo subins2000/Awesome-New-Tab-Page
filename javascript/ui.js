@@ -293,6 +293,10 @@
 
       if ( value === "" ) {
         preference.set($(this).attr("id"), null);
+
+        placeGrid();
+        $(window).trigger("antp-widgets");
+
         return;
       }
 
