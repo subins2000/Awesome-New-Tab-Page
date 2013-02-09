@@ -309,6 +309,9 @@
       }
 
       preference.set($(this).attr("id"), $(this).val());
+
+      placeGrid();
+      $(window).trigger("antp-widgets");
     }
   }
 

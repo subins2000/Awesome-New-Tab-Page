@@ -53,10 +53,8 @@
 
   /* END :: Show/Hide Grid */
 
-
 $(document).ready(function($) {
   placeGrid();
-  // placeWidgets();
 });
 
 var GRID_MIN_HEIGHT     = 3,
@@ -92,6 +90,7 @@ function moveGrid(pref) {
 }
 
 function placeGrid() {
+  $("#grid-holder").empty();
   moveGrid({ "animate_top": false });
   var tile_template = '<li class="tile empty">&nbsp;</li>';
 
