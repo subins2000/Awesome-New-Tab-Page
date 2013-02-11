@@ -1,46 +1,32 @@
-var current = 1;
-$("#next,#back").live("click", function(){
-  if( $(this).attr("id") === "next") {
-    current++;
-  } else if( $(this).attr("id") === "back") {
-    current--;
-  }
-
-  if(current == 1) {
-    $("#back").css("display", "none");
-  } else {
-    $("#back").css("display", "block");
-  }
-
-  if (current == 5) {
-    $("#next").css("display", "none");
-  } else {
-    $("#next").css("display", "block");
-  }
-
-  $("#1,#2,#3,#4,#5").stop().css("display", "none").css("opacity", "1");
-  $("#"+current).fadeIn();
-});
-
-
 $(window).load(function() {
   loadPlusOneScript();
   loadTwitterScript();
 });
 
 function loadPlusOneScript() {
-  var po = document.createElement('script');
-  po.type = 'text/javascript';
+  var po = document.createElement("script");
+  po.type = "text/javascript";
   po.async = true;
-  po.src = 'https://apis.google.com/js/plusone.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  po.src = "https://apis.google.com/js/plusone.js";
+  var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
 }
 
 function loadTwitterScript() {
-  var twitterScriptTag = document.createElement('script');
-  twitterScriptTag.type = 'text/javascript';
+  var twitterScriptTag = document.createElement("script");
+  twitterScriptTag.type = "text/javascript";
   twitterScriptTag.async = true;
-  twitterScriptTag.src = 'https://platform.twitter.com/widgets.js';
-  var s = document.getElementsByTagName('script')[0];
+  twitterScriptTag.src = "https://platform.twitter.com/widgets.js";
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(twitterScriptTag, s);
 }
+
+
+$(document).on("click", "#tutorial-start", function(event) {
+  $(".social").fadeIn(2000);
+  if ( parent.startTutorial ) {
+    $(document).trigger("tutorial-reset");
+    parent.startTutorial();
+  } else {
+    parent.requiredTutorial();
+  }
+});

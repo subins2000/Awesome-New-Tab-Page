@@ -288,69 +288,6 @@
   "app_webstore": {
     "message": "Chrome Web Store"
   },
-  "tutorial_ui_next": {
-    "message": "Next"
-  },
-  "tutorial_ui_back": {
-    "message": "Back"
-  },
-  "tutorial_1_welcome": {
-    "message": "Welcome to"
-  },
-  "tutorial_1_desc1": {
-    "message": "A New Tab Page (NTP) replacement that doesn't suck."
-  },
-  "tutorial_1_desc2": {
-    "message": "(... or at least tries really hard not to.)"
-  },
-  "tutorial_1_desc3": {
-    "message": "Click <span class=\"ul\">Next</span> to learn more."
-  },
-  "tutorial_2_title": {
-    "message": "No Longer Just <span class=\"ul\">Icons</span>"
-  },
-  "tutorial_2_desc1": {
-    "message": "Icons are out-dated. Technology is pacing forward, with extremely powerful, dynamic, and beautiful widgets found in Android, Windows Phone 7, and Windows 8."
-  },
-  "tutorial_2_desc2": {
-    "message": "This extension is a start at bringing the same power to Chrome's New Tab Page."
-  },
-  "tutorial_2_desc3": {
-    "message": "Say hello to <span class=\"ul\">widgets</span>."
-  },
-  "tutorial_3_title": {
-    "message": "Make Things Fit <span class=\"ul\">Your</span> Needs"
-  },
-  "tutorial_3_desc1": {
-    "message": "Click unlock and <span class=\"ul\">move</span> widgets and icons to wherever you want. <span class=\"ul\">Delete</span> things you don't want (when they're unlocked)."
-  },
-  "tutorial_4_title": {
-    "message": "Your Apps Are Safe"
-  },
-  "tutorial_4_desc1": {
-    "message": "Don't worry, your apps haven't gone too far."
-  },
-  "tutorial_4_desc2": {
-    "message": "Feel free to unlock tiles then drag apps to your home screen."
-  },
-  "tutorial_4_desc3": {
-    "message": "Show what you regularly use, hide everything else."
-  },
-  "tutorial_5_title1": {
-    "message": "Enjoy"
-  },
-  "tutorial_5_desc1": {
-    "message": "Enjoy! Remember to give this app 5 stars on the Web Store."
-  },
-  "tutorial_5_desc2": {
-    "message": "Got an idea for this extension? Leave it <a href=\"http://ntp.uservoice.com/\" target=\"_top\">here</a>."
-  },
-  "tutorial_5_title2": {
-    "message": "Are you a developer?"
-  },
-  "tutorial_5_desc3": {
-    "message": "Make your own widgets! Find out how here:"
-  },
   "ui_shortcut_img": {
     "message": "Image URL must be exactly 128px by 128px, preferably in PNG format with alpha transparency. To reset to default, just erase everything in the field."
   },
@@ -449,5 +386,62 @@
   },
   "ui_apps_tip_message": {
     "message": "Nice! You just installed an app. You can find all of your installed apps here."
+  },
+  "ui_tutorial2_next": {
+    "message": "Next"
+  },
+  "ui_tutorial2_app_window_title": {
+    "message": "Apps Window"
+  },
+  "ui_tutorial2_app_drawer": {
+    "message": "Here you'll find all of the apps that you've installed from the Chrome Web Store. You can <b>drag</b> apps out of this window onto your <b>unlocked</b> grid. You can also uninstall apps from this window."
+  },
+  "ui_tutorial2_widgets_window_title": {
+    "message": "Widgets Window"
+  },
+  "ui_tutorial2_widget_drawer": {
+    "message": "Here you'll find installed widgets made by third-party developers specifically designed for Awesome New Tab Page. Widgets bring dynamic and useful information right to your new tab page."
+  },
+  "ui_tutorial2_lock_title": {
+    "message": "Lock/Unlock Grid"
+  },
+  "ui_tutorial2_lock_grid": {
+    "message": "Locking and unlocking the grid allows you to place, move, and remove widgets, apps, and custom shortcuts. <b>Click the padlock to continue</b>."
+  },
+  "ui_tutorial2_delete_widget": {
+    "message": "Delete this widget"
+  },
+  "ui_tutorial2_delete_widget_string": {
+    "message": "The grid is yours to customize as you see fit. You can remove tiles you don't want. Go ahead and <b>delete the tutorial widget</b>."
+  },
+  "ui_tutorial2_empty_grid_title": {
+    "message": "Empty Grid Tile"
+  },
+  "ui_tutorial2_empty_grid_string": {
+    "message": "Why be limited to apps found on the Chrome Web Store? <b>Click on this empty grid tile</b> to create a custom shortcut to anywhere on the web."
+  },
+  "ui_tutorial2_completed_title": {
+    "message": "You're awesome!"
+  },
+  "ui_tutorial2_completed_string": {
+    "message": "Like, really awesome. Now you know how to use Awesome New Tab Page to get the most out of your Chrome experience. So what are you going to do next?"
+  },
+  "ui_tutorial2_finish_string": {
+    "message": "Finish Tutorial"
+  },
+  "ui_tutorial2_main_welcome": {
+    "message": "Welcome to"
+  },
+  "ui_tutorial2_main_feels": {
+    "message": "You just upgraded to awesome. How does it feel?"
+  },
+  "ui_tutorial2_main_getstarted": {
+    "message": "Maybe a little too much awesome all at once? Don't worry, the tutorial widget will help you get started."
+  },
+  "ui_tutorial2_main_click": {
+    "message": "Click that tiny little button down there to get going."
+  },
+  "ui_tutorial2_main_start": {
+    "message": "Start Tutorial"
   }
 }

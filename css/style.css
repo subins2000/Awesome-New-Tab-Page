@@ -271,27 +271,29 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   opacity: 1;
   color: white;
 }
+
+.bubble.active, .bubble:hover {
+  background-color: #32a5cf;
+  box-shadow: 0 0 0 4px rgba(50,165,207,0.5);
+}
+
 .bubble {
-  font-family: Trebuchet, Arial, sans-serif;
-  cursor: pointer;
-  max-height: 35px;
-  overflow: hidden;
-  display: inline-block;
-  padding: 10px;
-  background-color: #A1A1A1;
+  display: block;
+  padding: 6px 20px;
+  background-color: #343434;
+  border-top: 1px solid rgba(255,255,255,0.34);
+  border-right: 1px solid rgba(0,0,0,0.04);
+  border-bottom: 1px solid rgba(0,0,0,0.43);
+  border-left: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  border-radius: 1px;
   color: white !important;
-  font-weight: bold;
-  opacity: 1.0;
-  line-height: 10px;
-  font-size: 14px;
-  transition: all 250ms ease-in-out; /* for mouseover effect */
-    -webkit-transition: all 250ms ease-in-out;
-  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
 }
-.bubble:hover {
-  background-color: #C2C2C2;
-  opacity: 0.9;
-}
+
 #recently-closed-tabs-menu {
   position: fixed;
   left: 0px;
