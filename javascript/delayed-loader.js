@@ -36,6 +36,6 @@ require(["/javascript/ui.js?nocache=12"]);
 
 $(document).ready(function() {
   setTimeout(function() {
-    require(["jquery.confirm", "filesystem", "google-analytics", "storage-updates"]);
+    require(["filesystem", "google-analytics", "storage-updates"]);
   }, 1000);
 });

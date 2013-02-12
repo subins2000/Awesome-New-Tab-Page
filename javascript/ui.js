@@ -57,14 +57,14 @@
     required('/javascript/import-export.js?nocache=12');
   });
 
-  $("#app-drawer-button").live("click", function(){
+  $("#app-drawer-button").live("click", function() {
     _gaq.push([ '_trackEvent', 'Window', "Apps" ]);
 
     closeButton(".ui-2#apps");
     $(".ui-2#apps").toggle();
   });
 
-  $("#widget-drawer-button").live("click", function(){
+  $("#widget-drawer-button").live("click", function() {
     _gaq.push([ '_trackEvent', 'Window', "Widgets" ]);
 
     closeButton(".ui-2#widgets");
@@ -83,7 +83,7 @@
   });
 
   var aboutInit = false;
-  $("#logo-button,.ui-2.logo").live("click", function(){
+  $("#logo-button,.ui-2.logo").live("click", function() {
     _gaq.push([ '_trackEvent', 'Window', "About" ]);
 
     closeButton(".ui-2#about");
@@ -117,16 +117,19 @@
     }
   });
 
-  $(".ui-2 .drawer-app-uninstall").live("click", function(e){
+  $(".ui-2 .drawer-app-uninstall").live("click", function(e) {
     var to_delete = null;
     var to_delete_name = null;
     to_delete = $(this).parent();
     to_delete_name = $(to_delete).find(".drawer-app-name").html();
 
-    var r=confirm("Are you sure you want to uninstall " + to_delete_name + "?");
-    if (r==true) {
+    function uninstall(callbackReturned) {
+      if ( callbackReturned === false )
+        return;
       chrome.management.uninstall($(to_delete).attr("id"), reload() );
     }
+
+    qTipConfirm(chrome.i18n.getMessage("ui_uninstall_title"), chrome.i18n.getMessage("ui_confirm_uninstall", to_delete_name), chrome.i18n.getMessage("ui_button_ok"), chrome.i18n.getMessage("ui_button_cancel"), uninstall);
 
     return false;
   });
@@ -134,7 +137,6 @@
   /* END :: Windows */
 
 /* START :: Top Left Buttons */
-
 
   $(window).bind("antp-config-first-open", function() {
     var option = preference.get("hideLeftButtons");
@@ -262,8 +264,12 @@
 
   // Clears localStorage
   $("#reset-button").live("click", function() {
-    var reset = confirm( chrome.i18n.getMessage("ui_confirm_reset") );
-    if ( reset === true ) {
+    function reset(callbackReturned) {
+      if (callbackReturned === false) {
+        $.jGrowl("Whew! Crisis averted!", { header: "Reset Cancelled" });
+        return;
+      }
+
       deleteShortcuts();
       deleteRoot();
       localStorage.clear();
@@ -272,9 +278,9 @@
       setTimeout(function() {
         reload();
       }, 250);
-    } else {
-      $.jGrowl("Whew! Crisis averted!", { header: "Reset Cancelled" });
     }
+
+    qTipConfirm(chrome.i18n.getMessage("ui_config_reset"), chrome.i18n.getMessage("ui_confirm_reset"), chrome.i18n.getMessage("ui_button_ok"), chrome.i18n.getMessage("ui_button_cancel"), reset);
   });
 
   $(window).bind("antp-config-first-open", function() {
@@ -440,3 +446,59 @@ $('div[title]').qtip({
     classes: 'qtip-light qtip-shadow qtip-bootstrap'
   }
 });
+
+function qTipAlert(title, message, buttonText) {
+  var message = $('<span />', { text: message }),
+    ok = $('<button />', { text: buttonText, 'class': 'bubble' }).css("width", "100%");
+
+  dialogue( message.add(ok), title );
+}
+
+function qTipConfirm(title, message, buttonTextOk, buttonTextCancel, callback) {
+  var bool = undefined;
+  var message = $('<span />', { text: message }),
+    ok = $('<button />', {
+      text: buttonTextOk,
+      click: function() { callback(true); },
+      class: 'bubble ilb'
+    }).css({"width": "45%", "float": "left"}),
+    cancel = $('<button />', {
+      text: buttonTextCancel,
+      click: function() { callback(false); },
+      class: 'bubble ilb'
+    }).css({"width": "45%", "float": "right"});
+
+  dialogue( message.add(ok).add(cancel), title );
+}
+
+function dialogue(content, title) {
+  $('<div />').qtip({
+    content: {
+      text: content,
+      title: {
+        text: "<b>" + title + "</b>",
+        button: true
+      }
+    },
+    position: {
+      my: 'center',
+      at: 'center',
+      target: $(window)
+    },
+    show: {
+      ready: true,
+      modal: {
+        on: true,
+        blur: false
+      }
+    },
+    hide: false,
+    style: 'qtip-light qtip-rounded qtip-bootstrap qtip-dialogue',
+    events: {
+      render: function(event, api) {
+        $('button', api.elements.content).click(api.hide);
+      },
+      hide: function(event, api) { api.destroy(); }
+    }
+  });
+}

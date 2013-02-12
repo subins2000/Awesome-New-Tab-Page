@@ -19,25 +19,21 @@ $("#import-btn").bind("click", function() {
 
 // upon click on restore button
 $("#restore-btn").bind("click", function() {
-    $.confirm({title: chrome.i18n.getMessage('ui_import_export_confirm_restore_title'),
-    message: chrome.i18n.getMessage('ui_import_export_confirm_restore'),
-      buttons: {
-        Yes: {'class': 'blue', action: restore},
-        No: {'class' : 'gray'}
-      }
-  });
+  qTipConfirm(chrome.i18n.getMessage('ui_import_export_confirm_restore_title'), chrome.i18n.getMessage('ui_import_export_confirm_restore'), chrome.i18n.getMessage("ui_button_ok"), chrome.i18n.getMessage("ui_button_cancel"), restore);
 });
 
-function restore() {
-var restoreString = localStorage.backupBeforeImport;
+function restore(callbackReturned) {
+  if (callbackReturned === false)
+    return;
+
+  var restoreString = localStorage.backupBeforeImport;
   if (restoreString) {
     if (importLocalStorage(restoreString)) {
       localStorage.msg = JSON.stringify({title: chrome.i18n.getMessage("ui_import_export_msg_header"),
         message: chrome.i18n.getMessage("ui_import_export_restore_complete_msg")});
       window.location.reload();
     }
-  }
-  else {
+  } else {
     $.jGrowl(chrome.i18n.getMessage("ui_import_export_no_restore_msg"), { header: chrome.i18n.getMessage("ui_import_export_msg_header") });
   }
 }

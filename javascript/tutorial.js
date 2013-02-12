@@ -47,12 +47,7 @@ function startTutorial() {
 
           if ( current === undefined ) {
             api.destroy();
-            var
-              title = chrome.i18n.getMessage("ui_tutorial2_completed_title");
-              message = $("<span />", { text: chrome.i18n.getMessage("ui_tutorial2_completed_string") }),
-              ok = $("<button />", { text: chrome.i18n.getMessage("ui_tutorial2_finish_string"), "class": "full bubble" });
-
-            dialogue( message.add(ok), title );
+            qTipAlert(chrome.i18n.getMessage("ui_tutorial2_completed_title"), chrome.i18n.getMessage("ui_tutorial2_completed_string"), chrome.i18n.getMessage("ui_tutorial2_finish_string"));
           }
 
           switch(api.step) {
@@ -78,35 +73,3 @@ function startTutorial() {
 $(document).on("click", ".tutorial-next", function(event) {
   $(document).trigger("tutorial-next");
 });
-
-function dialogue(content, title) { // this will soon be moved to UI
-  $('<div />').qtip({
-    content: {
-      text: content,
-      title: {
-        text: "<b>" + title + "</b>",
-        button: true
-      }
-    },
-    position: {
-      my: 'center',
-      at: 'center',
-      target: $(window)
-    },
-    show: {
-      ready: true,
-      modal: {
-        on: true,
-        blur: false
-      }
-    },
-    hide: false,
-    style: 'qtip-light qtip-rounded qtip-bootstrap qtip-dialogue',
-    events: {
-      render: function(event, api) {
-        $('button', api.elements.content).click(api.hide).css("width", "100%");
-      },
-      hide: function(event, api) { api.destroy(); }
-    }
-  });
-}

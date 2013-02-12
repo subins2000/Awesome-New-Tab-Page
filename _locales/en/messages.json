@@ -20,6 +20,12 @@
   "ui_button_close": {
     "message": "Close"
   },
+  "ui_button_ok": {
+    "message": "OK"
+  },
+  "ui_button_cancel": {
+    "message": "Cancel"
+  },
   "ui_button_about": {
     "message": "About"
   },
@@ -239,6 +245,9 @@
   },
   "ui_uninstall": {
     "message": "Uninstall"
+  },
+  "ui_uninstall_title": {
+    "message": "Uninstall App"
   },
   "ui_confirm_uninstall": {
     "message": "Are you sure you want to uninstall $app$?",
