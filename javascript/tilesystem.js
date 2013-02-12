@@ -174,14 +174,14 @@ function placeGrid() {
   updateGridOpacity();
 }
 
-$(".empty").live({
+$(document).on({
   mouseenter: function() {
     $(this).addClass("add-shortcut");
   },
   mouseleave: function() {
     $(".tile").removeClass("add-shortcut");
   }
-});
+}, ".empty");
 
 var update = true;
 function makeZero(num){
@@ -292,7 +292,7 @@ $(window).mouseup("mouseup", function(e) {
   resize_element = {};
   resize_element.element = false;
   // When a tile resize square is clicked
-  $(".resize-tile > div").live("mousedown", function(e) {
+  $(document).on("mousedown", ".resize-tile > div", function(e) {
     if ( lock === true ) {
       resize_element.element = false;
       return false;
@@ -362,7 +362,7 @@ $(window).mouseup("mouseup", function(e) {
   });
 
   // When a tile resize square is released
-  $(document).live("mousemove", function(e) {
+  $(document).on("mousemove", function(e) {
     if ( lock === true ) {
       resize_element.element = false;
       return false;
@@ -495,7 +495,7 @@ $(window).mouseup("mouseup", function(e) {
   }
 
   // When a tile resize square is released
-  $(".resize-tile > div, .widget").live("mouseup", function(e) {
+  $(document).on("mouseup", ".resize-tile > div, .widget", function(e) {
     if ( lock === true ) {
       resize_element.element = false;
       return false;
@@ -580,7 +580,7 @@ $(window).mouseup("mouseup", function(e) {
 
   held_element.element = false;
   // When a tile is picked up
-  $(".widget").live("mousedown", function(e) {
+  $(document).on("mousedown", ".widget", function(e) {
     if(lock === true) {
       held_element.element = false;
       return false;
@@ -636,7 +636,7 @@ $(window).mouseup("mouseup", function(e) {
   });
 
   // When a tile is released
-  $(".widget").live("mouseup", function(e) {
+  $(document).on("mouseup", ".widget", function(e) {
     if ( lock === true ) {
       held_element.element = false;
       return false;
@@ -723,7 +723,7 @@ $(window).mouseup("mouseup", function(e) {
   });
 
   // When a tile is held and moved
-  $(document).live("mousemove", function(e) {
+  $(document).on("mousemove", function(e) {
     if(lock === true) {
       held_element.element = false;
       return false;
@@ -784,7 +784,7 @@ $(window).mouseup("mouseup", function(e) {
   });
 
   lock = true;
-  $("#lock-button,#unlock-button").live("click", function() {
+  $(document).on("click", "#lock-button,#unlock-button", function() {
     if(lock === true) {
       // Unlock
       lock = false;

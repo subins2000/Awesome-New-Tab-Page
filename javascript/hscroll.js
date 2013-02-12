@@ -44,7 +44,7 @@
 
     event.returnValue = false;
   }
-  $(document).live("mousewheel", scrollHorizontal);
+  $(document).on("mousewheel", scrollHorizontal);
 
   /* START :: Options Window */
 

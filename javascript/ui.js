@@ -27,7 +27,7 @@
     });
   });
 
-  $(".close,.ui-2.x").live("click", closeButton);
+  $(document).on("click", ".close, .ui-2.x", closeButton);
 
   function closeButton(exclude) {
 
@@ -44,7 +44,7 @@
   }
 
   var optionsInit = false;
-  $("#config-button, .ui-2.config").live("click", function(){
+  $(document).on("click", "#config-button, .ui-2.config", function(){
     if ( !optionsInit ) {
       $(window).trigger("antp-config-first-open");
       optionsInit = true;
@@ -57,25 +57,25 @@
     required('/javascript/import-export.js?nocache=12');
   });
 
-  $("#app-drawer-button").live("click", function() {
+  $(document).on("click", "#app-drawer-button", function() {
     _gaq.push([ '_trackEvent', 'Window', "Apps" ]);
 
     closeButton(".ui-2#apps");
     $(".ui-2#apps").toggle();
   });
 
-  $("#widget-drawer-button").live("click", function() {
+  $(document).on("click", "#widget-drawer-button", function() {
     _gaq.push([ '_trackEvent', 'Window', "Widgets" ]);
 
     closeButton(".ui-2#widgets");
     $(".ui-2#widgets").toggle();
   });
 
-  $("#recently-closed-tabs-menu").live("mouseleave", function() {
+  $(document).on("mouseleave", "#recently-closed-tabs-menu", function() {
     $(this).css("display", "none");
   });
 
-  $("#recently-closed-tabs").live("click", function() {
+  $(document).on("click", "#recently-closed-tabs", function() {
     _gaq.push([ "_trackEvent", "Window", "Recently Closed Tabs" ]);
 
     closeButton("#recently-closed-tabs-menu");
@@ -83,7 +83,7 @@
   });
 
   var aboutInit = false;
-  $("#logo-button,.ui-2.logo").live("click", function() {
+  $(document).on("click", "#logo-button,.ui-2.logo", function() {
     _gaq.push([ '_trackEvent', 'Window', "About" ]);
 
     closeButton(".ui-2#about");
@@ -117,7 +117,7 @@
     }
   });
 
-  $(".ui-2 .drawer-app-uninstall").live("click", function(e) {
+  $(document).on("click", ".ui-2 .drawer-app-uninstall", function(e) {
     var to_delete = null;
     var to_delete_name = null;
     to_delete = $(this).parent();
@@ -164,13 +164,12 @@
     moveLeftButtons();
   });
 
-  $("#top-buttons").live({
+  $(document).on({
     mouseenter: function() {
       if ( preference.get("hideLeftButtons") ) {
         $("#top-buttons > div").css("left", "0px");
         $("#widget-holder,#grid-holder").css("left", "27px");
       }
-
     },
     mouseleave: function() {
       if ( preference.get("hideLeftButtons") && preference.get("lock") ) {
@@ -178,7 +177,7 @@
         $("#widget-holder,#grid-holder").css("left", "0px");
       }
     }
-  });
+  }, "#top-buttons");
 
   /* END :: Top Left Buttons */
 
@@ -249,8 +248,7 @@
 
   $(".bg-color").css("background-color", "#" + (localStorage.getItem("color-bg") || "221f20"));
 
-
-  $("#bg-img-css").live("keyup change", function() {
+  $(document).on("keyup change", "#bg-img-css", function() {
     $("body").css("background", "" );
     $("body").css("background", $(this).val() );
     $(".bg-color").css("background-color", '#' + (localStorage.getItem("color-bg") || "221f20") );
@@ -263,7 +261,7 @@
   });
 
   // Clears localStorage
-  $("#reset-button").live("click", function() {
+  $(document).on("click", "#reset-button", function() {
     function reset(callbackReturned) {
       if (callbackReturned === false) {
         $.jGrowl("Whew! Crisis averted!", { header: "Reset Cancelled" });
