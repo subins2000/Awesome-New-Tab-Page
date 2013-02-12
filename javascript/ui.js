@@ -415,7 +415,7 @@ function showAppsWindow () {
       content: {
         text: chrome.i18n.getMessage("ui_apps_tip_message"),
         title: {
-          text: chrome.i18n.getMessage("ui_apps_tip_message_title"),
+          text: "<b>" + chrome.i18n.getMessage("ui_apps_tip_message_title") + "</b>",
           button: true
         }
       },
