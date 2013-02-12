@@ -51,7 +51,7 @@
     $(window).bind("antp-config-first-open", function() {
       var option = preference.get("disableHscroll");
 
-      $("#disableHscroll").attr("checked", option);
+      $("#disableHscroll").prop("checked", option);
       $(document).on("change", "#disableHscroll", disableHorizontalScrolling);
     });
 

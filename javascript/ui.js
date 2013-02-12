@@ -141,7 +141,7 @@
   $(window).bind("antp-config-first-open", function() {
     var option = preference.get("hideLeftButtons");
 
-    $("#hideLeftButtons").attr("checked", option);
+    $("#hideLeftButtons").prop("checked", option);
     $(document).on("change", "#hideLeftButtons", moveLeftButtons);
   });
 
@@ -195,7 +195,7 @@
     $(window).bind("antp-config-first-open", function() {
       var option = preference.get("showbmb");
 
-      $("#toggleBmb").attr("checked", option);
+      $("#toggleBmb").prop("checked", option);
       $(document).on("change", "#toggleBmb", updateBookmarkBar);
     });
 
@@ -331,7 +331,7 @@
     var
       hideScrollbar = $("#hide-scrollbar"),
       option = preference.get("hideScrollbar");
-    hideScrollbar.attr("checked", option);
+    hideScrollbar.prop("checked", option);
 
     $(document).on("change", "#hide-scrollbar", updateScrollBarVisibility);
   });

@@ -36,7 +36,7 @@
   $(window).bind("antp-config-first-open", function() {
     var option = preference.get("perm-grid");
 
-    $("#toggle-grid").attr("checked", option);
+    $("#toggle-grid").prop("checked", option);
     $(document).on("change", "#toggle-grid", updateGridOpacity);
   });
 
