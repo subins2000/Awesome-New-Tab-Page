@@ -251,10 +251,15 @@ var
 
     timeoutId = setTimeout($scope.update, 1000);
 
-    chrome.management.onEnabled.addListener( $scope.update );
-    chrome.management.onInstalled.addListener( $scope.update );
-    chrome.management.onDisabled.addListener( $scope.update );
-    chrome.management.onUninstalled.addListener( $scope.update );
+    $scope.updateBuffer = function() {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout($scope.update, 1000);
+    };
+
+    chrome.management.onEnabled.addListener( $scope.updateBuffer );
+    chrome.management.onInstalled.addListener( $scope.updateBuffer );
+    chrome.management.onDisabled.addListener( $scope.updateBuffer );
+    chrome.management.onUninstalled.addListener( $scope.updateBuffer );
 
     // Save $scope.stock_widgets and $scope.stock_apps
     setTimeout(function() {
