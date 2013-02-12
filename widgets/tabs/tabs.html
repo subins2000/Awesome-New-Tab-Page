@@ -1,13 +1,25 @@
-<html>
+<html ng-app ng-csp>
   <head>
     <link rel="stylesheet" href="tabs.css" type="text/css" media="screen">
     <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript" src="/javascript/angular/angular.js"></script>
     <script type="text/javascript" src="/javascript/string_score.js"></script>
     <script type="text/javascript" src="tabs.js"></script>
   </head>
 
   <body>
-    <div id="tabs"></div>
+    <div id="tabs" ng-controller="tabCtrl">
+      <div class="tab-item" ng-repeat="tab in tabs">
+        <img class="tab-icon" ng-src="chrome://favicon/{{tab.url}}">
+        <div class="tab-link" id="{{tab.id}}" title="{{tab.title}}" ng-click="switchToTab(tab.id)">
+          {{tab.title}}
+        </div>
+        <span id="{{tab.id}}" class="button">
+          <img ng-src="{{tab.pinned == false && 'pin.png' || 'unpin.png'}}" title="{{tab.pinned == false && 'Pin' || 'Unpin'}}" ng-class="{{tab.pinned == false && 'pin' || 'unpin'}}" ng-click="pinUnpin(tab.id)">
+          <img src="x.png" title="Close" id="{{tab.id}}" class="close button" ng-click="closeTab(tab.id)">
+        </span>
+      </div>
+    </div>
     <div id="search">
       <input type="text" autocomplete="off" id="query" placeholder="Search open tabs" />
     </div>
