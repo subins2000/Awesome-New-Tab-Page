@@ -126,7 +126,7 @@
     function uninstall(callbackReturned) {
       if ( callbackReturned === false )
         return;
-      chrome.management.uninstall($(to_delete).attr("id"), reload() );
+      chrome.management.uninstall($(to_delete).attr("id"));
     }
 
     qTipConfirm(chrome.i18n.getMessage("ui_uninstall_title"), chrome.i18n.getMessage("ui_confirm_uninstall", to_delete_name), chrome.i18n.getMessage("ui_button_ok"), chrome.i18n.getMessage("ui_button_cancel"), uninstall);
