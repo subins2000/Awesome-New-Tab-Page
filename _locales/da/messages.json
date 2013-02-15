@@ -203,66 +203,6 @@
 	"app_webstore":{
 		"message":"Chrome Web-butikken"
 	},
-	"tutorial_ui_next":{
-		"message":"N\u00e6ste"
-	},
-	"tutorial_ui_back":{
-		"message":"Tilbage"
-	},
-	"tutorial_1_welcome":{
-		"message":"Velkommen til"
-	},
-	"tutorial_1_desc1":{
-		"message":"En Ny Fane Side (NFS, eller NTP p\u00e5 engelsk) erstatning, som ikke stinker."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... eller som ihvertfald fors\u00f8ger virkelig h\u00e5rdt ikke at g\u00f8re det.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Klik p\u00e5 <span class=\"ul\"> N\u00e6ste<\/span> for at f\u00e5 mere at vide."
-	},
-	"tutorial_2_title":{
-		"message":"Ikke l\u00e6ngere bare <span class=\"ul\">ikoner<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"Denne udvidelse er en start p\u00e5 at bringe den samme kraft til Chromes Ny Fane side."
-	},
-	"tutorial_2_desc3":{
-		"message":"Sig goddag til <span class=\"ul\"> widgets<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"F\u00e5 tingene til at passe til <span class=\"ul\">dine<\/span> behov"
-	},
-	"tutorial_3_desc1":{
-		"message":"Klik p\u00e5 l\u00e5s op og <span class=\"ul\">flyt<\/span> widgets og ikoner derhen, hvor du vil. <span class=\"ul\">Slet<\/span> ting, du ikke vil have (n\u00e5r de er l\u00e5st op)."
-	},
-	"tutorial_4_title":{
-		"message":"Dine Apps Er I Sikkerhed"
-	},
-	"tutorial_4_desc1":{
-		"message":"Bare rolig, dine apps er ikke v\u00e6k."
-	},
-	"tutorial_4_desc2":{
-		"message":"F\u00f8l dig fri til at l\u00e5se fliser op for derefter at tr\u00e6kke apps hen til din hjemmesk\u00e6rm."
-	},
-	"tutorial_4_desc3":{
-		"message":"Vis hvad du regelm\u00e6ssigt bruger, skjul alt andet."
-	},
-	"tutorial_5_title1":{
-		"message":"Nyd det"
-	},
-	"tutorial_5_desc1":{
-		"message":"Nyd det! Husk at give denne app 5 stjerner p\u00e5 Web-butikken."
-	},
-	"tutorial_5_desc2":{
-		"message":"Har du en id\u00e9 til denne udvidelse? Skriv det <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">her<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Er du en udvikler?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Lav dine egne widgets! Find ud af hvordan her:"
-	},
 	"ui_shortcut_img":{
 		"message":"Billede URL skal v\u00e6re pr\u00e6cist 128px gange 128px, helst i PNG format med alpha gennemsigtighed. For at nulstille til standarden skal du bare slette alt i feltet."
 	},

@@ -158,45 +158,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"Dal\u0161\u00ed"
-	},
-	"tutorial_ui_back":{
-		"message":"Zp\u011bt"
-	},
-	"tutorial_1_welcome":{
-		"message":"V\u00edtejte"
-	},
-	"tutorial_2_desc3":{
-		"message":"Pozdravte <span class=\"ul\"> widgety<\/span>."
-	},
-	"tutorial_3_desc1":{
-		"message":"Kliknut\u00edm odemkn\u011bte a <span class=\"ul\"> p\u0159esu\u0148te<\/span> widgety a ikony kamkoli chcete. <span class=\"ul\"> Odstranit<\/span> v\u011bci, kter\u00e9 nechcete (kdy\u017e jsou odem\u010den\u00e9)."
-	},
-	"tutorial_4_title":{
-		"message":"Va\u0161e aplikace jsou bezpe\u010dn\u00e9"
-	},
-	"tutorial_4_desc2":{
-		"message":"Nebojte se odemknout dla\u017edice a p\u0159et\u00e1hnout aplikace na va\u0161i domovskou obrazovku."
-	},
-	"tutorial_4_desc3":{
-		"message":"Uk\u00e1zat, co pravideln\u011b pou\u017e\u00edv\u00e1te, Skr\u00fdt v\u0161e ostatn\u00ed."
-	},
-	"tutorial_5_title1":{
-		"message":"U\u017eijte si"
-	},
-	"tutorial_5_desc1":{
-		"message":"U\u017eijte si!Pamatujte d\u00e1t t\u00e9to aplikaci 5 hv\u011bzdi\u010dek na Web Store."
-	},
-	"tutorial_5_desc2":{
-		"message":"M\u00e1te n\u00e1pad pro toto roz\u0161\u00ed\u0159en\u00ed? Zanechte jej <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">zde<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Jste v\u00fdvoj\u00e1\u0159 ?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Vytvo\u0159te sv\u00e9 vlastn\u00ed aplikace! Jak na to zjist\u00edte tady:"
-	},
 	"ui_shortcut_img":{
 		"message":"URL obr\u00e1zku. Obr\u00e1zek mus\u00ed b\u00fdt p\u0159esn\u011b v rozli\u0161en\u00ed 128 x 128 px nejl\u00e9pe ve form\u00e1tu PNG s pr\u016fhlednost\u00ed. K vymaz\u00e1n\u00ed obr\u00e1zku sma\u017ete ve\u0161ker\u00fd text z tohoto pole."
 	},

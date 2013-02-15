@@ -236,69 +236,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"N\u00e4chstes"
-	},
-	"tutorial_ui_back":{
-		"message":"Zur\u00fcck"
-	},
-	"tutorial_1_welcome":{
-		"message":"Willkommen zu"
-	},
-	"tutorial_1_desc1":{
-		"message":"Einem Neuen Tab Seiten (NTP) Ersatz welcher kein Mist ist."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... oder es zumindest wirklich hart versucht nicht zu sein)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Klicken Sie <span class=\"ul\">Weiter<\/span>, um mehr zu erfahren."
-	},
-	"tutorial_2_title":{
-		"message":"Nicht l\u00e4nger nur <span class=\"ul\">Icons<\/span>"
-	},
-	"tutorial_2_desc1":{
-		"message":"Icons sind veraltet. Technologie schreitet voran mit extrem m\u00e4chtigen, dynamischen und sch\u00f6nen Widgets welche man in Android, Windows Phone 7 und Windows 8 findet."
-	},
-	"tutorial_2_desc2":{
-		"message":"Diese Erweiterung ist ein Start, um die selben F\u00e4higkeiten Chromes neuer Tab Seite zu geben."
-	},
-	"tutorial_2_desc3":{
-		"message":"Sagen Sie Hallo zu <span class=\"ul\">Erweiterungen<\/span>"
-	},
-	"tutorial_3_title":{
-		"message":"Passen Sie die Dinge an <span class=\"ul\">Ihre<\/span> Bed\u00fcrfnisse an"
-	},
-	"tutorial_3_desc1":{
-		"message":"Klicken Sie auf Freigeben und <span class=\"ul\">bewegen<\/span> Sie Erweiterungen und Icons woimmer Sie diese haben m\u00f6chten."
-	},
-	"tutorial_4_title":{
-		"message":"Ihre Apps sind sicher"
-	},
-	"tutorial_4_desc1":{
-		"message":"Keine Sorge, ihre Apps sind nicht weit."
-	},
-	"tutorial_4_desc2":{
-		"message":"Nach dem Freigeben k\u00f6nnen Sie ihre Apps auf dem Homescreen platzieren wo Sie m\u00f6chten."
-	},
-	"tutorial_4_desc3":{
-		"message":"Nur regelm\u00e4\u00dfig verwendete Elemente anzeigen."
-	},
-	"tutorial_5_title1":{
-		"message":"Viel Spass!"
-	},
-	"tutorial_5_desc1":{
-		"message":"Viel Spass! Nicht vergessen: 5 Sterne im Web Store vergeben ;-)"
-	},
-	"tutorial_5_desc2":{
-		"message":"Haben Sie eine Idee f\u00fcr eine Erweiterung? Hinterlassen Sie diese <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">hier<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Sind Sie ein Entwickler?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Erstellen Sie eigene Erweiterungen! So geht's:"
-	},
 	"ui_shortcut_img":{
 		"message":"Die Bild-URL muss genau 128px x 128px gro\u00df sein, vorzugsweise im PNG-Format mit Alpha-Transparenz. Leeren Sie dieses Feld, um das Bild zur\u00fcckzusetzen."
 	},

@@ -203,66 +203,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"Pr\u00f3ximo"
-	},
-	"tutorial_ui_back":{
-		"message":"Voltar"
-	},
-	"tutorial_1_welcome":{
-		"message":"Bem-vindo \u00e0"
-	},
-	"tutorial_1_desc1":{
-		"message":"Uma substitui\u00e7\u00e3o da p\u00e1gina nova guia (NTP) que n\u00e3o \u00e9 chata."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... ou pelo menos tenta n\u00e3o ser.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Clique em <span class=\"ul\">Pr\u00f3ximo<\/span> para aprender mais."
-	},
-	"tutorial_2_title":{
-		"message":"N\u00e3o mais Apenas <span class=\"ul\">\u00edcones<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"Essa extens\u00e3o \u00e9 um bom come\u00e7o de trazer o mesmo poder da p\u00e1gina Nova Guia do Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"Diga Ol\u00e1 aos <span class=\"ul\">widgets<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Fa\u00e7a as coisas se encaixarem \u00e0s <span class=\"ul\">suas<\/span> necessidades"
-	},
-	"tutorial_3_desc1":{
-		"message":"Clique desbloquear e <span class=\"ul\">mova<\/span> os widgets e \u00edcones para onde voc\u00ea deseja. <span class=\"ul\">Exclua<\/span> o que voc\u00ea n\u00e3o quer (quando estiverem desbloqueados)."
-	},
-	"tutorial_4_title":{
-		"message":"As suas aplica\u00e7\u00f5es est\u00e3o seguras"
-	},
-	"tutorial_4_desc1":{
-		"message":"N\u00e3o se preocupe, seus aplicativos n\u00e3o est\u00e3o distantes."
-	},
-	"tutorial_4_desc2":{
-		"message":"Sinta-se livre para desbloquear a grade e em seguida, arrastar os apps para sua p\u00e1gina inicial."
-	},
-	"tutorial_4_desc3":{
-		"message":"Mostre o que voc\u00ea usa regularmente, oculte todo o resto."
-	},
-	"tutorial_5_title1":{
-		"message":"Aproveite"
-	},
-	"tutorial_5_desc1":{
-		"message":"Aproveite! Lembre-se de dar 5 estrelas a esta aplica\u00e7\u00e3o na Web Store."
-	},
-	"tutorial_5_desc2":{
-		"message":"Tem uma id\u00e9ia para essa extens\u00e3o? Deixe sua ideia <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\"> aqui<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Voc\u00ea \u00e9 programador?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Fa\u00e7a seus pr\u00f3prios widgets! Saiba como aqui:"
-	},
 	"ui_shortcut_img":{
 		"message":"O endere\u00e7o da imagem deve ter exatamente 128px por 128px e de prefer\u00eancia no formato PNG com transpar\u00eancia alpha. Para resetar, basta apagar tudo no campo."
 	},

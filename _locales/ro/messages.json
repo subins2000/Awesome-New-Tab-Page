@@ -125,66 +125,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"Urm\u0103torul"
-	},
-	"tutorial_ui_back":{
-		"message":"\u00cenapoi"
-	},
-	"tutorial_1_welcome":{
-		"message":"Bine ati venit la"
-	},
-	"tutorial_1_desc1":{
-		"message":"Un \u00eenlocuitor de New Tab Page (NTP) care nu arat\u0103 r\u0103u."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... sau cel pu\u021bin \u00eencearc\u0103 din greu s\u0103 nu.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Click pe <span class=\"ul\">urm\u0103torul<\/span> pentru a afla mai multe."
-	},
-	"tutorial_2_title":{
-		"message":"Nu numai <span class=\"ul\">iconi\u021be<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"Aceast\u0103 extensie este un \u00eenceput aduce aceea\u015fi putere \u00een New Tab Page-ul din Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"Spune-le salut <span class=\"ul\">widget-urilor<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Face\u021bi ca lucrurile s\u0103 se potriveasc\u0103 nevoilor <span class=\"ul\">dumneavoastr\u0103<\/span>"
-	},
-	"tutorial_3_desc1":{
-		"message":"Apas\u0103 deblocare \u0219i <span class=\"ul\">mut\u0103<\/span> widget-urile \u0219i iconi\u021bele oriunde dori\u021bi. <span class=\"ul\">\u0218terge<\/span> lucrurile pe care nu le dori\u021bi (c\u00e2nd sunt deblocate)."
-	},
-	"tutorial_4_title":{
-		"message":"Aplica\u021biile dumneavoastr\u0103 sunt \u00een siguran\u021b\u0103"
-	},
-	"tutorial_4_desc1":{
-		"message":"Nu v\u0103 face\u0163i griji, aplica\u0163iile dumneavoastr\u0103 nu au mers prea departe."
-	},
-	"tutorial_4_desc2":{
-		"message":"Sim\u0163i\u0163i-v\u0103 liberi s\u0103 debloca\u021bi c\u0103su\u021be, apoi glisa\u0163i aplica\u021biile pe ecranul de pornire."
-	},
-	"tutorial_4_desc3":{
-		"message":"Afi\u0219eaz\u0103 ce utiliza\u021bi \u00een mod constant, ascunde\u021bi restul."
-	},
-	"tutorial_5_title1":{
-		"message":"Mult succes"
-	},
-	"tutorial_5_desc1":{
-		"message":"Mult succes! \u021aine\u021bi minte s\u0103 acorda\u021bi acestei aplica\u021bii 5 stele \u00een Web Store."
-	},
-	"tutorial_5_desc2":{
-		"message":"Ai o idee pentru aceast\u0103 extensie? Las-o <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">aici<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"E\u015fti un dezvoltator?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Creeaz\u0103-\u0163i propriile widget-uri! Afl\u0103 aici cum:"
-	},
 	"ui_shortcut_img":{
 		"message":"URL-ul imaginii trebuie s\u0103 fie exact 128px pe 128px, de preferin\u0163\u0103 \u00een format PNG cu transparen\u0163\u0103 alfa. Pentru a reseta la valorile implicite, doar \u015fterge\u0163i totul din c\u00e2mp."
 	},

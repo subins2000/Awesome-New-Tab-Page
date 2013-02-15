@@ -203,66 +203,6 @@
 	"app_webstore":{
 		"message":"Spletna trgovina Chrome"
 	},
-	"tutorial_ui_next":{
-		"message":"Naprej"
-	},
-	"tutorial_ui_back":{
-		"message":"Nazaj"
-	},
-	"tutorial_1_welcome":{
-		"message":"Dobrodo\u0161li v"
-	},
-	"tutorial_1_desc1":{
-		"message":"Zamenjavo za stran novega zavihka (NTP), ki ni zani\u010d."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... ali vsaj to res sku\u0161a.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Kliknite na <span class=\"ul\">Naprej<\/span>, da preberete ve\u010d o tem."
-	},
-	"tutorial_2_title":{
-		"message":"Ni\u010d ve\u010d samo <span class=\"ul\">ikone<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"Ta raz\u0161iritev je za\u010detek, ki vna\u0161a v Chrome podobno zmogljivost na strani novega zavihka."
-	},
-	"tutorial_2_desc3":{
-		"message":"Pozdravite <span class=\"ul\">gradnike<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Prilagodite stvari <span class=\"ul\">svojim<\/span> potrebam"
-	},
-	"tutorial_3_desc1":{
-		"message":"Kliknite odkleni in <span class=\"ul\">premaknite<\/span> gradnike in ikone kamor \u017eelite. <span class=\"ul\">Izbri\u0161ite<\/span> stvari, ki jih ne \u017eelite (ko so odklenjene)."
-	},
-	"tutorial_4_title":{
-		"message":"Va\u0161e aplikacije so varne"
-	},
-	"tutorial_4_desc1":{
-		"message":"Ne skrbite, va\u0161e aplikacije niso dale\u010d."
-	},
-	"tutorial_4_desc2":{
-		"message":"Mirno odklenite plo\u0161\u010dice in povlecite aplikacije na svojo doma\u010do stran."
-	},
-	"tutorial_4_desc3":{
-		"message":"Poka\u017eite, kar redno uporabljate, skrijte vse ostalo."
-	},
-	"tutorial_5_title1":{
-		"message":"U\u017eivajte"
-	},
-	"tutorial_5_desc1":{
-		"message":"U\u017eivajte! Spomnite se oceniti to aplikacijo v Spletni trgovini s 5 zvezdicami."
-	},
-	"tutorial_5_desc2":{
-		"message":"Imate idejo za to raz\u0161iritev? Zapi\u0161ite jo <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">sem<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Ali ste razvijalec?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Ustvarite si svoje gradnike! Preberite kako tukaj:"
-	},
 	"ui_shortcut_img":{
 		"message":"URL mora kazati na sliko velikosti to\u010dno 128px x 128px, po mo\u017enosti v formatu PNG s prosojnostjo alpha. Izbri\u0161ite vse v polju, da ponastavite na privzeto."
 	},

@@ -203,66 +203,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"Avanti"
-	},
-	"tutorial_ui_back":{
-		"message":"Indietro"
-	},
-	"tutorial_1_welcome":{
-		"message":"Benvenuti a"
-	},
-	"tutorial_1_desc1":{
-		"message":"Sostituisci la Nuova Scheda (NTP) con una pi\u00f9 bella."
-	},
-	"tutorial_1_desc2":{
-		"message":"(...o almeno provaci, veramente difficile non farlo.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Fare clic su <span class=\"ul\">Avanti<\/span> per saperne di pi\u00f9."
-	},
-	"tutorial_2_title":{
-		"message":"Non pi\u00f9 solo <span class=\"ul\">icone<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"Questa estensione rimpiazza la pagina Nuova scheda in Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"Salutate il <span class=\"ul\">Widget<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Adattate tutto <span class=\"ul\">alle vostre<\/span> esigenze"
-	},
-	"tutorial_3_desc1":{
-		"message":"Fare clic su Sblocca e <span class=\"ul\">muovere<\/span> i widget e le icone dove vuoi. <span class=\"ul\">Elimina<\/span> i tile che non volete (quando sono sbloccati)."
-	},
-	"tutorial_4_title":{
-		"message":"Le tue applicazioni sono sicure"
-	},
-	"tutorial_4_desc1":{
-		"message":"Non preoccuparti, le tue applicazioni non sono andate troppo lontane."
-	},
-	"tutorial_4_desc2":{
-		"message":"Sloccate liberamente i Tile e quindi trascinare le applicazioni nella schermata Home."
-	},
-	"tutorial_4_desc3":{
-		"message":"Mostra solo quello che si usa regolarmente, nascondi tutto il resto."
-	},
-	"tutorial_5_title1":{
-		"message":"Godetevi"
-	},
-	"tutorial_5_desc1":{
-		"message":"Divertiti! Ricordati di dare a questa app 5 stelle sul Web Store."
-	},
-	"tutorial_5_desc2":{
-		"message":"Hai un'idea per questa estensione? Lasciala <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">qui<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Sei uno sviluppatore?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Fai il tuo widget! Scopri qui come fare:"
-	},
 	"ui_shortcut_img":{
 		"message":"URL dell'immagine deve essere esattamente 128px per 128px, preferibilmente in formato PNG con trasparenza alfa. Per ripristinare le impostazioni predefinite, basta cancellare il campo di testo"
 	},

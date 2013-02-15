@@ -236,66 +236,6 @@
 	"app_webstore":{
 		"message":"\ud06c\ub86c \uc6f9 \uc2a4\ud1a0\uc5b4"
 	},
-	"tutorial_ui_next":{
-		"message":"\ub2e4\uc74c"
-	},
-	"tutorial_ui_back":{
-		"message":"\uc774\uc804"
-	},
-	"tutorial_1_welcome":{
-		"message":"\ud658\uc601\ud569\ub2c8\ub2e4"
-	},
-	"tutorial_1_desc1":{
-		"message":"A New Tab Page (NTP) replacement that doesn't suck."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... or at least tries really hard not to.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Click <span class=\"ul\">Next<\/span> to learn more."
-	},
-	"tutorial_2_title":{
-		"message":"No Longer Just <span class=\"ul\">Icons<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"This extension is a start at bringing the same power to Chrome's New Tab Page."
-	},
-	"tutorial_2_desc3":{
-		"message":"<span class=\"ul\">\uc704\uc82f<\/span>\uc5d0\uac8c \uc778\uc0ac\ud574\ubcf4\uc138\uc694."
-	},
-	"tutorial_3_title":{
-		"message":"Make Things Fit <span class=\"ul\">Your<\/span> Needs"
-	},
-	"tutorial_3_desc1":{
-		"message":"Click unlock and <span class=\"ul\">move<\/span> widgets and icons to wherever you want. <span class=\"ul\">Delete<\/span> things you don't want (when they're unlocked)."
-	},
-	"tutorial_4_title":{
-		"message":"\ub2f9\uc2e0\uc758 \uc560\ud50c\ub9ac\ucf00\uc774\uc158\uc740 \uc548\uc804\ud569\ub2c8\ub2e4."
-	},
-	"tutorial_4_desc1":{
-		"message":"\uac71\uc815\ub9c8\uc138\uc694. \ub2f9\uc2e0\uc758 \uc560\ud50c\ub9ac\ucf00\uc774\uc158\uc740 \uc0ad\uc81c\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4."
-	},
-	"tutorial_4_desc2":{
-		"message":"Feel free to unlock tiles then drag apps to your home screen."
-	},
-	"tutorial_4_desc3":{
-		"message":"Show what you regularly use, hide everything else."
-	},
-	"tutorial_5_title1":{
-		"message":"\uc990\uae30\uc138\uc694"
-	},
-	"tutorial_5_desc1":{
-		"message":"\uc774\uc81c \uc990\uae30\uc138\uc694! (\uc6f9\uc2a4\ud1a0\uc5b4\uc5d0 \ubcc4 5\uac1c \uc8fc\ub294\uac70 \uc78a\uc9c0\ub9c8\uc138\uc694)"
-	},
-	"tutorial_5_desc2":{
-		"message":"\ud655\uc7a5\ud504\ub85c\uadf8\ub7a8\uc5d0 \ub300\ud55c \uc88b\uc740 \uc0dd\uac01\uc774 \uc788\uc73c\uc2ed\ub2c8\uae4c? <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">\uc5ec\uae30<\/a>\uc5d0 \ub0a8\uaca8\uc8fc\uc138\uc694."
-	},
-	"tutorial_5_title2":{
-		"message":"\uac1c\ubc1c\uc790 \uc774\uc2ed\ub2c8\uae4c?"
-	},
-	"tutorial_5_desc3":{
-		"message":"\ub2f9\uc2e0\uc758 \uc704\uc82f\uc744 \ub9cc\ub4e4\uc5b4\ubcf4\uc138\uc694! \uc5ec\uae30\uc5d0\uc11c \ubc29\ubc95\uc744 \ucc3e\uc544\ubcf4\uc138\uc694."
-	},
 	"ui_shortcut_img":{
 		"message":"\uc774\ubbf8\uc9c0 URL\uc740 \ubc18\ub4dc\uc2dc 128*128\ud53d\uc140\uc774\uc5ec\uc57c\ud558\uace0 PNG\ud3ec\uba67\uc77c\uc218\ub85d \uc88b\uc2b5\ub2c8\ub2e4. \uae30\ubcf8\uac12\uc73c\ub85c \uc7ac\uc124\uc815 \ud558\uc2dc\ub824\uba74, \uc774 \ubd80\ubd84\ub9cc \uc9c0\uc6b0\uc2dc\uba74 \ub429\ub2c8\ub2e4."
 	},
