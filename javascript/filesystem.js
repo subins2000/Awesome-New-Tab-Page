@@ -107,24 +107,17 @@ $("#filesystem_icon_input").change(function() {
 $("#filesystem_icon_screenshot_bt").click(function () {
   chrome.permissions.request({origins: ['*://*/*']}, function(result) {
     if (result == true) {
-      $.confirm({title: chrome.i18n.getMessage('ui_screenshot_confirm_title'),
-        message: chrome.i18n.getMessage('ui_screenshot_confirm'),
-          buttons: {
-            Continue: {'class': 'blue', action: takeScreenshot},
-            Cancel: {'class' : 'gray'}
-          }
-      });
-    }
-    else {
-      $.confirm({title: chrome.i18n.getMessage('ui_screenshot_permission_denied_title'),
-        message: chrome.i18n.getMessage('ui_screenshot_permission_denied'),
-          buttons: { OK: {'class': 'blue'}}
-      });
+      qTipConfirm(chrome.i18n.getMessage('ui_screenshot_confirm_title'), chrome.i18n.getMessage('ui_screenshot_confirm'), chrome.i18n.getMessage('ui_button_ok'), chrome.i18n.getMessage('ui_button_cancel'), takeScreenshot);
+    } else {
+      qTipAlert(chrome.i18n.getMessage('ui_screenshot_permission_denied_title'), chrome.i18n.getMessage('ui_screenshot_permission_denied'), chrome.i18n.getMessage('ui_button_ok'));
     }
   });
 });
 
-function takeScreenshot() {
+function takeScreenshot(callbackReturned) {
+  if (callbackReturned === false)
+    return;
+
   var shortcutURL = $("[ng-model='$parent.$parent.appLaunchUrl']").val();
   chrome.tabs.create({ url: shortcutURL }, function (tab) {
     chrome.tabs.onUpdated.addListener(function (tabid, tabInfo, tabToCapture) {   // wait until page is completely loaded

@@ -20,6 +20,12 @@
 	"ui_button_close":{
 		"message":"Cerrar"
 	},
+	"ui_button_ok":{
+		"message":"Vale"
+	},
+	"ui_button_cancel":{
+		"message":"Cancelar"
+	},
 	"ui_button_about":{
 		"message":"Acerca de"
 	},
@@ -119,6 +125,12 @@
 	"ui_config_general":{
 		"message":"General"
 	},
+	"ui_config_shbmb":{
+		"message":"Breanne"
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Mostrar la barra de marcadores en la parte superior de la p\u00e1gina"
+	},
 	"ui_config_shtlb":{
 		"message":"Mostrar los botones de la izquierda s\u00f3lo en el \u00e1rea activada"
 	},
@@ -148,6 +160,27 @@
 	},
 	"ui_config_bgimg2":{
 		"message":"Ejemplo (NO arrastre punto y coma!):"
+	},
+	"ui_config_onoff_on":{
+		"message":"ON"
+	},
+	"ui_config_onoff_off":{
+		"message":"OFF"
+	},
+	"ui_config_hide_scrollbar":{
+		"message":"Ocultar barra de desplazamiento inferior"
+	},
+	"ui_config_hide_scrollbar_tip":{
+		"message":"Oculta la barra de desplazamiento de la parte inferior de la p\u00e1gina."
+	},
+	"ui_config_advanced":{
+		"message":"Avanzado"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Desactivar el desplazamiento horizontal"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"Desactiva el desplazamiento horizontal, permitiendo a\u00fan el vertical."
 	},
 	"ui_about":{
 		"message":"Acerca de"
@@ -188,6 +221,9 @@
 	"ui_uninstall":{
 		"message":"Desinstalar"
 	},
+	"ui_uninstall_title":{
+		"message":"Desinstalar aplicaci\u00f3n"
+	},
 	"ui_confirm_uninstall":{
 		"message":"\u00bfSeguro que deseas desinstalar $app$?",
 		"placeholders":{
@@ -210,7 +246,7 @@
 		"message":"Consiga M\u00e1s Apliaciones"
 	},
 	"ui_faw_get_more_apps_body":{
-		"message":"Consiga m\u00e1s aplicaciones e <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a>."
+		"message":"Consiga m\u00e1s aplicaciones de <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a>."
 	},
 	"ui_faw_get_more_widgets":{
 		"message":"Consiga M\u00e1s Widgets"
@@ -235,69 +271,6 @@
 	},
 	"app_webstore":{
 		"message":"Chrome Web Store"
-	},
-	"tutorial_ui_next":{
-		"message":"Siguiente"
-	},
-	"tutorial_ui_back":{
-		"message":"Atr\u00e1s"
-	},
-	"tutorial_1_welcome":{
-		"message":"Bienvenido a"
-	},
-	"tutorial_1_desc1":{
-		"message":"Un reemplazo de Nueva Pesta\u00f1a (NTP) que no apeste."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... o al menos intenta realmente duro no.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Haga clic en <span class=\"ul\"> siguiente<\/span> para obtener m\u00e1s informaci\u00f3n."
-	},
-	"tutorial_2_title":{
-		"message":"Ya no s\u00f3lo <span class=\"ul\"> iconos<\/span>"
-	},
-	"tutorial_2_desc1":{
-		"message":"Los iconos est\u00e1n desactualizados. La tecnolog\u00eda avanza continuamente, con poderosos, din\u00e1micos y maravillosos widgets disponibles para Android, Windows Phone 7 y pr\u00f3ximamente Windows 8."
-	},
-	"tutorial_2_desc2":{
-		"message":"Esta extensi\u00f3n trae las mismas posibilidades a la pagina de pesta\u00f1a nueva de Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"Salude a los <span class=\"ul\"> widgets<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Hacer cosas ajustar <span class=\"ul\"> sus<\/span> necesidades"
-	},
-	"tutorial_3_desc1":{
-		"message":"Haga clic en desbloquear y <span class=\"ul\"> Mover<\/span> widgets e iconos a donde quieras. <span class=\"ul\"> Eliminar<\/span> cosas que no quiere (cuando est\u00e1n desbloqueadas)."
-	},
-	"tutorial_4_title":{
-		"message":"Tus aplicaciones son seguras"
-	},
-	"tutorial_4_desc1":{
-		"message":"No te preocupes, tus aplicaciones no se han perdido."
-	},
-	"tutorial_4_desc2":{
-		"message":"Si\u00e9ntete libre de desbloquear casillas y luego arrastra las aplicaciones a tu pantalla de inicio."
-	},
-	"tutorial_4_desc3":{
-		"message":"Muestra lo que usas regularmente y esconde lo dem\u00e1s."
-	},
-	"tutorial_5_title1":{
-		"message":"Disfr\u00fatalo"
-	},
-	"tutorial_5_desc1":{
-		"message":"\u00a1Disfruta de este app y acu\u00e9rdate de darle 5 estrellas."
-	},
-	"tutorial_5_desc2":{
-		"message":"\u00bfTienes alguna idea para esta extensi\u00f3n? D\u00ednosla <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">aqu\u00ed<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"\u00bfEres un desarrollador?"
-	},
-	"tutorial_5_desc3":{
-		"message":"\u00a1Haz tus propio widgets! Descubre c\u00f3mo aqu\u00ed:"
 	},
 	"ui_shortcut_img":{
 		"message":"La URL de la imagen debe ser exactamente de 128px por 128px, preferiblemente en formato PNG con transparencia alfa. Para restablecer todos los valores predeterminados, simplemente borra todo del campo."
@@ -354,7 +327,7 @@
 		"message":"Importar: Sobrescribe la configuraci\u00f3n actual con una cadena v\u00e1lida exportada. <b>ADVERTENCIA<\/b>: Todas las preferencias actuales se perder\u00e1n de forma definitiva. No hay ninguna manera de deshacer esta operaci\u00f3n. Las im\u00e1genes subidas no se exportaran; son im\u00e1genes de la web."
 	},
 	"ui_import_export_installed_warning":{
-		"message":"No se importaran o exportaran complementos, extensiones y aplicaciones instaladas. Las extensiones no pueden instalar otras aplicaciones o extensiones. Si lo que busca es esa funci\u00f3n, use <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'> Chrome Sync<\/a>."
+		"message":"No se importaran o exportaran complementos, extensiones y aplicaciones instaladas. Las extensiones no pueden instalar otras aplicaciones o extensiones. Si lo que busca es esa funci\u00f3n, use <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'> Chrome Sync<\/a> como alternativa."
 	},
 	"ui_import_export_desc_restore":{
 		"message":"Restaurar: Le permite deshacer la \u00faltima importaci\u00f3n. Su estado actual tambi\u00e9n ser\u00e1 guardado para posteriores restauraciones."
@@ -397,5 +370,32 @@
 	},
 	"ui_apps_tip_message":{
 		"message":"\u00a1Genial! Acabas de instalar una aplicaci\u00f3n. Aqu\u00ed puedes ver todas las aplicaciones instaladas."
+	},
+	"ui_tutorial2_next":{
+		"message":"Siguiente"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"Ventana de aplicaciones"
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Ventana de widgets"
+	},
+	"ui_tutorial2_delete_widget":{
+		"message":"Eliminar este widget"
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"\u00a1Eres impresionante!"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Finalizar tutorial"
+	},
+	"ui_tutorial2_main_welcome":{
+		"message":"Bienvenido a"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"Acabas de ascender a Impresionante. \u00bfC\u00f3mo te sientes?"
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Iniciar tutorial"
 	}
 }

@@ -119,6 +119,9 @@
 	"ui_config_general":{
 		"message":"Genel"
 	},
+	"ui_config_shbmb":{
+		"message":"Yer i\u015fareti \u00e7ubu\u011funu g\u00f6ster"
+	},
 	"ui_config_shtlb":{
 		"message":"\u00dcst soldaki d\u00fc\u015fmeleri yanl\u0131zca alan\u0131n \u00fczerine gelindi\u011finde g\u00f6ster"
 	},
@@ -148,6 +151,12 @@
 	},
 	"ui_config_bgimg2":{
 		"message":"\u00d6rnek (Arkas\u0131na noktal\u0131 virg\u00fcl olmadan!):"
+	},
+	"ui_config_onoff_on":{
+		"message":"A\u00c7IK"
+	},
+	"ui_config_onoff_off":{
+		"message":"KAPALI"
 	},
 	"ui_about":{
 		"message":"Hakk\u0131nda"
@@ -226,66 +235,6 @@
 	},
 	"app_webstore":{
 		"message":"Chrome Uygulama Ma\u011fazas\u0131"
-	},
-	"tutorial_ui_next":{
-		"message":"\u0130leri"
-	},
-	"tutorial_ui_back":{
-		"message":"Geri"
-	},
-	"tutorial_1_welcome":{
-		"message":"Ho\u015f Geldiniz"
-	},
-	"tutorial_1_desc1":{
-		"message":"A New Tab Page'\u0131 (NTP) de\u011fi\u015ftirmek k\u00f6t\u00fc de\u011fildir."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... ya da en az\u0131ndan \u00e7al\u0131\u015f\u0131r ger\u00e7ekten zor de\u011fil.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Daha fazlas\u0131n\u0131 \u00f6\u011frenmek i\u00e7in <span class=\"ul\">\u0130lerit<\/span>'ye t\u0131kla."
-	},
-	"tutorial_2_title":{
-		"message":"Art\u0131k sadece <span class=\"ul\">simgeler<\/span> var"
-	},
-	"tutorial_2_desc2":{
-		"message":"Bu uzant\u0131, Chrome'a yeni etiket sayfalar\u0131 i\u00e7in ayn\u0131 g\u00fc\u00e7 getiren, bir ba\u015flang\u0131\u00e7t\u0131r."
-	},
-	"tutorial_2_desc3":{
-		"message":"<span class=\"ul\">Ara\u00e7lara<\/span> merhaba deyin."
-	},
-	"tutorial_3_title":{
-		"message":"<span class=\"ul\">\u0130htiya\u00e7lar\u0131n\u0131za<\/span> uygun i\u015fler yap\u0131n"
-	},
-	"tutorial_3_desc1":{
-		"message":"Kilidi a\u00e7'a bas\u0131n; ara\u00e7lar\u0131 ve ikonlar\u0131 nereye isterseniz oraya <span class=\"ul\">hareket ettirin<\/span>. \u0130stemedi\u011finiz \u015feyleri <span class=\"ul\">silin<\/span> (Kilit a\u00e7\u0131kken)."
-	},
-	"tutorial_4_title":{
-		"message":"Uygulamalar\u0131n\u0131z G\u00fcvende"
-	},
-	"tutorial_4_desc1":{
-		"message":"Endi\u015felenmeyin, uygulamalar\u0131n\u0131z hi\u00e7 bir yere gitmedi."
-	},
-	"tutorial_4_desc2":{
-		"message":"D\u00f6\u015feme kilidini a\u00e7t\u0131ktan sonra uygulamalar\u0131 ana ekrana s\u00fcr\u00fckleyebilirsiniz."
-	},
-	"tutorial_4_desc3":{
-		"message":"Genelde kulland\u0131\u011f\u0131n\u0131 g\u00f6ster, di\u011fer her\u015feyi gizle."
-	},
-	"tutorial_5_title1":{
-		"message":"Keyfini \u00e7\u0131kar\u0131n"
-	},
-	"tutorial_5_desc1":{
-		"message":"Keyfini \u00e7\u0131kar\u0131n! Bu uygulamaya Web Ma\u011fazas\u0131'nda 5 y\u0131ld\u0131z vermeyi unutmay\u0131n."
-	},
-	"tutorial_5_desc2":{
-		"message":"Bu eklenti i\u00e7in bir fikriniz mi var? <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">Buraya<\/a> yazabilirsiniz."
-	},
-	"tutorial_5_title2":{
-		"message":"Geli\u015ftirici misiniz?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Kendi ara\u00e7lar\u0131n\u0131z\u0131 yap\u0131n. Nas\u0131l yapaca\u011f\u0131n\u0131z\u0131 buradan bulabilirsiniz:"
 	},
 	"ui_shortcut_img":{
 		"message":"Verilen URL deki resim tam olarak 128x128 piksel boyutunda, tercihen alfa deste\u011fiyle PNG format\u0131nda olmal\u0131d\u0131r. S\u0131f\u0131rlamak i\u00e7in, sadece formdaki her\u015feyi silin."

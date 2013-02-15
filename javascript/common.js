@@ -45,7 +45,7 @@
 
   var stock_widgets = {
     webstore: {
-      where: [2,3],
+      where: [2,4],
       size: [1,1],
       type: "app",
       isApp: true,
@@ -58,6 +58,20 @@
       simg: "app.webstore.png",
       appLaunchUrl: "https://chrome.google.com/webstore?utm_source=webstore-app&utm_medium=awesome-new-tab-page"
     },
+    getwidgets: {
+      where: [2,3],
+      size: [1,1],
+      type: "app",
+      isApp: true,
+      enabled: true,
+      name: "Get Widgets",
+      color: "rgba(0, 160, 60, 1)",
+      id: "webstore",
+      stock: true,
+      img: "icon128.png",
+      simg: "icon128.png",
+      appLaunchUrl: "http://dev.antp.co/widgets"
+    },
     tutorial: {
       where: [0,0],
       size: [2,2],
@@ -69,7 +83,7 @@
       path: "widgets/tutorial/widget.tutorial.html"
     },
     clock: {
-      where: [1,3],
+      where: [1,2],
       size: [1,1],
       type: "iframe",
       isApp: false,
@@ -83,6 +97,7 @@
       size: [1,1],
       type: "iframe",
       isApp: false,
+      enabled: false,
       stock: true,
       name: "Notepad",
       id: "notepad",
@@ -114,7 +129,7 @@
       id: "amazoninstantvideo"
     },
     amazon: {
-      where: [1,2],
+      where: [1,3],
       size: [1,1],
       type: "app",
       isApp: true,
@@ -172,15 +187,16 @@
       path: "widgets/tabs/tabs.html",
       poke: 2,
       resize: true,
-      size: [1,1],
+      size: [1,2],
       type: "iframe",
       v2: {
+        resize    : true,
         min_height: 1,
         min_width : 1,
         max_height: 3,
         max_width : 3
       },
-      where: [2,4]
+      where: [2,1]
     }
   };
 
@@ -372,9 +388,10 @@ function _e(_eNum) {
 /* START :: Preferences */
 
   var DEFAULTS = { // uses localStorage keys
-    "perm-grid": true,
-    "hideScrollbar": false,
-    "hideLeftButtons": false,
+    "perm-grid":        true,
+    "hideScrollbar":    false,
+    "hideLeftButtons":  false,
+    "disableHscroll":   false,
   };
 
   var preference = {

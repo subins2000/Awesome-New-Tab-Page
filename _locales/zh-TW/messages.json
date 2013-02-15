@@ -17,11 +17,20 @@
 	"ui_button_close":{
 		"message":"\u95dc\u9589"
 	},
+	"ui_button_ok":{
+		"message":"\u78ba\u5b9a"
+	},
+	"ui_button_cancel":{
+		"message":"\u53d6\u6d88"
+	},
 	"ui_button_about":{
 		"message":"\u95dc\u65bc"
 	},
 	"ui_config":{
 		"message":"\u914d\u7f6e"
+	},
+	"ui_button_help":{
+		"message":"\u8aac\u660e\u8207\u610f\u898b"
 	},
 	"ui_c_learnmore":{
 		"message":"\u77ad\u89e3\u66f4\u591a\u8cc7\u8a0a"
@@ -59,6 +68,9 @@
 	"ui_te_shfavicon":{
 		"message":"\u986f\u793a\/\u96b1\u85cf\u5716\u793a"
 	},
+	"ui_te_search":{
+		"message":"\u641c\u5c0b"
+	},
 	"ui_te_bg_colorpicker":{
 		"message":"\u958b\u5553\u984f\u8272\u9078\u64c7"
 	},
@@ -86,6 +98,9 @@
 	"ui_config_general":{
 		"message":"\u4e00\u822c"
 	},
+	"ui_config_shgrid":{
+		"message":"\u986f\u793a\u7db2\u683c\uff08\u672a\u9396\u5b9a\u6642\uff09"
+	},
 	"ui_config_amazonlocale":{
 		"message":"\u8a2d\u5b9a<i>\u9810\u8a2d<\/i> \u4e9e\u99ac\u905c\u5feb\u6377 Widget\uff0c\u8acb\u9078\u64c7\u60a8\u7684\u570b\u5bb6\u3002"
 	},
@@ -110,6 +125,12 @@
 	"ui_config_bgimg2":{
 		"message":"\u7bc4\u4f8b(\u6c92\u6709\u5206\u865f\uff01):"
 	},
+	"ui_config_onoff_on":{
+		"message":"\u958b"
+	},
+	"ui_config_onoff_off":{
+		"message":"\u95dc"
+	},
 	"ui_about":{
 		"message":"\u95dc\u65bc"
 	},
@@ -131,6 +152,15 @@
 	"ui_about_rate":{
 		"message":"\u8a55\u50f9"
 	},
+	"ui_install":{
+		"message":"\u5b89\u88dd"
+	},
+	"ui_uninstall":{
+		"message":"\u5378\u9664"
+	},
+	"ui_uninstall_title":{
+		"message":"\u5378\u9664\u61c9\u7528\u7a0b\u5f0f"
+	},
 	"ui_confirm_uninstall":{
 		"message":"\u4f60\u78ba\u5b9a\u8981\u79fb\u9664\u61c9\u7528\u7a0b\u5f0f$app$?",
 		"placeholders":{
@@ -139,6 +169,9 @@
 				"example":"Chrome Web Store"
 			}
 		}
+	},
+	"ui_faw_unlock_drag":{
+		"message":"\u89e3\u9396\u4e26\u62d6\u66f3"
 	},
 	"ui_faw_get_more_apps":{
 		"message":"\u7372\u5f97\u66f4\u591a\u7684\u61c9\u7528\u7a0b\u5f0f"
@@ -149,56 +182,17 @@
 	"ui_faw_get_more_widgets":{
 		"message":"\u7372\u5f97\u66f4\u591a\u5c0f\u5de5\u5177"
 	},
+	"ui_faw_pick":{
+		"message":"\u9078\u53d6"
+	},
+	"ui_faw_install":{
+		"message":"\u5b89\u88dd"
+	},
 	"ui_bmb_ob":{
 		"message":"\u5176\u4ed6\u66f8\u7c64"
 	},
 	"app_webstore":{
 		"message":"Chrome \u7dda\u4e0a\u61c9\u7528\u7a0b\u5f0f\u5546\u5e97"
-	},
-	"tutorial_ui_next":{
-		"message":"\u4e0b\u4e00\u6b65"
-	},
-	"tutorial_ui_back":{
-		"message":"\u8fd4\u56de"
-	},
-	"tutorial_1_welcome":{
-		"message":"\u6b61\u8fce\u4f7f\u7528"
-	},
-	"tutorial_1_desc3":{
-		"message":"\u9ede\u64ca<span class=\"ul\">\u4e0b\u4e00\u6b65<\/span>\u77ad\u89e3\u66f4\u591a\u3002"
-	},
-	"tutorial_2_title":{
-		"message":"\u4e0d\u518d\u53ea\u662f <span class=\"ul\"> \u5716\u793a<\/span>"
-	},
-	"tutorial_2_desc3":{
-		"message":"\u8fce\u63a5 <span class=\"ul\"> \u5c0f\u5de5\u5177<\/span> \u3002"
-	},
-	"tutorial_3_title":{
-		"message":"\u4f7f\u7269\u4ef6\u5011\u66f4\u7b26\u5408 <span class=\"ul\"> \u60a8<\/span> \u7684\u9700\u8981"
-	},
-	"tutorial_3_desc1":{
-		"message":"\u6309\u4e00\u4e0b\u89e3\u9396 <span class=\"ul\"> \u79fb\u52d5<\/span> \u5c0f\u5de5\u5177\u548c\u5716\u793a\u5230\u60a8\u7406\u60f3\u7684\u4f4d\u7f6e\uff1b\u4ea6\u80fd <span class=\"ul\"> \u522a\u9664<\/span> \u4f60\u4e0d\u9700\u8981\u7684\u6771\u897f\u3002"
-	},
-	"tutorial_4_title":{
-		"message":"\u60a8\u7684\u61c9\u7528\u7a0b\u5f0f\u662f\u5b89\u5168\u7684"
-	},
-	"tutorial_4_desc1":{
-		"message":"\u4e0d\u7528\u64d4\u5fc3\uff0c\u60a8\u7684\u61c9\u7528\u7a0b\u5f0f\u6c92\u6709\u6d88\u5931\u3002"
-	},
-	"tutorial_5_title1":{
-		"message":"\u4eab\u7528\u5427\uff01"
-	},
-	"tutorial_5_desc1":{
-		"message":"\u4eab\u53d7\u5427 \uff01\u8acb\u8a18\u5f97\u5728 Web Store \u4e0a\uff0c\u7d66\u9019\u500b\u61c9\u7528\u7a0b\u5f0f 5 \u9846\u661f\u3002"
-	},
-	"tutorial_5_desc2":{
-		"message":"\u5c0d\u9019\u500b\u64f4\u5145\u529f\u80fd\u6709\u500b\u597d\u4e3b\u610f\u55ce\uff1f\u5230<a href=\"http:\/\/ntp.uservoice.com\/\"target=\"_top\">\u9019\u88e1<\/a>\u7559\u4e0b\u610f\u898b\u5427\u3002"
-	},
-	"tutorial_5_title2":{
-		"message":"\u4f60\u662f\u958b\u767c\u8005\u55ce\uff1f"
-	},
-	"tutorial_5_desc3":{
-		"message":"\u8a2d\u5b9a\u60a8\u5c08\u5c6c\u7684 Widget\uff01\u6b32\u77e5\u8a2d\u5b9a\u65b9\u6cd5\uff0c\u8acb\u6309\u9019\u88e1\uff1a"
 	},
 	"ui_shortcut_img":{
 		"message":"\u5716\u50cf\u5927\u5c0f\u5fc5\u9808\u662f 128x128 \u50cf\u7d20\u3002\u5efa\u8b70\u4f7f\u7528\u652f\u63f4alpha\u900f\u660e\u7279\u6027\u7684PNG\u683c\u5f0f\u3002\u6e05\u7a7a\u65b9\u6846\u4ee5\u91cd\u8a2d\u3002"
@@ -208,6 +202,9 @@
 	},
 	"ui_resize_reset":{
 		"message":"\u91cd\u7f6e"
+	},
+	"ui_resize_center":{
+		"message":"\u7f6e\u4e2d"
 	},
 	"ui_resize_cover":{
 		"message":"\u5c01\u9762"
@@ -224,6 +221,9 @@
 	"rctm_clear_all":{
 		"message":"\u6e05\u9664\u6700\u8fd1\u95dc\u9589\u7684\u6a19\u7c64\u9801"
 	},
+	"ui_import_export_btn":{
+		"message":"\u532f\u5165\/\u532f\u51fa"
+	},
 	"ui_import_export_btn2":{
 		"message":"\u8fd4\u56de"
 	},
@@ -239,11 +239,17 @@
 	"ui_import_export_installed_warning":{
 		"message":"\u5df2\u5b89\u88dd\u7684\u61c9\u7528\u7a0b\u5f0f\u3001 \u63d2\u4ef6\u548c\u5c0f\u5de5\u5177\u4e0d\u80fd\u532f\u5165\u53ca\u532f\u51fa\u3002\u5167\u7f6e\u63d2\u4ef6\u4e0d\u80fd\u5b89\u88dd\u5176\u4ed6\u61c9\u7528\u6216\u64f4\u5c55\u3002\u6539\u70ba\u4f7f\u7528 <a href='HTTP:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'> Chrome \u540c\u6b65<\/a>\u3002"
 	},
+	"ui_import_export_header":{
+		"message":"\u532f\u5165\/\u532f\u51fa"
+	},
 	"ui_import_export_confirm_restore_title":{
 		"message":"\u78ba\u8a8d\u9084\u539f"
 	},
 	"ui_import_export_confirm_restore":{
 		"message":"\u60a8\u78ba\u5be6\u8981\u9084\u539f\u55ce\uff1f\u60a8\u76ee\u524d\u7684\u8a2d\u7f6e\u5c07\u6703\u907a\u5931\u3002"
+	},
+	"ui_import_export_msg_header":{
+		"message":"\u532f\u5165\/\u532f\u51fa"
 	},
 	"ui_import_export_restore_complete_msg":{
 		"message":"\u9084\u539f\u5b8c\u6210\u3002"

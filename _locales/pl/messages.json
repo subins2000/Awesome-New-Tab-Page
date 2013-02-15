@@ -20,6 +20,12 @@
 	"ui_button_close":{
 		"message":"Zamknij"
 	},
+	"ui_button_ok":{
+		"message":"OK"
+	},
+	"ui_button_cancel":{
+		"message":"Anuluj"
+	},
 	"ui_button_about":{
 		"message":"O dodatku"
 	},
@@ -119,8 +125,23 @@
 	"ui_config_general":{
 		"message":"Og\u00f3lne"
 	},
+	"ui_config_shbmb":{
+		"message":"Poka\u017c pasek zak\u0142adek"
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Poka\u017c pasek zak\u0142adek na g\u00f3rze strony"
+	},
 	"ui_config_shtlb":{
 		"message":"Poka\u017c pasek przycisk\u00f3w po lewej stronie po najechaniu myszk\u0105"
+	},
+	"ui_config_shtlb_desc":{
+		"message":"Kiedy ta opcja jest aktywna, przyciski znajduj\u0105ce si\u0119 w po lewej stronie b\u0119d\u0105 automatycznie si\u0119 chowa\u0107. Aby uzyska\u0107 do nich dost\u0119p, najed\u017a kursorem w miejsce gdzie normalnie powinny si\u0119 znajdowa\u0107."
+	},
+	"ui_config_shgrid":{
+		"message":"Poka\u017c siatk\u0119(Kiedy interfejs jest odblokowany)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Kiedy ta opcja jest aktywna, siatka b\u0119dzie widoczna ca\u0142y czas."
 	},
 	"ui_config_amazonlocale":{
 		"message":"Dla <i>domy\u015blnego<\/i> skr\u00f3tu strony Amazon, wybierz sw\u00f3j kraj."
@@ -148,6 +169,42 @@
 	},
 	"ui_config_bgimg2":{
 		"message":"Przyk\u0142ad (BEZ \u015brednika na ko\u0144cu!):"
+	},
+	"ui_config_onoff_on":{
+		"message":"W\u0142\u0105cz"
+	},
+	"ui_config_onoff_off":{
+		"message":"Wy\u0142\u0105cz"
+	},
+	"ui_config_hide_scrollbar":{
+		"message":"Ukryj pasek przewijania"
+	},
+	"ui_config_hide_scrollbar_tip":{
+		"message":"Ukrywa pasek przewijania na dole strony."
+	},
+	"ui_config_advanced":{
+		"message":"Zaawansowane"
+	},
+	"ui_config_advanced_tip":{
+		"message":"Poni\u017cej s\u0105 opcje zaawansowane, kt\u00f3re je\u015bli by\u0142y by \u017ale ustawione, spowodowa\u0142y by trudno\u015bci z obs\u0142ug\u0105. U\u017cywasz tych opcji na w\u0142asn\u0105 odpowiedzialno\u015b\u0107."
+	},
+	"ui_config_advanced_grid_width":{
+		"message":"Ustaw szeroko\u015b\u0107 siatki"
+	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"Zast\u0119puje automatyczn\u0105 generacj\u0119 siatki. U\u017cycie tej opcji mo\u017ce spowodowa\u0107 \u017ce kafelki nie b\u0119d\u0105 si\u0119 \u0142adowa\u0107. Ustawiaj\u0105c t\u0105 warto\u015b\u0107 na zbyt wysok\u0105, mo\u017ce spowodowa\u0107 utrat\u0119 wydajno\u015bci. Minimum: 4. Maksimum 50. <b>Pozostaw puste aby dezaktywowa\u0107!<\/b>"
+	},
+	"ui_config_advanced_grid_height":{
+		"message":"Ustaw wysoko\u015b\u0107 siatki"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"Zast\u0119puje automatyczn\u0105 generacj\u0119 siatki. U\u017cycie tej opcji mo\u017ce spowodowa\u0107 \u017ce kafelki nie b\u0119d\u0105 si\u0119 \u0142adowa\u0107. Ustawiaj\u0105c t\u0105 warto\u015b\u0107 na zbyt wysok\u0105, mo\u017ce spowodowa\u0107 utrat\u0119 wydajno\u015bci. Minimum: 3. Maksimum 25. <b>Pozostaw puste aby dezaktywowa\u0107!<\/b>"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Wy\u0142\u0105cz przewijanie poziome"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"Wy\u0142\u0105cza przewijanie w poziomie umo\u017cliwiaj\u0105c przewijanie w pionie."
 	},
 	"ui_about":{
 		"message":"O dodatku"
@@ -187,6 +244,9 @@
 	},
 	"ui_uninstall":{
 		"message":"Odinstaluj"
+	},
+	"ui_uninstall_title":{
+		"message":"Odinstaluj aplikacje"
 	},
 	"ui_confirm_uninstall":{
 		"message":"Czy na pewno chcesz odinstalowa\u0107 dodatek $app$?",
@@ -235,69 +295,6 @@
 	},
 	"app_webstore":{
 		"message":"Chrome Web Store"
-	},
-	"tutorial_ui_next":{
-		"message":"Nast\u0119pny &raquo;"
-	},
-	"tutorial_ui_back":{
-		"message":"&laquo; Poprzedni"
-	},
-	"tutorial_1_welcome":{
-		"message":"Witaj w"
-	},
-	"tutorial_1_desc1":{
-		"message":"Zast\u0119pstwo dla nowej karty (NTP), kt\u00f3re nie ssie tak jak poprzednie."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... a przynajmniej stara si\u0119.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Kliknij <span class=\"ul\">Nast\u0119pny<\/span> aby dowiedzie\u0107 si\u0119 wi\u0119cej."
-	},
-	"tutorial_2_title":{
-		"message":"To ju\u017c nie tylko <span class=\"ul\">Ikonki<\/span>"
-	},
-	"tutorial_2_desc1":{
-		"message":"Ikonki s\u0105 przestarza\u0142e Technologia idzie do przodu, pojawiaj\u0105 si\u0119 nowe, pot\u0119\u017cne i dynamiczne widgety tj. te z Androida, Windows Phone 7 oraz Windows 8."
-	},
-	"tutorial_2_desc2":{
-		"message":"To rozszerzenie jest pocz\u0105tkiem w dostarczeniu podobnej mocy do nowej karty w Google Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"Przywitaj si\u0119 z <span class=\"ul\">widgetami<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Dopasuj rzeczy do <span class=\"ul\">swoich<\/span> potrzeb"
-	},
-	"tutorial_3_desc1":{
-		"message":"Kliknij odblokuj i <span class=\"ul\">przesuwaj<\/span> widgety oraz ikonki gdziekolwiek zechcesz. <span class=\"ul\">Usu\u0144<\/span> rzeczy, kt\u00f3rych nie potrzebujesz."
-	},
-	"tutorial_4_title":{
-		"message":"Twoje appsy s\u0105 bezpieczne"
-	},
-	"tutorial_4_desc1":{
-		"message":"Nie martw si\u0119, Twoje aplikacje nie posz\u0142y daleko."
-	},
-	"tutorial_4_desc2":{
-		"message":"Mo\u017cesz spokojnie odblokowa\u0107 kafelki i przeci\u0105ga\u0107 widgety na Tw\u00f3j ekran domowy."
-	},
-	"tutorial_4_desc3":{
-		"message":"Poka\u017c czego na og\u00f3\u0142 u\u017cywasz i ukryj wszystko inne."
-	},
-	"tutorial_5_title1":{
-		"message":"Baw si\u0119"
-	},
-	"tutorial_5_desc1":{
-		"message":"Baw si\u0119 dobrze! Pami\u0119taj by da\u0107 tej aplikacji 5 gwiazdek w sklepiku Google Chrome."
-	},
-	"tutorial_5_desc2":{
-		"message":"Masz pomys\u0142 na rozszerzenie? Zostaw go <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">tutaj<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Jeste\u015b programist\u0105?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Stw\u00f3rz swoje w\u0142asne widgety! Dowiedz si\u0119 jak:"
 	},
 	"ui_shortcut_img":{
 		"message":"Wskazywany obrazek musi by\u0107 dok\u0142adnie 128x128 pikseli, najlepiej w formacie PNG z przezroczysto\u015bci\u0105. Aby zresetowa\u0107, po prostu usu\u0144 wszystko w tym polu."
@@ -397,5 +394,62 @@
 	},
 	"ui_apps_tip_message":{
 		"message":"Mi\u0142o! W\u0142a\u015bnie zainstalowa\u0142e\u015b aplikacj\u0119. Wszystkie zainstalowane aplikacje mo\u017cesz znale\u017a\u0107 tutaj."
+	},
+	"ui_tutorial2_next":{
+		"message":"Dalej"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"Okno aplikacji"
+	},
+	"ui_tutorial2_app_drawer":{
+		"message":"W tym miejscu mo\u017cesz znale\u017a\u0107 wszystkie dodatki jakie zosta\u0142y zainstalowane ze sklepu internetowego. Mo\u017cesz <b>przeci\u0105gn\u0105\u0107<\/b> aplikacje z tego okna do Twojej <b>odblokowanej<\/b> siatki. W tym oknie mo\u017cesz tak\u017ce odinstalowywa\u0107 dodatki."
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Okno wid\u017cet\u00f3w"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Tutaj znajdziesz wid\u017cety wykonane przez osoby trzecie, kt\u00f3re stworzy\u0142y aplikacje specjalnie dla Niesamowitej Nowej Karty. Wid\u017cety wprowadzaj\u0105 aktualne i przydatne informacje na nowej karcie."
+	},
+	"ui_tutorial2_lock_title":{
+		"message":"Zablokuj\/Odblokuj siatk\u0119"
+	},
+	"ui_tutorial2_lock_grid":{
+		"message":"Blokowanie i odblokowywanie siatki umo\u017cliwia wstawianie, przenoszenie oraz usuwanie wid\u017cet\u00f3w, aplikacji oraz skr\u00f3t\u00f3w. <b>Kliknij na symbol k\u0142\u00f3dki aby kontynuowa\u0107<\/b>."
+	},
+	"ui_tutorial2_delete_widget":{
+		"message":"Usu\u0144 ten wid\u017cet"
+	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"Siatka jest do Twojej dyspozycji. Mo\u017cesz kasowa\u0107 p\u0142ytki kt\u00f3rych nie potrzebujesz. Teraz mo\u017cesz \u015bmia\u0142o <b>usun\u0105\u0107 wid\u017cet samouczka<\/b>."
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Wyczy\u015b\u0107 siatk\u0119 p\u0142ytek"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"Nie ograniczaj si\u0119 aplikacjami znalezionymi w sklepie internetowym. <b> kliknij na pusty kafelek na siatce<\/b> i stw\u00f3rz skr\u00f3t do dowolnej strony w internecie."
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"Jeste\u015b niesamowity(-a)!"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Polub, bardzo niesamowite. Teraz ju\u017c wiesz jak korzysta\u0107 z Niesamowitej Nowej Karty aby jak najlepiej wykorzysta\u0107 przegl\u0105dark\u0119 Chrome. A wi\u0119c co teraz zrobisz?"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Zako\u0144cz samouczek"
+	},
+	"ui_tutorial2_main_welcome":{
+		"message":"Witaj w"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"W\u0142asnie zaktualizowa\u0142e\u015b do Niesamowitej Nowej Strony Startowej. Jak si\u0119 z tym czujesz?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"Mo\u017ce zbyt du\u017co tej niesamowito\u015bci na raz? Nie martw si\u0119, wid\u017cet samouczka na pewno pomo\u017ce Ci na pocz\u0105tku."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Kliknij na ten ma\u0142y przycisk na dole aby przej\u015b\u0107 dalej."
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Rozpocznij samouczek"
 	}
 }

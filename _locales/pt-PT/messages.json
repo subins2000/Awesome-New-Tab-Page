@@ -230,69 +230,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"Seguinte"
-	},
-	"tutorial_ui_back":{
-		"message":"Voltar"
-	},
-	"tutorial_1_welcome":{
-		"message":"Bem-vindo ao"
-	},
-	"tutorial_1_desc1":{
-		"message":"Uma nova guia de substitui\u00e7\u00e3o de p\u00e1gina (NTP), que funciona."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... ao menos tente, n\u00e3o \u00e9 muito dif\u00edcil.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Clique <span class=\"ul\">Pr\u00f3ximo<\/span> para aprender mais."
-	},
-	"tutorial_2_title":{
-		"message":"N\u00e3o mais Apenas <span class=\"ul\">\u00edcones<\/span>"
-	},
-	"tutorial_2_desc1":{
-		"message":"Icons est\u00e3o desatualizados. A Tecnologia est\u00e1 a avan\u00e7ar, com uma for\u00e7a extrema. Widgets din\u00e2micos e bonitos encontrados em Androids, Windows Phone 7 e no novo Windows 8."
-	},
-	"tutorial_2_desc2":{
-		"message":"Esta extens\u00e3o \u00e9 um bom come\u00e7o de trazer o mesmo poder do \"Nova Separador\" do Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"Diga \"Ol\u00e1!\" aos <span class=\"ul\">widgets<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Fa\u00e7a com que as coisas se encaixem \u00e0s <span class=\"ul\">SUAS<\/span> necessidades!"
-	},
-	"tutorial_3_desc1":{
-		"message":"Clique em desbloquear e <span class=\"ul\">mova<\/span> os widgets e os \u00edcones para onde desejar. <span class=\"ul\">Exclua<\/span> o que voc\u00ea n\u00e3o quer (Quando Estiverem Desbloqueados)."
-	},
-	"tutorial_4_title":{
-		"message":"As suas aplica\u00e7\u00f5es est\u00e3o seguras."
-	},
-	"tutorial_4_desc1":{
-		"message":"N\u00e3o se preocupe, as suas aplica\u00e7\u00f5es n\u00e3o foram muito longe."
-	},
-	"tutorial_4_desc2":{
-		"message":"Sinta-se livre para desbloquear os azulejos, em seguida, arraste os aplicativos para sua tela inicial."
-	},
-	"tutorial_4_desc3":{
-		"message":"Mostre somente o que voc\u00ea usa regularmente, oculte todo o resto."
-	},
-	"tutorial_5_title1":{
-		"message":"Divirta-se..."
-	},
-	"tutorial_5_desc1":{
-		"message":"Divirta-se! Lembre-se de dar 5 Estrelas a esta aplica\u00e7\u00e3o (ANT Grid) na Web Store."
-	},
-	"tutorial_5_desc2":{
-		"message":"Tem uma ideia para esta extens\u00e3o? Ent\u00e3o deixe sua ideia <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">aqui<\/a>!"
-	},
-	"tutorial_5_title2":{
-		"message":"Voc\u00ea \u00e9 um desenvolvente?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Fa\u00e7a os seu pr\u00f3prios widgets! Descubra aqui como:"
-	},
 	"ui_shortcut_img":{
 		"message":"O URL da imagem deve ter 128px por 128px, de prefer\u00eancia no formato PNG com transpar\u00eancia. Para repor os valores padr\u00e3o elimine o conte\u00fado do campo."
 	},

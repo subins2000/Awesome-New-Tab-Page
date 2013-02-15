@@ -203,66 +203,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Winkel"
 	},
-	"tutorial_ui_next":{
-		"message":"Volgende"
-	},
-	"tutorial_ui_back":{
-		"message":"Terug"
-	},
-	"tutorial_1_welcome":{
-		"message":"Welkom bij"
-	},
-	"tutorial_1_desc1":{
-		"message":"Een vervanging van het nieuwe tabblad pagina (NTP), die niet zuigt."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... of tenminste het hard probeert.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"Klik op <span class=\"ul\">volgende<\/span> om meer te leren."
-	},
-	"tutorial_2_title":{
-		"message":"Niet langer alleen <span class=\"ul\">pictogrammen<\/span>"
-	},
-	"tutorial_2_desc2":{
-		"message":"Deze uitbreiding is een begin van het brengen van dezelfde kracht tegenover Chrome's New Tablad pagina."
-	},
-	"tutorial_2_desc3":{
-		"message":"Zeg hallo tegen <span class=\"ul\">widgets<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"Laat dingen zich aanpassen aan <span class=\"ul\">je<\/span> behoeften"
-	},
-	"tutorial_3_desc1":{
-		"message":"Klik op ontgrendelen en <span class=\"ul\">verplaats<\/span> de widgets en pictogrammen waar je maar wilt. <span class=\"ul\">Verwijder<\/span> dingen die je niet wilt (wanneer ze ontgrendeld zijn)."
-	},
-	"tutorial_4_title":{
-		"message":"Je applicaties zijn veilig"
-	},
-	"tutorial_4_desc1":{
-		"message":"Geen zorgen je applicaties zijn niet verdwenen."
-	},
-	"tutorial_4_desc2":{
-		"message":"Ontgrendel gerust de tegels en sleep ze naar je startpagina."
-	},
-	"tutorial_4_desc3":{
-		"message":"Toon wat je regelmatig gebruikt, verberg al het andere."
-	},
-	"tutorial_5_title1":{
-		"message":"Geniet er van"
-	},
-	"tutorial_5_desc1":{
-		"message":"Heb veel plezier! Vergeet niet deze app 5 sterren in de webwinkel te geven."
-	},
-	"tutorial_5_desc2":{
-		"message":"Heb je een idee voor deze extensie? Meld het <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">hier<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"Ben jij een ontwikkelaar?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Maak je eigen widgets! Ontdek hier hoe:"
-	},
 	"ui_shortcut_img":{
 		"message":"De afbeelding moet exact 128px bij 128px zijn, het liefst in een PNG formaat met doorzichtigheid. Om dit terug te zetten naar standaard kan je het veld leeg halen."
 	},

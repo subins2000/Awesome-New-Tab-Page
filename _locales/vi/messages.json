@@ -167,66 +167,6 @@
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
-	"tutorial_ui_next":{
-		"message":"Ti\u1ebfp"
-	},
-	"tutorial_ui_back":{
-		"message":"Tr\u1edf l\u1ea1i"
-	},
-	"tutorial_1_welcome":{
-		"message":"Ch\u00e0o m\u1eebng t\u1edbi"
-	},
-	"tutorial_1_desc1":{
-		"message":"S\u1ef1 thay th\u1ebf m\u1ed9t th\u1ebb m\u1edbi (NTP) kh\u00f4ng ph\u00f9 h\u1ee3p."
-	},
-	"tutorial_1_desc2":{
-		"message":"(... ho\u1eb7c \u00edt nh\u1ea5t ch\u00fang t\u00f4i \u0111\u00e3 r\u1ea5t n\u1ed7 l\u1ef1c.)"
-	},
-	"tutorial_1_desc3":{
-		"message":"B\u1ea5m <span class=\"ul\">Ti\u1ebfp theo<\/span> \u0111\u1ec3 t\u00ecm hi\u1ec3u th\u00eam."
-	},
-	"tutorial_2_title":{
-		"message":"<span class=\"ul\">Bi\u1ec3u t\u01b0\u1ee3ng<\/span> kh\u00f4ng c\u00f2n t\u1ed3n t\u1ea1i"
-	},
-	"tutorial_2_desc2":{
-		"message":"Ph\u1ea7n m\u1edf r\u1ed9ng n\u00e0y l\u00e0 b\u01b0\u1edbc kh\u1edfi \u0111\u1ea7u mang \u0111\u1ebfn s\u1ee9c m\u1ea1nh cho tab m\u1edbi c\u1ee7a Chrome."
-	},
-	"tutorial_2_desc3":{
-		"message":"H\u00e3y l\u00e0m quen v\u1edbi c\u00e1c <span class=\"ul\">ti\u1ec7n \u00edch<\/span>."
-	},
-	"tutorial_3_title":{
-		"message":"H\u00e3y bi\u1ebfn m\u1ecdi th\u1ee9 theo \u00fd mu\u1ed1n c\u1ee7a <span class=\"ul\">B\u1ea1n<\/span>"
-	},
-	"tutorial_3_desc1":{
-		"message":"B\u1ea5m m\u1edf kh\u00f3a v\u00e0 b\u1ea1n c\u00f3 th\u1ec3 <span class=\"ul\">di chuy\u1ec3n<\/span> c\u00e1c ti\u1ec7n \u00edch hay bi\u1ec3u t\u01b0\u1ee3ng t\u1edbi v\u1ecb tr\u00ed b\u1ea1n mu\u1ed1n. Ho\u1eb7c <span class=\"ul\">x\u00f3a b\u1ecf<\/span> ch\u00fang n\u1ebfu c\u1ea7n (khi \u0111\u00e3 \u0111\u01b0\u1ee3c m\u1edf kh\u00f3a)."
-	},
-	"tutorial_4_title":{
-		"message":"C\u00e1c \u1ee8ng d\u1ee5ng \u0111\u00e3 c\u00e0i v\u1eabn t\u1ed3n t\u1ea1i"
-	},
-	"tutorial_4_desc1":{
-		"message":"\u0110\u1eebng lo, c\u00e1c \u1ee9ng d\u1ee5ng m\u00e0 b\u1ea1n \u0111\u00e3 c\u00e0i kh\u00f4ng b\u1ecb m\u1ea5t \u0111i \u0111\u00e2u h\u1ebft."
-	},
-	"tutorial_4_desc2":{
-		"message":"B\u1ea1n c\u00f3 th\u1ec3 t\u1ef1 do m\u1edf kh\u00f3a r\u1ed3i k\u00e9o c\u00e1c \u1ee9ng d\u1ee5ng v\u00e0o trang ch\u00ednh."
-	},
-	"tutorial_4_desc3":{
-		"message":"Ch\u1ec9 c\u1ea7n hi\u1ec3n th\u1ecb c\u00e1c \u1ee9ng d\u1ee5ng hay d\u00f9ng, \u1ea9n m\u1ecdi th\u1ee9 kh\u00e1c."
-	},
-	"tutorial_5_title1":{
-		"message":"H\u00e3y t\u1eadn h\u01b0\u1edfng"
-	},
-	"tutorial_5_desc1":{
-		"message":"T\u1eadn h\u01b0\u1edfng nh\u00e9! \u0110\u1eebng qu\u00ean ch\u1ea5m \u0111i\u1ec1m 5 sao cho ti\u1ec7n \u00edch n\u00e0y tr\u00ean Web Store."
-	},
-	"tutorial_5_desc2":{
-		"message":"B\u1ea1n mu\u1ed1n \u0111\u00f3ng g\u00f3p \u00fd t\u01b0\u1edfng? H\u00e3y Chia s\u1ebb ch\u00fang <a href=\"http:\/\/ntp.uservoice.com\/\" target=\"_top\">T\u1ea0I \u0110\u00c2Y<\/a>."
-	},
-	"tutorial_5_title2":{
-		"message":"B\u1ea1n c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t nh\u00e0 ph\u00e1t tri\u1ec3n kh\u00f4ng?"
-	},
-	"tutorial_5_desc3":{
-		"message":"Mu\u1ed1n t\u1ef1 t\u1ea1o ti\u1ec7n \u00edch! T\u00ecm hi\u1ec3u t\u1ea1i \u0111\u00e2y:"
-	},
 	"ui_shortcut_img":{
 		"message":"\u1ea2nh ph\u1ea3i c\u00f3 k\u00edch th\u01b0\u1edbc 128x128 pixel, khuy\u00ean d\u00f9ng \u0111\u1ecbnh d\u1ea1ng PNG. \u0110\u1ec3 d\u00f9ng h\u00ecnh m\u1eb7c \u0111\u1ecbnh, h\u00e3y \u0111\u1ec3 tr\u1ed1ng \u00f4 n\u00e0y."
 	},

@@ -25,19 +25,17 @@ function requiredColorPicker(callback) {
   });
 }
 
+function requiredTutorial() {
+  required('/javascript/tutorial.js', function(loaded) {
+    if (loaded)
+      startTutorial();
+  });
+}
+
 require(["/javascript/ui.js?nocache=12"]);
 
 $(document).ready(function() {
   setTimeout(function() {
-    require(["jquery.qtip.min"], function() {
-      // Tooltips delayed initializer
-      $('div[title]').qtip({
-        style: {
-          classes: 'ui-tooltip-light ui-tooltip-shadow ui-tooltip-bootstrap'
-        }
-      });
-    });
-
-    require(["jquery.confirm", "filesystem", "google-analytics", "storage-updates"]);
+    require(["filesystem", "google-analytics", "storage-updates"]);
   }, 1000);
 });

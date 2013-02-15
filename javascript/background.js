@@ -50,7 +50,7 @@
   chrome.tabs.onMoved.addListener( getAllTabs );
   chrome.tabs.onCreated.addListener( getAllTabs );
   chrome.tabs.onUpdated.addListener( getAllTabs );
-  //chrome.tabs.onHighlighted.addListener( getAllTabs );
+  chrome.tabs.onRemoved.addListener( getAllTabs );
 
   function getAllTabs() {
     chrome.tabs.getAllInWindow(null, getAllTabs_callback);
@@ -58,7 +58,7 @@
   function getAllTabs_callback(tabs) {
     localStorage.setItem("open_tabs", JSON.stringify( tabs ));
   }
-  chrome.tabs.getAllInWindow(null, getAllTabs_callback);
+  getAllTabs();
 
   /* END :: Recently Closed Tabs */
 
@@ -268,9 +268,10 @@
   /* END :: External Communication Stuff */
 
 
-  /* START :: App installed */
+/* START :: App installed */
+
   chrome.management.onInstalled.addListener(function(ExtensionInfo) {
-    if (ExtensionInfo.type == "hosted_app" || ExtensionInfo.type == "packaged_app" || ExtensionInfo.type == "legacy_packaged_app") {
+    if (ExtensionInfo.type === "hosted_app" || ExtensionInfo.type === "packaged_app" || ExtensionInfo.type === "legacy_packaged_app") {
       setTimeout(showAppsUI, 1000);
     }
   });
@@ -285,15 +286,16 @@
   /* END :: App installed */
 
 /* START :: On App/Widget uninstalled */
-chrome.management.onUninstalled.addListener(removeWidgetInstances);
 
-function removeWidgetInstances(id) {
-  var widgets = JSON.parse(localStorage.widgets);
-  for (i in widgets) {
-    if (widgets[i].id == id)
-      delete widgets[i];
+  chrome.management.onUninstalled.addListener(removeWidgetInstances);
+
+  function removeWidgetInstances(id) {
+    var widgets = JSON.parse(localStorage.widgets);
+    for (i in widgets) {
+      if (widgets[i].id == id)
+        delete widgets[i];
+    }
+    localStorage.setItem("widgets", JSON.stringify(widgets));
   }
-  localStorage.setItem("widgets", JSON.stringify(widgets));
-}
 
-/* END :: On App/Widget uninstalled */
+  /* END :: On App/Widget uninstalled */
