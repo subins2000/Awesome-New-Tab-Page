@@ -32,8 +32,6 @@ function requiredTutorial() {
   });
 }
 
-require(["/javascript/ui.js?nocache=12"]);
-
 $(document).ready(function() {
   setTimeout(function() {
     require(["filesystem", "google-analytics", "storage-updates"]);

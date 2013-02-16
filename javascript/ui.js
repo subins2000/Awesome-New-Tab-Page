@@ -350,6 +350,31 @@
 
   /* END :: Hide Scrollbar */
 
+/* START :: Hide RCTM */
+
+  $(window).bind("antp-config-first-open", function() {
+    var
+      hideRCTM = $("#hideRCTM"),
+      option = preference.get("hideRCTM");
+    hideRCTM.prop("checked", option);
+
+    $(document).on("change", "#hideRCTM", updateRCTMVisibility);
+  });
+
+  function updateRCTMVisibility(e) {
+    if ( e )
+      preference.set("hideRCTM", $(this).is(":checked"));
+
+    if ( preference.get("hideRCTM") ) {
+      $("#recently-closed-tabs").hide();
+    } else {
+      $("#recently-closed-tabs").show();
+    }
+  }
+  updateRCTMVisibility();
+
+  /* END :: Hide RCTM */
+
 function colorPickerLoaded() {
   // background color picker
   $("#colorselector-bg").ColorPicker({
@@ -439,10 +464,12 @@ function showAppsWindow () {
   });
 }
 
-$('div[title]').qtip({
-  style: {
-    classes: 'qtip-light qtip-shadow qtip-bootstrap'
-  }
+$(document).ready(function() {
+  $('div[title]').qtip({
+    style: {
+      classes: 'qtip-light qtip-shadow qtip-bootstrap'
+    }
+  });
 });
 
 function qTipAlert(title, message, buttonText) {

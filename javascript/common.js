@@ -392,6 +392,7 @@ function _e(_eNum) {
     "hideScrollbar":    false,
     "hideLeftButtons":  false,
     "disableHscroll":   false,
+    "hideRCTM":         false,
   };
 
   var preference = {
