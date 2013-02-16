@@ -79,7 +79,7 @@
           background-size: {{app.backgroundSize}}; background-position: {{app.backgroundPosition}}">
         <div ng-switch on="app.searchEnabled" >
           <div ng-switch-when="true">
-            <input type="text" class="search-box" name="search" value="" placeholder="Search" data-search="{{app.searchUrl}}" />
+            <input type="text" class="search-box" name="search" value="" placeholder="Search" data-search="{{app.searchUrl}}" autocomplete="off" />
           </div>
         </div>
         <div class="app-name" ng-hide="!app.name_show">{{app.name}}</div>
@@ -108,7 +108,7 @@
           background-size: {{shortcut.backgroundSize}}; background-position: {{shortcut.backgroundPosition}}">
         <div ng-switch on="shortcut.searchEnabled" >
           <div ng-switch-when="true">
-            <input type="text" class="search-box" name="search" value="" placeholder="Search" data-search="{{shortcut.searchUrl}}" />
+            <input type="text" class="search-box" name="search" value="" placeholder="Search" data-search="{{shortcut.searchUrl}}" autocomplete="off" />
           </div>
         </div>
         <div class="app-name" ng-hide="!shortcut.name_show">{{shortcut.name}}</div>
@@ -318,7 +318,7 @@
               </a>
             </p>
             <p>
-              <input id="bg-img-css" type="text" name="bg-img-css" />
+              <input id="bg-img-css" type="text" name="bg-img-css" autocomplete="off" />
             </p>
             <p class="tip">{{'ui_config_bgimg3' | i18n}}</p>
             <p>{{'ui_config_bgimg2' | i18n}}</p>
@@ -547,7 +547,7 @@
 
               <h3>{{'ui_te_name' | i18n}}</h3>
               <p>{{'ui_te_name_desc' | i18n}}</p>
-              <input type="text" ng-model="$parent.$parent.name" ng-tile-editor />
+              <input type="text" ng-model="$parent.$parent.name" ng-tile-editor autocomplete="off" />
               <p>
                 <input ng-model="$parent.$parent.name_show" type="checkbox" ng-tile-editor />
                 {{'ui_te_shname' | i18n}}
@@ -564,7 +564,7 @@
               <div class="hide-if-app">
                 <h3>URL</h3>
                 <p>{{'ui_te_url_desc' | i18n}}</p>
-                <input ng-model="$parent.$parent.appLaunchUrl" type="text" ng-tile-editor />
+                <input ng-model="$parent.$parent.appLaunchUrl" type="text" ng-tile-editor autocomplete="off" />
                 <p class="tip">{{'ui_te_url_tip' | i18n}}</p>
                 <p>
                   <input ng-model="$parent.$parent.favicon_show" type="checkbox" ng-tile-editor />
@@ -576,7 +576,7 @@
             <pane name="{{'ui_te_search' | i18n}}" class="hide-if-app">
               <div class="hide-if-app">
                 <p>{{'ui_te_search_desc' | i18n}} <i>"https://www.google.com/search?q={input}"</i></p>
-                <input ng-model="$parent.$parent.searchUrl" type="text" ng-tile-editor />
+                <input ng-model="$parent.$parent.searchUrl" type="text" ng-tile-editor autocomplete="off" />
               </div>
             </pane>
 
@@ -607,7 +607,7 @@
                 <div id="filesystem_icon_screenshot_bt" class="bubble ilb">
                   {{'ui_te_ib_screenshot' | i18n}}
                 </div>
-                <input ng-model="$parent.$parent.img" type="text" class="ilb" ng-tile-editor />
+                <input ng-model="$parent.$parent.img" type="text" class="ilb" ng-tile-editor autocomplete="off" />
                 <input type="file" id="filesystem_icon_input" style="width:0; height: 0; opacity: 0;">
                 <div id="filesystem_icon_ui" class="bubble ilb">
                   {{'ui_te_ib_browse' | i18n}}
