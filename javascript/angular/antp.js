@@ -282,7 +282,7 @@ var
           widget.pokeVersion = widget.poke;
 
           widget.img = "icon128.png";
-          widget.id = "mgmiemnjjchgkmgbeljfocdjjnpjnmcg";
+          widget.id = chrome.extension.getURL("").substr(19, 32);
 
           widget.stock = true;
 

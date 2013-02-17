@@ -859,7 +859,7 @@ function addWidget(widget_id, tile_location) {
       installedWidgets = scope.widgets,
       installedApps = scope.apps,
       obj = installedWidgets[widget_id] || installedApps.filter(function (app) { return app.id === widget_id; })[0],
-      widget = {id: extensionID, name: obj.name, where: [tile_location.top, tile_location.left], size: [obj.height, obj.width], img: obj.img, isApp: obj.isApp || false},
+      widget = {id: obj.id, name: obj.name, where: [tile_location.top, tile_location.left], size: [obj.height, obj.width], img: obj.img, isApp: obj.isApp || false},
       stock;
 
   if ( typeof(widget.size[0]) === "undefined" )
@@ -879,7 +879,7 @@ function addWidget(widget_id, tile_location) {
       widget.size[1] = TILE_MIN_WIDTH;
 
   if (!widget.isApp) {
-    widget.path = "chrome-extension://"+extensionID+"/" + obj.path.replace(/\s+/g, '');
+    widget.path = "chrome-extension://"+obj.id+"/" + obj.path.replace(/\s+/g, '');
     widget.optionsUrl = obj.optionsUrl;
     widget.poke = obj.poke;
     widget.isApp = false;

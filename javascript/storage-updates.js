@@ -40,7 +40,7 @@ storageFunctions.updateOldPaths = function() {
         }
       }
     } else if (widgets[i].id === "tabs" || widgets[i].path === "widgets/tabs.html"
-      || widgets[i].path === "chrome-extension://mgmiemnjjchgkmgbeljfocdjjnpjnmcg/widgets/tabs.html") {
+      || widgets[i].path === "chrome-extension://" + chrome.extension.getURL("").substr(19, 32) + "/widgets/tabs.html") {
       pathChanged = true;
       widgets[i].path = "widgets/tabs/tabs.html";
     }
