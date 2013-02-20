@@ -551,22 +551,25 @@ var
           $scope.$apply(function() {
             // i have to set up special cases, because some checkboxes use values AND checked booleans
             // if checked, use value.
-            if (attr.ngModel === "$parent.$parent.shortcut_pin" || attr.ngModel === "$parent.$parent.shortcut_newtab") {
-              value = $("[ng-model='" + attr.ngModel + "']").is(':checked');
+            if (attr.name === "shortcut_pin" || attr.name === "shortcut_newtab") {
+              value = $("#" + attr.name).is(':checked');
 
               // uncheck the other box (if checked)
-              $("[ng-model='" + (attr.ngModel == "$parent.$parent.shortcut_pin" ? "$parent.$parent.shortcut_newtab" : "$parent.$parent.shortcut_pin") + "']").removeAttr("checked");
+              $("#" + (attr.name == "shortcut_pin" ? "shortcut_newtab" : "shortcut_pin")).removeAttr("checked");
             }
 
             // checked = true, unchecked = false
             // rather than unchecked = undefined
-            if (attr.ngModel === "$parent.$parent.name_show" || attr.ngModel === "$parent.$parent.favicon_show" || attr.ngModel === "$parent.$parent.shortcut_background_transparent") {
-              value = $("[ng-model='" + attr.ngModel + "']").is(':checked');
+            if (attr.name === "name_show" || attr.name === "favicon_show" || attr.name === "shortcut_background_transparent") {
+              value = $("#" + attr.name).is(':checked');
             }
 
             ngModelCtrl.$setViewValue(value);
           });
-          $scope.update(attr.ngModel.split(".")[2], value);
+          if ($scope.update)
+            $scope.update(attr.ngModel.split(".")[2], value);
+          else
+            $scope.$parent.update(attr.ngModel.split(".")[2], value);
         });
       }
     };
@@ -675,11 +678,11 @@ var
     return {
       restrict: 'E',
       transclude: true,
-      scope: { name: '@' },
+      scope: { name: '@', state: '=', onChange: '&' },
       template:
         '<div>' +
           '<div class="onoffswitch">' +
-            '<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{name}}">' +
+            '<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="{{name}}" ng-model="state" ng-change="onChange({checked:state})">' +
             '<label class="onoffswitch-label" for="{{name}}">' +
               '<div class="onoffswitch-inner">' +
                 '<div class="onoffswitch-active"><div class="onoffswitch-switch">' + chrome.i18n.getMessage("ui_config_onoff_on") + '</div></div>' +

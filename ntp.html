@@ -556,16 +556,16 @@
               <h3>{{'ui_te_name' | i18n}}</h3>
               <p>{{'ui_te_name_desc' | i18n}}</p>
               <input type="text" ng-model="$parent.$parent.name" ng-tile-editor autocomplete="off" />
-              <p>
-                <input ng-model="$parent.$parent.name_show" type="checkbox" ng-tile-editor />
+              <p class="checkbox">
+                <span><onoff ng-model="$parent.$parent.name_show" name="name_show" state="$parent.$parent.name_show" on-change="$parent.$parent.name_show = checked" ng-tile-editor></span>
                 {{'ui_te_shname' | i18n}}
               </p>
-              <p>
-                <input ng-model="$parent.$parent.shortcut_pin" name="leftclick" value="pin" type="checkbox" ng-tile-editor />
+              <p class="checkbox">
+                <span><onoff ng-model="$parent.$parent.shortcut_pin" name="shortcut_pin" state="$parent.$parent.shortcut_pin" on-change="$parent.$parent.shortcut_pin = checked" ng-tile-editor></span>
                 {{'ui_te_pin' | i18n}}
               </p>
-              <p>
-                <input ng-model="$parent.$parent.shortcut_newtab" name="leftclick" value="newtab" type="checkbox" ng-tile-editor />
+              <p class="checkbox">
+                <span><onoff ng-model="$parent.$parent.shortcut_newtab" name="shortcut_newtab" state="$parent.$parent.shortcut_newtab" on-change="$parent.$parent.shortcut_newtab = checked" ng-tile-editor></span>
                 {{'ui_te_newtab' | i18n}}
               </p>
 
@@ -575,7 +575,7 @@
                 <input ng-model="$parent.$parent.appLaunchUrl" type="text" ng-tile-editor autocomplete="off" />
                 <p class="tip">{{'ui_te_url_tip' | i18n}}</p>
                 <p>
-                  <input ng-model="$parent.$parent.favicon_show" type="checkbox" ng-tile-editor />
+                  <span><onoff ng-model="$parent.$parent.favicon_show" name="favicon_show" state="$parent.$parent.favicon_show" on-change="$parent.$parent.favicon_show = checked" ng-tile-editor></span>
                   {{'ui_te_shfavicon' | i18n}}
                 </p>
               </div>
@@ -596,8 +596,8 @@
               </div>
               <div id="swatches" ng-click="setswatch($event)"></div>
 
-              <p>
-                <input ng-model="$parent.$parent.shortcut_background_transparent" type="checkbox" ng-tile-editor />
+              <p class="checkbox">
+                <span><onoff ng-model="$parent.$parent.shortcut_background_transparent" name="shortcut_background_transparent" state="$parent.$parent.shortcut_background_transparent" on-change="$parent.$parent.shortcut_background_transparent = checked" ng-tile-editor></span>
                 {{'ui_te_bg_transparent' | i18n}}
               </p>
               <p class="tip">

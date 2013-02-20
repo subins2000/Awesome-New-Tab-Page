@@ -176,6 +176,9 @@ body {
   bottom: 5px;
   right: 7px;
 }
+.ui-2#editor .checkbox {
+  height: 30px;
+}
 #widget-holder > .app > a {
   position: absolute;
   top: 0; bottom: 0;
