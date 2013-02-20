@@ -679,6 +679,7 @@ var
       restrict: 'E',
       transclude: true,
       scope: { name: '@', state: '=', onChange: '&' },
+      require: 'state',
       template:
         '<div>' +
           '<div class="onoffswitch">' +
