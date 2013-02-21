@@ -504,6 +504,9 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 .option-container {
   max-width: 80%;
 }
+.tile-edit-title-margin {
+  margin-top: 6px;
+}
 
 .ui-2 h3 {
   margin-bottom: 0;
