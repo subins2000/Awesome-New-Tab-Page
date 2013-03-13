@@ -31,6 +31,8 @@
 
     <link rel="stylesheet" href="/css/style.css?nocache=12" type="text/css" media="screen" />
 
+    <script type="text/javascript" src="javascript/Iuppiter.js"></script>
+
     <meta name="google" value="notranslate" />
   </head>
 
@@ -345,6 +347,32 @@
               <div id="run-import-btn" class="bubble ilb">
                 <i18n message-id="ui_import_export_btn_import_run"></i18n>
               </div>
+
+            </div>
+          </pane>
+
+          <pane name="{{'ui_online_backups_header' | i18n}}">
+            <div class="online-backups" ng-controller="backupsCtrl">
+              <p><i18n message-id="ui_online_backups_desc"></i18n></p>
+              <p><i18n message-id="ui_online_backups_warning"></i18n></p>
+
+              <div class="list-wrapper" ng-controller="backupsCtrl">
+                <div class="space-stats"></div>
+                <div id="backups-list">
+                  <div class="online-backup" ng-repeat="backup in backups">
+                    <div class="item-link" title="{{backup.name}}">
+                      <span class="backup-name"> {{backup.name}} </span> <span class="dim"> - {{backup.size}} KB</span>
+                    </div>
+                    <span class="buttons">
+                      <img src="/images/ui-2/down.png" title="{{'ui_online_backup_load_backup' | i18n}}" class="button" ng-click="loadBackup(backup.name)">
+                      <img src="/images/ui-2/x.png" title="{{'ui_online_backup_remove_backup' | i18n}}" class="button" ng-click="removeBackup(backup.name)">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <input id="backup-name" type="text" placeholder="{{'ui_online_backup_name_placeholder' | i18n}}" ng-model="newBackupName">
+              <div id="save-backup-btn" class="bubble ilb" ng-click="saveBackup(newBackupName)">{{'ui_online_backup_btn_save_backup' | i18n}}</i18n></div>
             </div>
           </pane>
 

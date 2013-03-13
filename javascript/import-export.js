@@ -51,12 +51,18 @@ $("#export-btn").bind("click", function() {
   $textArea.select();
 });
 
+// upon click on Save Backup online
+$("#save-backup-btn").bind("click", function() {
+  
+});
+
 function buildExportString() {
   var exportDataObj = {};
   var locStor = localStorage;
   for(var i=0, len=locStor.length; i<len; i++) {
     var key = locStor.key(i);
-    if (key != "backupBeforeImport" && key != "installed_widgets") { // don't export restore data and installed_widgets
+    if (key != "backupBeforeImport" && key != "installed_widgets" && 
+        key != "open_tabs" && key != "recently_closed") { // don't export restore data and installed_widgets
       var value = locStor[key];
       exportDataObj[key] = value;
     }

@@ -698,3 +698,215 @@ var
 
   /* END :: Checkbox Directive */
 
+/* START :: Backup directive */
+  function backupsCtrl($scope) {
+
+  $scope.backups = [];
+  $scope.width = null;
+  $scope.height = null;
+
+  $scope.safeApply = function(fn) {
+    var phase = this.$root.$$phase;
+    if(phase == '$apply' || phase == '$digest') {
+      if(fn && (typeof(fn) === 'function')) {
+        fn();
+      }
+    } else {
+      this.$apply(fn);
+    }
+  };
+
+  $scope.update = function() {
+    var self = this;
+    $scope.backups = [];
+
+    function addBackupToList(backup) {      
+      var keys = backup.keys;
+      keys.push(key);
+      chrome.storage.sync.getBytesInUse(keys, function(bytesInUse) {
+        if (!chrome.runtime.lastError) {
+          backup.size = bytesInUse;
+          backup.size /= 1024; // convert to KB
+          backup.size = backup.size.toFixed(1);
+          $scope.backups.push(backup);
+        }
+      });
+    };
+
+    chrome.storage.sync.get(null, function(items) {
+      for (var key in items)
+      {
+        if (key.indexOf("backup_") == 0) {
+          var backup = items[key];
+          addBackupToList(backup);
+        }
+      }
+      setTimeout(function() {
+        $scope.backups.sort(function(a, b) {
+          return new Date(a.time) < new Date(b.time);
+        });
+
+        chrome.storage.sync.getBytesInUse(null, function(bytes) {
+          if (!checkForErrors(chrome.runtime.lastError)) {
+            var spaceStr = (bytes / 1024).toFixed(2) + "KB of " + (chrome.storage.sync.QUOTA_BYTES / 1024).toFixed(2) + "KB used";
+            $(".list-wrapper .space-stats").text(spaceStr);
+          }
+        });
+
+        $scope.safeApply.call(self);
+      }, 50);
+    });
+  };
+
+  function checkForErrors(error) {
+    if (error) {
+      if (error.message.indexOf("MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE") != -1 || error.message.indexOf("MAX_WRITE_OPERATIONS_PER_HOUR") != -1) {
+        qTipAlert(chrome.i18n.getMessage('ui_online_backup_sync_writes_exceeded_title'), chrome.i18n.getMessage('ui_online_backup_sync_writes_exceeded'), chrome.i18n.getMessage("ui_button_ok"));
+      } else if (error.message.indexOf("QUOTA_BYTES") != -1 || error.message.indexOf("MAX_ITEMS") != -1) {
+        qTipAlert(chrome.i18n.getMessage('ui_online_backup_sync_size_exceeded_title'), chrome.i18n.getMessage('ui_online_backup_sync_size_exceeded'), chrome.i18n.getMessage("ui_button_ok"));
+      }
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  // break up string into chunks of specified size
+  function makeChunks(key, str, chunkSize) {
+    var chunkNo = 0, 
+        currIndex = 0;
+        chunks = {};
+
+    chunkSize -= key.length + 10;
+
+    do {
+      chunk = str.substr(currIndex, chunkSize);
+      if (chunk.length > 0)
+        chunks[key+"_chunk"+chunkNo] = chunk;
+
+      currIndex += chunkSize;
+      chunkNo++;
+    } while(chunk.length > 0);
+
+    return chunks;
+  }
+
+  // returns arrray of keys in an object
+  function getKeys(obj) {
+    var keys = [];
+    for(var k in obj) 
+      keys.push(k);
+    return keys;
+  }
+
+  function validateBackupName(backupName, callback) {
+    if (!backupName || backupName.length <= 0) {
+      qTipAlert(chrome.i18n.getMessage('ui_online_backup_invalid_backup_name_title'), chrome.i18n.getMessage('ui_online_backup_invalid_backup_name'), chrome.i18n.getMessage("ui_button_ok"));
+      callback(false);
+    } else {
+      backupName = "backup_" + backupName;
+      chrome.storage.sync.get(backupName, function(data) {
+        if (!checkForErrors(chrome.runtime.lastError)) {
+          if (data && data[backupName]) {
+            qTipAlert(chrome.i18n.getMessage('ui_online_backup_backup_already_exist_title'), chrome.i18n.getMessage('ui_online_backup_backup_already_exist'), chrome.i18n.getMessage("ui_button_ok"));
+            callback(false);
+          } else {
+            callback(true);
+          }
+        }
+      });
+    }
+  }
+
+  $scope.saveBackup = function(backupName) {
+    validateBackupName(backupName, function(valid) {
+      if (valid) {
+        var exportString = buildExportString();
+
+        var chunks = makeChunks(backupName, exportString, chrome.storage.sync.QUOTA_BYTES_PER_ITEM);
+        var keys = getKeys(chunks); // array of chunk keys
+
+        var backupKey = "backup_" + backupName;
+        chunks[backupKey] = {
+          "name": backupName, 
+          "keys": keys, 
+          "time": (new Date()).toJSON()
+        };
+
+        chrome.storage.sync.set(chunks, function() {
+          checkForErrors(chrome.runtime.lastError);
+        });
+      }
+    });
+  };
+
+  $scope.removeBackup = function(name) {
+    name = "backup_" + name;
+    qTipConfirm(chrome.i18n.getMessage('ui_online_backup_confirm_delete_backup_title'), chrome.i18n.getMessage('ui_online_backup_confirm_delete_backup'), chrome.i18n.getMessage("ui_button_yes"), chrome.i18n.getMessage("ui_button_no"),
+     function(yes) {
+      if (yes) {
+        chrome.storage.sync.get(name, function(backup) {
+          if (!checkForErrors(chrome.runtime.lastError)) {
+            var keys = backup[name].keys;
+            keys.push(name);
+            chrome.storage.sync.remove(keys);
+          }
+        });
+      }
+     });
+  };
+
+  function combineChunks(chunks) {
+    var backupString = "";
+    for (var chunk in chunks) 
+      backupString += chunks[chunk];
+    return backupString;
+  }
+
+  $scope.loadBackup = function(name) {
+    name = "backup_" + name;
+    qTipConfirm(chrome.i18n.getMessage('ui_online_backup_confirm_load_backup_title'), chrome.i18n.getMessage('ui_online_backup_confirm_load_backup'), chrome.i18n.getMessage("ui_button_yes"), chrome.i18n.getMessage("ui_button_no"), 
+      function(yes) {
+        if (yes) {
+          chrome.storage.sync.get(name, function(backup) {
+            if (!checkForErrors(chrome.runtime.lastError)) {
+              var keys = backup[name].keys;
+              chrome.storage.sync.get(keys, function(chunks) {
+                if (!checkForErrors(chrome.runtime.lastError)) {
+                  var importString = combineChunks(chunks);
+                  if (validateImportString(importString)) {
+                    if (importLocalStorage(importString)) {
+                      // to display message on page refresh, store it in localstorage
+                      localStorage.msg = JSON.stringify({title: chrome.i18n.getMessage("ui_online_backup_backup_imported_title"),
+                        message: chrome.i18n.getMessage("ui_online_backup_backup_imported")});
+                      window.location.reload();
+                    }
+                  }
+                }
+              });
+            }
+          });
+        }
+      });
+  };
+
+  function storageItemChanged(changes, areaName) {
+    if (areaName == "sync") {
+      for (var change in changes) {
+        if (change.indexOf("backup_") == 0) {
+          $scope.update();
+          return;
+        }
+      }
+    }
+  }
+
+  chrome.storage.onChanged.addListener(storageItemChanged);
+
+  $("img").live("dragstart", function(event) { event.preventDefault(); });
+
+  $scope.update();
+}
+
+/* END :: List directive */
+ 
