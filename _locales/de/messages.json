@@ -20,6 +20,12 @@
 	"ui_button_close":{
 		"message":"Beenden"
 	},
+	"ui_button_ok":{
+		"message":"OK"
+	},
+	"ui_button_cancel":{
+		"message":"Abbrechen"
+	},
 	"ui_button_about":{
 		"message":"\u00dcber"
 	},
@@ -119,8 +125,23 @@
 	"ui_config_general":{
 		"message":"Allgemeines"
 	},
+	"ui_config_shbmb":{
+		"message":"Lesezeichen-Leiste anzeigen"
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Lesezeichen-Leiste am oberen Rand der Seite anzeigen"
+	},
 	"ui_config_shtlb":{
 		"message":"Obere Schaltfl\u00e4che nur anzeigen, wenn ich mit der Maus dar\u00fcber fahre"
+	},
+	"ui_config_shtlb_desc":{
+		"message":"Wenn aktiviert, verschwinden die Kn\u00f6pfe oben links. Um sie zu erreichen, fahren sie mit der Maus \u00fcber deren normalen Platz."
+	},
+	"ui_config_shgrid":{
+		"message":"Gitter anzeigen (wenn aktiviert)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Wenn aktiviert, wird das Gitter immer angezeigt."
 	},
 	"ui_config_amazonlocale":{
 		"message":"W\u00e4hlen Sie ihr Land f\u00fcr die Amazon-<i>Lager<\/i>-Verkn\u00fcpfung."
@@ -148,6 +169,42 @@
 	},
 	"ui_config_bgimg2":{
 		"message":"Beispiel (KEIN angef\u00fcgtes Semikolon!):"
+	},
+	"ui_config_onoff_on":{
+		"message":"AN"
+	},
+	"ui_config_onoff_off":{
+		"message":"AUS"
+	},
+	"ui_config_hide_scrollbar":{
+		"message":"Untere Scrollbar verstecken"
+	},
+	"ui_config_hide_scrollbar_tip":{
+		"message":"Versteckt die Scrollbar am unteren Rand der Seite."
+	},
+	"ui_config_advanced":{
+		"message":"Erweitert"
+	},
+	"ui_config_advanced_tip":{
+		"message":"Unten sind erweiterte Optionen, die bei falscher Verwendung zu einer schlechten Nutzer-Erfahrung f\u00fchren. Benutzung auf eigene Gefahr."
+	},
+	"ui_config_advanced_grid_width":{
+		"message":"Gitter-Gr\u00f6\u00dfe einstellen"
+	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"\u00dcberschreibt automatische Gitter-Generation. Wenn sie diese Einstellung nutzen, k\u00f6nnen ihre Kacheln vielleicht nicht geladen werden. Wenn sie diese Option zu gro\u00df einstellen k\u00f6nnte die Geschwindigkeit beeintr\u00e4chtigen. Min: 4. Max: 50. <b>Zahl zum Deaktivieren l\u00f6schen!<\/b>"
+	},
+	"ui_config_advanced_grid_height":{
+		"message":"Gitter-H\u00f6he einstellen"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"\u00dcberschreibt automatische Gitter-Generation. Wenn sie diese Einstellung nutzen, k\u00f6nnen ihre Kacheln vielleicht nicht geladen werden. Wenn sie diese Option zu gro\u00df einstellen k\u00f6nnte die Geschwindigkeit beeintr\u00e4chtigen. Min: 3. Max: 25. <b>Zahl zum Deaktivieren l\u00f6schen!<\/b>"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Horizontales Scrollen deaktivieren"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"Deaktiviert horizontales Scrollen, erlaubt vertikales Scrollen."
 	},
 	"ui_about":{
 		"message":"\u00dcber"
@@ -187,6 +244,9 @@
 	},
 	"ui_uninstall":{
 		"message":"Deinstallieren"
+	},
+	"ui_uninstall_title":{
+		"message":"App deinstallieren"
 	},
 	"ui_confirm_uninstall":{
 		"message":"Sind Sie sicher, dass Sie $app$ deinstallieren wollen?",
@@ -334,5 +394,62 @@
 	},
 	"ui_apps_tip_message":{
 		"message":"Super! Sie haben gerade eine app installiert. Sie k\u00f6nnen alle installierte apps hier finden."
+	},
+	"ui_tutorial2_next":{
+		"message":"N\u00e4chstes"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"App-Fenster"
+	},
+	"ui_tutorial2_app_drawer":{
+		"message":"Hier finden Sie alle Apps, die Sie aus dem Chrome Web Store installiert haben. <b>Ziehen Sie<\/b> Apps aus diesem Fenster in das <b>entsperrte<\/b> Gitter. Sie k\u00f6nnen auch Apps aus diesem Fenster deinstallieren."
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Widgets-Fenster"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Hier finden Sie die installierten Widgets von Drittanbietern, die speziell f\u00fcr Awesome new tab Page erstellt wurden. Widgets bringen dynamische und n\u00fctzliche Informationen korrekt auf Ihre neue Registerkarte."
+	},
+	"ui_tutorial2_lock_title":{
+		"message":"Gitter Sperren\/Entsperren"
+	},
+	"ui_tutorial2_lock_grid":{
+		"message":"Sperren und Entsperren des Gitters erlaubt ihnen das Einf\u00fcgen, Verschieben und Entfernen von benutzerdefinierten Verkn\u00fcpfungen, Widgets und Apps. <b>Klicken Sie auf das Vorh\u00e4ngeschloss um fortzufahren<\/b>."
+	},
+	"ui_tutorial2_delete_widget":{
+		"message":"Dieses Widget l\u00f6schen"
+	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"Das Gitter k\u00f6nnen Sie anpassen, wie Sie es f\u00fcr richtig halten. Sie k\u00f6nnen Kacheln entfernen, die Sie nicht wollen. Fahren sie fort, und <b>L\u00f6schen Sie das Einf\u00fchrungs-Widget<\/b>."
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Leere Gitter-Kachel"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"Warum auf Apps aus dem Chrome Web Store beschr\u00e4nkt sein? <b>Klicken Sie auf diese leere Gitter-Kachel<\/b>, um eine benutzerdefinierte Verkn\u00fcpfung \u00fcberall im Web zu erstellen."
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"Du bist super!"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Nein, wirklich genial. Jetzt wissen Sie wie man Awesome New Tab Page verwendet, um Ihre Chrome-Erfahrung optimal zu nutzen. Also, was wollen sie als n\u00e4chstes tun?"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Einf\u00fchrung beenden"
+	},
+	"ui_tutorial2_main_welcome":{
+		"message":"Willkommen bei"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"Du hast Chrome gerade auf Super verbessert. Wie f\u00fchlt sich das an?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"Vielleicht ein bisschen zu Super f\u00fcr den Anfang? Keine Sorge, das Einf\u00fchrungs-Widget wird ihnen helfen."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Klicken sie den kleinen Knopf dort unten an, um anzufangen."
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Einf\u00fchrung starten"
 	}
 }

@@ -5,6 +5,9 @@
 	"ui_button_widgets":{
 		"message":"Widgets"
 	},
+	"ui_button_widget_browser":{
+		"message":"Navigateur de widget."
+	},
 	"ui_button_unlock":{
 		"message":"D\u00e9verrouiller"
 	},
@@ -71,6 +74,9 @@
 	"ui_te_search":{
 		"message":"Recherche"
 	},
+	"ui_te_search_desc":{
+		"message":"Entrez une URL de recherche pour ce site. Par exemple :"
+	},
 	"ui_te_bg_colorpicker":{
 		"message":"S\u00e9lectionneur de couleur"
 	},
@@ -102,7 +108,7 @@
 		"message":"Prendre une capture d'\u00e9cran"
 	},
 	"ui_screenshot_confirm":{
-		"message":"Afin de capturer la capture d'\u00e9cran, le site sera ouvert dans un nouvel onglet. Apr\u00e8s la fin du chargement de la page, l'onglet se fermera automatiquement et vous allez retourner sur Awesome New Tab Page. Veuillez ne pas fermer ou naviguer plus loin. Cela ne devrait pas prendre que quelques secondes."
+		"message":"Afin d'effectuer la capture d'\u00e9cran, le site sera ouvert dans un nouvel onglet. Apr\u00e8s la fin du chargement de la page, l'onglet se fermera automatiquement et vous allez retourner sur Awesome New Tab Page. Veuillez ne pas fermer ou naviguer plus loin. Cela ne devrait pas prendre que quelques secondes."
 	},
 	"ui_screenshot_permission_denied_title":{
 		"message":"Autorisation refus\u00e9e"
@@ -119,8 +125,23 @@
 	"ui_config_general":{
 		"message":"G\u00e9n\u00e9ral"
 	},
+	"ui_config_shbmb":{
+		"message":"Afficher la barre de favoris."
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Afficher la barre de favoris en haut des pages."
+	},
 	"ui_config_shtlb":{
 		"message":"Afficher les boutons en haut \u00e0 gauche uniquement sur la zone de pointage"
+	},
+	"ui_config_shtlb_desc":{
+		"message":"Une fois activ\u00e9, les boutons sup\u00e9rieur gauche dispara\u00eetront. Pour y acc\u00e9der de nouveau, passer votre souris \u00e0 leur emplacement habituel."
+	},
+	"ui_config_shgrid":{
+		"message":"Afficher la grille (quand d\u00e9verrouill\u00e9)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Quand activ\u00e9, la grille est affich\u00e9e en permanence."
 	},
 	"ui_config_amazonlocale":{
 		"message":"Pour l'ic\u00f4ne de <i>stock<\/i> Amazon, s\u00e9lectionnez votre pays."
@@ -150,10 +171,10 @@
 		"message":"Exemple (PAS de point-virgule final!):"
 	},
 	"ui_config_onoff_on":{
-		"message":"ON"
+		"message":"ACTIV\u00c9"
 	},
 	"ui_config_onoff_off":{
-		"message":"OFF"
+		"message":"D\u00c9SACTIV\u00c9"
 	},
 	"ui_config_hide_scrollbar":{
 		"message":"Cacher Barre de d\u00e9filement du bas"
@@ -164,11 +185,26 @@
 	"ui_config_advanced":{
 		"message":"Avanc\u00e9"
 	},
+	"ui_config_advanced_tip":{
+		"message":"Ci-dessous ce trouve des options qui, si mal utilis\u00e9es, peuvent mener \u00e0 une exp\u00e9rience utilisateurs d\u00e9grad\u00e9e. Utilisez les \u00e0 vos risques et p\u00e9rils."
+	},
 	"ui_config_advanced_grid_width":{
 		"message":"D\u00e9finir Largeur Grille"
 	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"Remplace la g\u00e9n\u00e9ration automatique de la taille de la grille. Utiliser ce param\u00e8tre peut emp\u00eacher vos tuiles de se charger correctement. R\u00e9gler ce param\u00e8tre sur une valeur trop importante peut impacter les performances. Min : 4. Max : 50. <b>Effacer le nombre pour d\u00e9sactiver !<\/b>"
+	},
 	"ui_config_advanced_grid_height":{
 		"message":"D\u00e9finir Hauteur Grille"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"Remplace la g\u00e9n\u00e9ration automatique de la taille de la grille. Utiliser ce param\u00e8tre peut emp\u00eacher vos tuiles de se charger correctement. R\u00e9gler ce param\u00e8tre sur une valeur trop importante peut impacter les performances. Min : 3. Max : 25. <b>Effacer le nombre pour d\u00e9sactiver !<\/b>"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"D\u00e9sactiver le d\u00e9filement horizontale."
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"D\u00e9sactive le d\u00e9filement horizontale, autorisant le d\u00e9filement verticale."
 	},
 	"ui_about":{
 		"message":"\u00c0 propos"
@@ -245,8 +281,14 @@
 	"ui_faw_pick":{
 		"message":"Choisir"
 	},
+	"ui_faw_pick_body":{
+		"message":"Ci-dessous, choisissez les widgets que vous souhaitez installer."
+	},
 	"ui_faw_install":{
 		"message":"Installer"
+	},
+	"ui_faw_install_body":{
+		"message":"Frappe la touche d'installation pour l'ajouter \u00e0 Chrome et la fen\u00eatre d'applis."
 	},
 	"ui_bmb_ob":{
 		"message":"Autres favoris"
@@ -344,8 +386,14 @@
 	"ui_import_export_btn_restore":{
 		"message":"Restaurer"
 	},
+	"ui_drag_widget_message":{
+		"message":"Pour placer un widget, cliquez puis fa\u00eetes glisser sur une tuile vide."
+	},
 	"ui_apps_tip_message_title":{
 		"message":"Nouvelle App Install\u00e9e"
+	},
+	"ui_apps_tip_message":{
+		"message":"Bien jou\u00e9! Vous avez install\u00e9 une application. Vous pouvez trouver toutes vos applications install\u00e9es ici."
 	},
 	"ui_tutorial2_next":{
 		"message":"Suivant"
@@ -353,23 +401,53 @@
 	"ui_tutorial2_app_window_title":{
 		"message":"Fen\u00eatre Apps"
 	},
+	"ui_tutorial2_app_drawer":{
+		"message":"Ici, vous trouverez toutes les applications que vous avez install\u00e9es depuis le Chrome Web Store. Vous pouvez <b>glisser<\/b> les applications en dehors de cette fen\u00eatre sur votre grille <b>d\u00e9verrouill\u00e9e<\/b>. Vous pouvez aussi d\u00e9sinstaller des applications depuis cette fen\u00eatre."
+	},
 	"ui_tutorial2_widgets_window_title":{
 		"message":"Fen\u00eatre Widgets"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Ici, vous trouverez les widgets install\u00e9s, r\u00e9alis\u00e9s par des d\u00e9veloppeurs tiers et sp\u00e9cialement con\u00e7u pour Awesome New Tab Page. Les widgets apportent un contenu dynamique et des informations utiles, directement sur votre page de nouvel onglet."
 	},
 	"ui_tutorial2_lock_title":{
 		"message":"V\u00e9rouiller\/D\u00e9verrouiller Grille"
 	},
+	"ui_tutorial2_lock_grid":{
+		"message":"Verrouiller et d\u00e9verrouiller la grille vous permet de placer, d\u00e9placer et supprimer widgets, applications et raccourcis personnalis\u00e9s. <b>Cliquez sur le cadenas pour continuer.<\/b>"
+	},
 	"ui_tutorial2_delete_widget":{
 		"message":"Supprimer ce widget"
 	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"Vous pouvez personnaliser la grille comme bon vous semble. Vous pouvez supprimer les tuiles que vous ne voulez pas. Essayer en <b>supprimant le widget du tutoriel.<\/b>"
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Titre grille vide"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"Pourquoi se limiter aux applications trouv\u00e9es sur le Chrome Web Store ? <b>Cliquez sur cette tuile vide<\/b> pour cr\u00e9er un raccourci personnalis\u00e9 vers n'importe o\u00f9 sur le web."
+	},
 	"ui_tutorial2_completed_title":{
 		"message":"Vous \u00eates super !"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Genre, vraiment g\u00e9nial. Maintenant vous savez comment utiliser Awesome New Tab Page pour obtenir le meilleur de votre exp\u00e9rience Chrome. Alors, qu'allez vous faire maintenant ?"
 	},
 	"ui_tutorial2_finish_string":{
 		"message":"Finir Tutoriel"
 	},
 	"ui_tutorial2_main_welcome":{
 		"message":"Bienvenue sur"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"Vous venez juste de mettre \u00e0 niveau vers l'incroyable. Comment se sent-on ?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"Peut-\u00eatre un peu trop g\u00e9nial tout \u00e0 la fois? Ne vous inqui\u00e9tez pas, le widget tutoriel va vous aider \u00e0 d\u00e9marrer."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Cliquez sur ce petit bouton minuscule l\u00e0-bas pour y aller."
 	},
 	"ui_tutorial2_main_start":{
 		"message":"Commencer Tutoriel"

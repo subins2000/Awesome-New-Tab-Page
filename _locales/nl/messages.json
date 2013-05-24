@@ -5,6 +5,9 @@
 	"ui_button_widgets":{
 		"message":"Widgets"
 	},
+	"ui_button_widget_browser":{
+		"message":"Widget browser"
+	},
 	"ui_button_unlock":{
 		"message":"Ontgrendelen"
 	},
@@ -17,11 +20,20 @@
 	"ui_button_close":{
 		"message":"Sluiten"
 	},
+	"ui_button_ok":{
+		"message":"Ok\u00e9"
+	},
+	"ui_button_cancel":{
+		"message":"Annuleren"
+	},
 	"ui_button_about":{
-		"message":"Gaat over"
+		"message":"Over ANTP"
 	},
 	"ui_config":{
 		"message":"Instellen"
+	},
+	"ui_button_help":{
+		"message":"Hulp & Ondersteuning"
 	},
 	"ui_c_learnmore":{
 		"message":"Leer meer"
@@ -30,7 +42,7 @@
 		"message":"Verander achtergrond kleur"
 	},
 	"ui_te":{
-		"message":"Tegel aanpasser"
+		"message":"Tegeleditor"
 	},
 	"ui_te_general":{
 		"message":"Algemene"
@@ -39,25 +51,31 @@
 		"message":"Naam"
 	},
 	"ui_te_name_desc":{
-		"message":"Hoe wil je het noemen?"
+		"message":"Hoe wil je dit noemen?"
 	},
 	"ui_te_shname":{
 		"message":"Toon\/Verberg naam"
 	},
 	"ui_te_pin":{
-		"message":"PIN met de linkermuisknop"
+		"message":"Pin met de linkermuisknop"
 	},
 	"ui_te_newtab":{
-		"message":"Open in een nieuw tabblad met linkermuisknop"
+		"message":"Open in een nieuw tabblad met de linkermuisknop"
 	},
 	"ui_te_url_desc":{
-		"message":"Voer een link in waar je naartoe gelinkt wil worden zoals http:\/\/www.google.nl\/"
+		"message":"Voeg een link in waar je naartoe gelinkt wil worden zoals http:\/\/www.google.be\/"
 	},
 	"ui_te_url_tip":{
-		"message":"Tip: Een werkende link heeft een protocool zoals \"http:\/\/\" voor het domein staan zonder dit werkt de link niet."
+		"message":"Tip: Een werkende link heeft een protocol zoals \"http:\/\/\" of \"https:\/\/\" voor het domein staan; zonder dit werkt de link niet."
 	},
 	"ui_te_shfavicon":{
 		"message":"Toon\/Verberg favicon"
+	},
+	"ui_te_search":{
+		"message":"Zoeken"
+	},
+	"ui_te_search_desc":{
+		"message":"Vul een zoekmachine-url in. Bijvoorbeeld:"
 	},
 	"ui_te_bg_colorpicker":{
 		"message":"Open de kleurmixer"
@@ -66,19 +84,19 @@
 		"message":"Helemaal doorzichtige achtergrond"
 	},
 	"ui_te_bg_tip":{
-		"message":"Tip: Als je deze aanvinkt, kun je het beste de naam en de favicon verbergen."
+		"message":"Tip: Als je dit aanvinkt, kun je het beste naam en favicon verbergen."
 	},
 	"ui_te_bg_note":{
-		"message":"Opmerking: Deze optie heeft geen effect op de pictogram & de achtergrond instellingen."
+		"message":"Opmerking: Deze optie heeft geen effect op de pictogram- en achtergrondinstellingen."
 	},
 	"ui_te_app_tip":{
-		"message":"Niet alle opties zijn beschikbaar voor alle apps. Als je meer opties wilt, maak een zelfgemaakte shortcut; klik op een lege tegel tijden ontgrendelde mode."
+		"message":"Niet alle opties zijn beschikbaar voor apps. Als je het leuk zou vinden om meer opties te krijgen, kies dan voor een zelfgemaakte snelkoppeling; klik simpelweg op een lege tegel als de grid is ontgrendeld en klaar."
 	},
 	"ui_te_ib":{
 		"message":"Pictogram & achtergrond"
 	},
 	"ui_te_ib_desc":{
-		"message":"Voer een webadres in voor een afbeelding, gebruik de bladeren knop of verplaats een afbeelding om het pictogram te wijzigen."
+		"message":"Voer een webadres in voor een afbeelding, gebruik de bladeren-knop voor een afbeeling op je computer of sleep een afbeelding naar hier om het pictogram te wijzigen."
 	},
 	"ui_te_ib_browse":{
 		"message":"Bladeren"
@@ -90,61 +108,112 @@
 		"message":"Bezig met foto maken"
 	},
 	"ui_screenshot_confirm":{
-		"message":"Om de schermfoto te maken zal de website geopend worden in een nieuw tabblad. Nadat de pagina geladen is, zal het tabblad automatisch sluiten en je zal dan teruggebracht worden naar de Awesome New Tab page. A.u.b. niet sluiten of weg klikken. Dit zal niet meer dan een paar seconden duren."
+		"message":"Om een schermfoto te kunnen maken wordt de website even geopend in een nieuw tabblad. Nadat de pagina geladen is, wordt het tabblad automatisch gesloten en wordt je teruggeleid naar de Awesome New Tab page. Niet sluiten of wegklikken a.u.b. voor de screenshot is gemaakt. Dit zal niet meer dan een paar seconden duren."
 	},
 	"ui_screenshot_permission_denied_title":{
 		"message":"Dat mag niet!"
 	},
 	"ui_screenshot_permission_denied":{
-		"message":"U weigerde Awesome  New Tab Page de toestemming die nodig om het schermfoto's te maken. Als u een schermfoto wil nemen, probeer het alstublieft opnieuw en geef Awesome New Tab Page de benodigde toestemming."
+		"message":"U weigerde Awesome New Tab Page de toestemming die nodig is om schermfoto's te maken. Als u een schermfoto wil nemen, probeer het dan alstublieft opnieuw en geef Awesome New Tab Page de benodigde toestemming om dit te doen."
 	},
 	"ui_te_ib_tip":{
 		"message":"Tip: Laat leeg voor geen pictogram."
 	},
 	"ui_te_ib_advanced":{
-		"message":"Geadvanceerd: Verberg de namen en de favicon en gebruik een afbeelding die 200px bij 200px om een 1\u00d71 tegel volledig te veranderen."
+		"message":"Geavanceerd: Verberg de naam en favicon en gebruik een afbeelding die 200px bij 200px meet om een 1\u00d71-tegel volledig te veranderen."
 	},
 	"ui_config_general":{
 		"message":"Algemene"
 	},
+	"ui_config_shbmb":{
+		"message":"Toon Bladwijzerbalk"
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Toon Bladwijzerbalk bovenaan deze pagina"
+	},
 	"ui_config_shtlb":{
-		"message":"Laat de knoppen linksboven alleen in het zweef gebied"
+		"message":"Toon de knoppen linksbovenaan alleen als je er met de cursor over beweegt"
+	},
+	"ui_config_shtlb_desc":{
+		"message":"Als dit ingeschakeld is schuiven de knoppen linksboven automatisch weg. Plaats de muis waar ze normaal zijn om opnieuw toegang tot ze te krijgen."
+	},
+	"ui_config_shgrid":{
+		"message":"Toon het raster (wanneer ontgrendeld)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Als dit is ingeschakeld wordt het raster altijd getoond, ongeacht of het raster is ontgrendeld of vergrendeld."
 	},
 	"ui_config_amazonlocale":{
-		"message":"Voor de <i>voorraad<\/i> Amezon snelkoppeling, selecteer je land."
+		"message":"Voor de <i>voorraad<\/i>-Amazonsnelkoppeling, selecteer je land."
 	},
 	"ui_config_reset":{
 		"message":"Reset"
 	},
 	"ui_config_reset_desc":{
-		"message":"Deze knop zal alle veranderingen die aangebracht zijn op de Awesome New Tab pagina ongedaan maken."
+		"message":"Deze knop zal alle veranderingen die aangebracht zijn op de Awesome New Tab Page sinds u deze hebt ge\u00efnstalleerd hebt wissen. Opgelet: dit is niet ongedaan te maken!"
 	},
 	"ui_confirm_reset":{
-		"message":"Weet je zeker dat je de widgets, apps, zelfgemaakte shortcuts, opgeslagen widget voorkeuren (notepad, etc) and achtergrond voorkeuren resseten? Alle aanpassingen gaan verloren."
+		"message":"Weet je zeker dat je de widgets, apps, zelfgemaakte snelkoppelingen, opgeslagen widget-voorkeuren (notitieblok, etc.) en achtergrondvoorkeuren wil resetten? Alle aanpassingen gaan verloren!"
 	},
 	"ui_config_bg":{
 		"message":"Achtergrond"
 	},
 	"ui_config_bg_upload":{
-		"message":"Upload afbeelding"
+		"message":"Upload een afbeelding"
 	},
 	"ui_config_bgimg1":{
-		"message":"<b>Geavanceerde<\/b> (Steno achtergrond CSS): gebruik een afbeelding van het web."
+		"message":"<b>Geavanceerd<\/b> (Steno-achtergrondcss): gebruik een afbeelding die op het web staat."
 	},
 	"ui_config_bgimg3":{
 		"message":"Haal het vak leeg om de standaard achtergrond te gebruiken (enkele kleur)."
 	},
 	"ui_config_bgimg2":{
-		"message":"Voorbeeld (Geen puntkomma aan het einde):"
+		"message":"Voorbeeld (GEEN PUNTKOMMA aan het einde):"
+	},
+	"ui_config_onoff_on":{
+		"message":"AAN"
+	},
+	"ui_config_onoff_off":{
+		"message":"UIT"
+	},
+	"ui_config_hide_scrollbar":{
+		"message":"Verberg de onderste scrollbalk."
+	},
+	"ui_config_hide_scrollbar_tip":{
+		"message":"Verbergt de scrollbalk onderaan de pagina."
+	},
+	"ui_config_advanced":{
+		"message":"Geavanceerd"
+	},
+	"ui_config_advanced_tip":{
+		"message":"Hieronder staan geavanceerde opties die, als ze niet goed gebruikt worden, tot een verslechterde gebruikerservaring kunnen leiden. Gebruik deze opties alleen op eigen risico!"
+	},
+	"ui_config_advanced_grid_width":{
+		"message":"Stel rasterbreedte in"
+	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"Automatisch raster wordt overschreven. Deze instelling kan resulteren dat tegels niet worden geladen.\nTe grote waardes kunnen het gebruiksgemak be\u00efnvloeden. \nMin.: 4, Max.: 50. <b>Schakel uit door het getal te verwijderen!<b>"
+	},
+	"ui_config_advanced_grid_height":{
+		"message":"Stel rasterhoogte in"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"Automatisch raster wordt overschreven. Deze instelling kan resulteren dat tegels niet worden geladen.\nTe grote waardes kunnen het gebruiksgemak be\u00efnvloeden. \nMin;: 3 Max.: 25 <b>Schakel uit door het getal te verwijderen<b>"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Horizontaal scrollen uitschakelen"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"Schakelt horizontaal scrollen uit, waardoor verticaal scrollen toegestaan wordt."
 	},
 	"ui_about":{
-		"message":"Gaat over"
+		"message":"Over ANTP"
 	},
 	"ui_about_contrib":{
-		"message":"Bijdragers"
+		"message":"Projectteam"
 	},
 	"ui_about_contrib_desc":{
-		"message":"Dit project zou niet bestaan zonder het harde werken, feedbacks, idee\u00ebn, vertalers en de onderstuining van een groepen van erg geweldige mensen."
+		"message":"Dit project zou niet bestaan zonder het harde werken, de feedbacks, idee\u00ebn, de vertalers en de ondersteuning van groepen van echt geweldige mensen!"
 	},
 	"ui_about_dev":{
 		"message":"Ontwikkelaars"
@@ -165,10 +234,19 @@
 		"message":"Vind je de Awesome New Tab Page leuk? Waarom deel je het niet met vrienden en familie?"
 	},
 	"ui_about_rate":{
-		"message":"Becijfer"
+		"message":"Beoordeel"
 	},
 	"ui_about_rate_desc":{
-		"message":"Vind je deze extension leuk? Maak tijd en geef een positieve review op de Chrome web store."
+		"message":"Vind je deze extensie leuk? Maak even tijd en geef een positieve review op de Chrome Web Store."
+	},
+	"ui_install":{
+		"message":"Installeren"
+	},
+	"ui_uninstall":{
+		"message":"De\u00efnstalleren"
+	},
+	"ui_uninstall_title":{
+		"message":"De\u00efnstalleer app"
 	},
 	"ui_confirm_uninstall":{
 		"message":"Weet je zeker dat je $app$ wilt verwijderen?",
@@ -180,34 +258,49 @@
 		}
 	},
 	"ui_faw_unlock_drag":{
-		"message":"Ontgrendel & Sleep"
+		"message":"Ontgrendel & sleep"
 	},
 	"ui_faw_unlock_drag_apps":{
-		"message":"Ontgrendel het raster en <b>Sleep<\/b> uw ge\u00efnstalleerde apps naar een leeg plekje."
+		"message":"Ontgrendel het raster en <b>sleep<\/b> uw ge\u00efnstalleerde apps naar een leeg plekje."
 	},
 	"ui_faw_unlock_drag_widgets":{
-		"message":"Ontgrendel het raster en <b>Sleep<\/b> uw ge\u00efnstalleerde widget naar een leeg plekje."
+		"message":"Ontgrendel het raster en <b>sleep<\/b> uw ge\u00efnstalleerde widgets naar een leeg plekje."
 	},
 	"ui_faw_get_more_apps":{
-		"message":"Krijg  meer apps"
+		"message":"Krijg meer apps"
 	},
 	"ui_faw_get_more_apps_body":{
-		"message":"Meer apps krijgen uit de <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'> Chrome Web-winkel<\/a>."
+		"message":"Meer apps krijgen uit de <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'> Chrome Webwinkel<\/a>."
 	},
 	"ui_faw_get_more_widgets":{
 		"message":"Krijg meer widgets"
+	},
+	"ui_faw_get_more_widgets_body":{
+		"message":"Zoek meer widgets."
+	},
+	"ui_faw_pick":{
+		"message":"Kies"
+	},
+	"ui_faw_pick_body":{
+		"message":"Kies hieronder de widgets die je wil installeren."
+	},
+	"ui_faw_install":{
+		"message":"Installeren"
+	},
+	"ui_faw_install_body":{
+		"message":"Geef de installeerknop een knal! om het aan Chrome en het widgetvenster toe te voegen."
 	},
 	"ui_bmb_ob":{
 		"message":"Andere Bladwijzers"
 	},
 	"app_webstore":{
-		"message":"Chrome Web Winkel"
+		"message":"Chrome Webwinkel"
 	},
 	"ui_shortcut_img":{
 		"message":"De afbeelding moet exact 128px bij 128px zijn, het liefst in een PNG formaat met doorzichtigheid. Om dit terug te zetten naar standaard kan je het veld leeg halen."
 	},
 	"notepad_default":{
-		"message":"Typ hier niets. Alles wat u typt zal worden opgeslagen op elke toetsaanslag. Wees voorzichtig; Er zijn geen back-ups, en de resetknop zal de gegevens verloren laten gaan!"
+		"message":"Typ hier iets. Alles wat u typt zal worden opgeslagen op elke toetsaanslag. Wees wel voorzichtig; er zijn geen back-ups, en de resetknop zal de gegevens verloren laten gaan!"
 	},
 	"ui_resize_reset":{
 		"message":"Reset"
@@ -231,7 +324,7 @@
 		"message":"Verwijder recent gesloten tabbladen"
 	},
 	"rctm_clear_all_confirm":{
-		"message":"Het wissen van de recent gesloten tabbladen wist niet de internetgeschiedenis. Deze functie leegt alleen maar deze lijst. "
+		"message":"Het wissen van de recent gesloten tabbladen wist niet de internetgeschiedenis. Deze functie verwijdert ze alleen maar deze lijst. "
 	},
 	"ui_import_export_btn":{
 		"message":"Importeren\/exporteren"
@@ -249,19 +342,19 @@
 		"message":"Exporteren"
 	},
 	"ui_import_export_btn_import_run":{
-		"message":"Pas toe"
+		"message":"Toepassen"
 	},
 	"ui_import_export_desc_export":{
 		"message":"Export: Genereert een tekst die al uw voorkeuren bevat. Deze tekst kan worden opgeslagen voor later als een back-up of kan worden gekopieerd naar andere computers die zich dan automatisch instellen zoals deze. Ge\u00fcploade afbeeldingen worden niet ge\u00ebxporteerd; die afbeeldingen staan op het internet."
 	},
 	"ui_import_export_desc_import":{
-		"message":"Importeren: Overschrijft uw huidige configuratie met een geldige ge\u00ebxporteerde tekst. <b>Waarschuwing<\/b>: al uw huidige voorkeuren zullen verloren gaan. Er is geen manier om deze bewerking ongedaan maken. Ge\u00fcploade afbeeldingen worden niet ge\u00efmporteerd; deze afbeeldingen staan op het internet."
+		"message":"Importeren: Overschrijft uw huidige configuratie met een geldige ge\u00ebxporteerde tekst. <b>WAARSCHUWING:<\/b>: al uw huidige voorkeuren zullen verloren gaan! Er is geen manier om deze bewerking ongedaan maken. Ge\u00fcploade afbeeldingen worden niet ge\u00efmporteerd; deze afbeeldingen staan op het internet."
 	},
 	"ui_import_export_installed_warning":{
-		"message":"Ge\u00efnstalleerde apps, extensies en widgets worden niet ge\u00efmporteerd of ge\u00ebxporteerd. Extensies kunnen niet andere apps of extensies installeren. Gebruik <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'> Chrome Sync<\/a>."
+		"message":"Ge\u00efnstalleerde apps, extensies en widgets worden niet ge\u00efmporteerd of ge\u00ebxporteerd. Extensies kunnen geen andere apps of extensies installeren. Gebruik in plaats daarvan <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Chrome Sync<\/a>."
 	},
 	"ui_import_export_desc_restore":{
-		"message":"Herstel: Je kan altijd je laatste invoer ongedaan maken. Je huidige status zal ook opgeslagen worden zodat hij eventueel later ook nog hersteld kan worden."
+		"message":"Herstellen: Je kan altijd je laatste invoer ongedaan maken. Je huidige status zal ook opgeslagen worden zodat hij eventueel later ook nog hersteld kan worden."
 	},
 	"ui_import_export_header":{
 		"message":"Importeren\/exporteren"
@@ -285,12 +378,78 @@
 		"message":"Invoer voltooid."
 	},
 	"ui_import_export_empty_string_msg":{
-		"message":"Voer invoer tekst eerst in!"
+		"message":"Voer invoertekst eerst in!"
 	},
 	"ui_import_export_invalid_string_msg":{
 		"message":"Ongeldige invoer!"
 	},
 	"ui_import_export_btn_restore":{
 		"message":"Herstel"
+	},
+	"ui_drag_widget_message":{
+		"message":"Klik en sleep de widget naar een lege tegel om deze te plaatsen."
+	},
+	"ui_apps_tip_message_title":{
+		"message":"Nieuwe app ge\u00efnstalleerd"
+	},
+	"ui_apps_tip_message":{
+		"message":"Leuk! U hebt net een nieuwe app ge\u00efnstalleerd! Al uw ge\u00efnstalleerde apps vindt u hier."
+	},
+	"ui_tutorial2_next":{
+		"message":"Volgende"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"Appvenster"
+	},
+	"ui_tutorial2_app_drawer":{
+		"message":"Hier vindt u alle apps die u hebt ge\u00efnstalleerd via de Chrome Web Store. <b>Sleep<\/b> apps naar je <b>ontgrendelde<\/b> raster. Vanuit dit venster kunt u ook apps verwijderen."
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Widgetvenster"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Hier vindt u ge\u00efnstalleerde widgets gemaakt door derde partij-ontwikkelaars speciaal gemaakt voor Awesome New Tab Page. Widgets plaatsen dynamische en nuttige info op uw nieuw tabbladpagina."
+	},
+	"ui_tutorial2_lock_title":{
+		"message":"Vergendel\/Ontgrendel Raster"
+	},
+	"ui_tutorial2_lock_grid":{
+		"message":"U kunt uw raster vergrendelen en ontgrendelen, zodat u widgets, apps en aangepaste sneltoetsen kunt plaatsen, verplaatsen en verwijderen. <b>Klik op het hangslot om door te gaan<\/b>."
+	},
+	"ui_tutorial2_delete_widget":{
+		"message":"Verwijder deze widget"
+	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"Het raster is aan jou om het aan te passen zoals jij het wil. Je kan tegels verwijderen die je niet wenst. Wel, ga je gang en <b>verwijder het tutorialwidget<\/b>!"
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Lege tegel"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"Waarom zou je beperkt worden tot apps gevonden in de Chrome Webwinkel? <b>Klik op deze lege rastertegel<\/b> om een aangepaste snelkoppeling te maken naar waar dan ook op het web."
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"Je bent geweldig!"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Leuk, echt \"awesome\"! Nu weet u hoe u ANTP kan gebruiken om het meeste uit uw Chrome-ervaring te halen. Dus wat ga je nu doen?"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Be\u00ebindig tutorial"
+	},
+	"ui_tutorial2_main_welcome":{
+		"message":"Welkom bij"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"U hebt net ge\u00fcpgraded naar \"awesome\"! Hoe voelt dat?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"Misschien een beetje te veel \"awesome\" tegelijk? Maak je geen zorgen! Het tutorialwidget zal je helpen om aan de slag te gaan."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Klik op die kleine knop om te starten."
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Start Tutorial"
 	}
 }

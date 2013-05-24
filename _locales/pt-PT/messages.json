@@ -5,17 +5,26 @@
 	"ui_button_widgets":{
 		"message":"Widgets"
 	},
+	"ui_button_widget_browser":{
+		"message":"Navegador de widgets"
+	},
 	"ui_button_unlock":{
 		"message":"Desbloquear"
 	},
 	"ui_button_lock":{
-		"message":"Bloquear para Interagir com Aplica\u00e7\u00f5es e Widgets"
+		"message":"Bloqueie para interagir com os aplicativos & Widgets"
 	},
 	"ui_button_rct":{
 		"message":"P\u00e1ginas recentemente fechadas"
 	},
 	"ui_button_close":{
 		"message":"Fechar"
+	},
+	"ui_button_ok":{
+		"message":"OK"
+	},
+	"ui_button_cancel":{
+		"message":"Cancelar"
 	},
 	"ui_button_about":{
 		"message":"Sobre"
@@ -30,10 +39,10 @@
 		"message":"Saber mais"
 	},
 	"ui_config_bg_changecolor":{
-		"message":"Mudar Cor de Fundo"
+		"message":"Trocar cor de fundo"
 	},
 	"ui_te":{
-		"message":"Editor de T\u00edtulo"
+		"message":"Editor de titulos"
 	},
 	"ui_te_general":{
 		"message":"Geral"
@@ -42,25 +51,25 @@
 		"message":"Nome"
 	},
 	"ui_te_name_desc":{
-		"message":"Que nome lhe queres dar?"
+		"message":"Como deseja chamar isso?"
 	},
 	"ui_te_shname":{
-		"message":"Mostrar \/ Ocultar Nome"
+		"message":"Mostrar \/ Ocultar o nome"
 	},
 	"ui_te_pin":{
-		"message":"Fixar com o bot\u00e3o esquerdo"
+		"message":"d+"
 	},
 	"ui_te_newtab":{
 		"message":"Abrir num Novo Separador com o bot\u00e3o esquerdo"
 	},
 	"ui_te_url_desc":{
-		"message":"Digite o URL que deseja, por exemplo http:\/\/www.google.com\/"
+		"message":"Insira a URL que voc\u00ea gostaria de ligar a, tais como http:\/\/www.google.com\/"
 	},
 	"ui_te_url_tip":{
-		"message":"Dica: Um URL v\u00e1lido cont\u00e9m um protocolo - com \"http:\/\/\" - antes do dom\u00ednio. Sem um protocolo v\u00e1lido o atalho n\u00e3o funcionar\u00e1."
+		"message":"Dica: Um v\u00e1lido URL cont\u00e9m um protocolo - como \"http:\/\/\" - antes do dom\u00ednio. Sem um protocolo v\u00e1lido, o atalho n\u00e3o funcionar\u00e1."
 	},
 	"ui_te_shfavicon":{
-		"message":"Mostrar \/ Ocultar Favicon"
+		"message":"Mostrar \/ ocultar Favicon"
 	},
 	"ui_te_search":{
 		"message":"Pesquisa"
@@ -75,31 +84,31 @@
 		"message":"Fundo completamente transparente"
 	},
 	"ui_te_bg_tip":{
-		"message":"Dica: Se selecionar esta op\u00e7\u00e3o, poder\u00e1 tamb\u00e9m querer ocultar o Nome e o Favicon."
+		"message":"Dica: Se voc\u00ea marcar esta caixa, voc\u00ea tamb\u00e9m poder\u00e1 ocultar o nome e o favicon."
 	},
 	"ui_te_bg_note":{
-		"message":"Nota: Esta op\u00e7\u00e3o n\u00e3o tem efeito nas defini\u00e7\u00f5es de \u00cdcone e de Fundo."
+		"message":"Nota: Esta op\u00e7\u00e3o n\u00e3o tem efeito sobre as configura\u00e7\u00f5es de \u00edcone e plano de fundo."
 	},
 	"ui_te_app_tip":{
-		"message":"Nem todas as op\u00e7\u00f5es est\u00e3o dispon\u00edveis para aplica\u00e7\u00f5es. Se voc\u00ea gostaria de ter mais op\u00e7\u00f5es, crie um atalho personalizado no seu lugar. Basta clicar sobre um azulejo branco com a grade desbloqueada."
+		"message":"Nem todas as op\u00e7\u00f5es est\u00e3o dispon\u00edveis para aplicativos. Se voc\u00ea gostaria de obter mais op\u00e7\u00f5es, em vez disso crie um atalho personalizado. Basta clicar em uma grade desbloqueada vazia."
 	},
 	"ui_te_ib":{
-		"message":"\u00cdcone e Fundo"
+		"message":"\u00cdcone & Fundo"
 	},
 	"ui_te_ib_desc":{
-		"message":"Digite a URL da Web de uma imagem, utilize o bot\u00e3o de navega\u00e7\u00e3o, ou arraste e solte uma imagem acima para mudar o \u00edcone."
+		"message":"Introduza um URL da web para uma imagem, use o bot\u00e3o Procurar, ou arrastar & soltar uma imagem acima para alterar o \u00edcone."
 	},
 	"ui_te_ib_browse":{
 		"message":"Procurar"
 	},
 	"ui_te_ib_screenshot":{
-		"message":"Usar Imagem de Tela"
+		"message":"Usar screenshot"
 	},
 	"ui_screenshot_confirm_title":{
-		"message":"A tirar imagem da tela"
+		"message":"Para capturar uma screenshot, O site deve ser aberto em uma nova aba. Depois que a pagina terminar de carregar, a aba ser\u00e1 automaticamente fechada e voc\u00ea vai retornar a Awesome New Tab Page. Por favor, n\u00e3o feche ou navegue durante a captura. Isso \u00e9 feito durante alguns segundos."
 	},
 	"ui_screenshot_confirm":{
-		"message":"Para capturar a imagem, o site ser\u00e1 aberto em um novo separador. Depois de a p\u00e1gina terminar de carregar, o mesmo ser\u00e1 automaticamente encerrado e ir\u00e1 de volta ao ANT Grid. Por favor, n\u00e3o feche nem navegue pelo site. Isto n\u00e3o dever\u00e1 levar mais que alguns segundos."
+		"message":"Permiss\u00e3o negada"
 	},
 	"ui_screenshot_permission_denied_title":{
 		"message":"Lamentamos, Permiss\u00e3o Negada!"
@@ -108,55 +117,106 @@
 		"message":"Recusou-se a conceder a permiss\u00e3o necess\u00e1ria para o ANT Grid capturar a tela. Se voc\u00ea deseja ter uma imagem, por favor, tente novamente e conceda a permiss\u00e3o necess\u00e1ria ao ANT Grid."
 	},
 	"ui_te_ib_tip":{
-		"message":"Dica: Deixe em branco e n\u00e3o ter\u00e1 nenhum \u00edcone."
+		"message":"Dica: Deixe em branco para nenhum \u00edcone."
 	},
 	"ui_te_ib_advanced":{
-		"message":"Avan\u00e7ado: Oculte o Nome e o Favicon e use uma imagem de 200px por 200px para personalizar completamente o azulejo 1x1."
+		"message":"Avan\u00e7adas: Ocultar o nome e o favicon e usar uma imagem que \u00e9 200px por 200px para personalizar completamente um azulejo de 1 x 1."
 	},
 	"ui_config_general":{
 		"message":"Geral"
 	},
+	"ui_config_shbmb":{
+		"message":"Apresentar Barra de Marcadores"
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Apresentar Barra de Marcadores no topo da p\u00e1gina"
+	},
 	"ui_config_shtlb":{
-		"message":"Mostrar os bot\u00f5es da barra lateral esquerda somente na \u00e1rea em foco"
+		"message":"Mostrar bot\u00f5es esquerdo superior apenas de \u00e1rea-foco"
+	},
+	"ui_config_shtlb_desc":{
+		"message":"Quando activado, os bot\u00f5es do topo esquerdo ir\u00e3o deslizar para fora do caminho. Para lhes aceder novamente, coloque o rato onde eles est\u00e3o normalmente."
+	},
+	"ui_config_shgrid":{
+		"message":"Mostrar Grelha (quando desbloqueado)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Quando activado, a grelha ir\u00e1 ficar sempre vis\u00edvel."
 	},
 	"ui_config_amazonlocale":{
-		"message":"Para o <i>suporte<\/i> do atalho Amazon, selecione seu pa\u00eds."
+		"message":"Para o <i>stock<\/i> atalho da Amazon, selecione o seu pa\u00eds."
 	},
 	"ui_config_reset":{
-		"message":"Repor"
+		"message":"Redefinir"
 	},
 	"ui_config_reset_desc":{
-		"message":"Este bot\u00e3o ir\u00e1 permitir desfazer todas as altera\u00e7\u00f5es que fez no ANT Grid."
+		"message":"Este bot\u00e3o permitir\u00e1 que voc\u00ea desfa\u00e7a todas as altera\u00e7\u00f5es que voc\u00ea fez para o Awesome New Tab Page."
 	},
 	"ui_confirm_reset":{
-		"message":"Tem certeza de que deseja repor os widgets, as aplica\u00e7\u00f5es, os atalhos personalizados, as a\u00e7\u00f5es dos widgets (bloco de notas, etc.) e o plano de fundo? Lembre-se que todas as altera\u00e7\u00f5es ser\u00e3o perdidas."
+		"message":"Tem a certeza de que deseja redefinir o widget, app e coloca\u00e7\u00f5es de atalho personalizado, prefer\u00eancias do widget das a\u00e7\u00f5es (bloco de notas, etc.) e prefer\u00eancias de plano de fundo? Todas as personaliza\u00e7\u00f5es ser\u00e3o irrevogavelmente perdidas."
 	},
 	"ui_config_bg":{
 		"message":"Plano de fundo"
 	},
 	"ui_config_bg_upload":{
-		"message":"Carregar Imagem"
+		"message":"Enviar imagem"
 	},
 	"ui_config_bgimg1":{
-		"message":"<b>Avan\u00e7ado<\/b> (Shorthand Background CSS): Usar uma imagem da Web."
+		"message":"<b>Avan\u00e7ado<\/b> (Forma abreviada fundo CSS): Use uma imagem da web."
 	},
 	"ui_config_bgimg3":{
-		"message":"Apague a caixa para usar o fundo padr\u00e3o (Cor S\u00f3lida)."
+		"message":"Apague o conte\u00fado da caixa para usar o plano de fundo do padr\u00e3o (cor s\u00f3lida)."
 	},
 	"ui_config_bgimg2":{
-		"message":"Exemplo(SEM virgula \u00e0 frente!):"
+		"message":"Exemplo (SEM v\u00edrgula \u00e0 direita!):"
+	},
+	"ui_config_onoff_on":{
+		"message":"Ligado"
+	},
+	"ui_config_onoff_off":{
+		"message":"Desligado"
+	},
+	"ui_config_hide_scrollbar":{
+		"message":"Ocultar barra de desloca\u00e7\u00e3o inferior"
+	},
+	"ui_config_hide_scrollbar_tip":{
+		"message":"Oculta a barra de desloca\u00e7\u00e3o no fundo da p\u00e1gina."
+	},
+	"ui_config_advanced":{
+		"message":"Avan\u00e7ado"
+	},
+	"ui_config_advanced_tip":{
+		"message":"Abaixo est\u00e3o as op\u00e7\u00f5es avan\u00e7adas que, se usados \u200b\u200bde forma inadequada, podem causar uma degrada\u00e7\u00e3o da utiliza\u00e7\u00e3o. Utilize as op\u00e7\u00f5es seguintes por sua conta e risco."
+	},
+	"ui_config_advanced_grid_width":{
+		"message":"Definir largura da grelha"
+	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"Substitui a gera\u00e7\u00e3o autom\u00e1tica da grelha. Esta defini\u00e7\u00e3o pode fazer com que os mosaicos n\u00e3o sejam carregados. Definir um valor muito grande pode afectar o desempenho. Min: 4. Max: 50. <b>Apague o n\u00famero para desactivar! <\/ b>"
+	},
+	"ui_config_advanced_grid_height":{
+		"message":"Definir altura da grelha"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"Substitui a gera\u00e7\u00e3o autom\u00e1tica da grelha. Esta defini\u00e7\u00e3o pode fazer com que os mosaicos n\u00e3o sejam carregados. Definir um valor muito grande pode afectar o desempenho. Min: 3. Max: 25. <b>Apague o n\u00famero para desactivar! <\/ b>"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Desativar Deslocamento Horizontal"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"Desactiva deslocamento horizontal , permitindo deslocamento vertical."
 	},
 	"ui_about":{
 		"message":"Sobre"
 	},
 	"ui_about_contrib":{
-		"message":"Patrocinadores"
+		"message":"Contribuintes"
 	},
 	"ui_about_contrib_desc":{
-		"message":"Este projeto n\u00e3o poderia existir sem muito trabalho, feedback, ideias, tradu\u00e7\u00f5es, e suporte por parte de alguns grupos de pessoas incr\u00edveis."
+		"message":"Este projeto n\u00e3o existiria sem o trabalho \u00e1rduo, coment\u00e1rios, id\u00e9ias, tradu\u00e7\u00f5es e apoio de alguns grupos de algumas pessoas incr\u00edveis."
 	},
 	"ui_about_dev":{
-		"message":"Programadores"
+		"message":"Desenvolvedores"
 	},
 	"ui_about_contrib_translators":{
 		"message":"Tradutores"
@@ -165,19 +225,19 @@
 		"message":"Utilizadores"
 	},
 	"ui_about_contrib_cta":{
-		"message":"Clique nos links acima para ver (e talvez juntar-se) a essas pessoas impressionantes em a\u00e7\u00e3o!"
+		"message":"Clique nos links acima para ver (e talvez se juntar) essas pessoas incr\u00edveis em a\u00e7\u00e3o!"
 	},
 	"ui_about_share":{
 		"message":"Partilhar"
 	},
 	"ui_about_share1":{
-		"message":"Voc\u00ea gosta do Awesome New Tab Page? Por que n\u00e3o o compartilha com seus amigos e familiares?"
+		"message":"Gostou do Awesome New Tab Page? Por que n\u00e3o partilh\u00e1-lo com amigos e fam\u00edlia?"
 	},
 	"ui_about_rate":{
-		"message":"Classificar"
+		"message":"Vote"
 	},
 	"ui_about_rate_desc":{
-		"message":"Gostas desta extens\u00e3o? Leva um minuto para escrever uma cr\u00edtica positiva na Web Store do Chrome."
+		"message":"Gosta desta extens\u00e3o? D\u00ea-nos uma cr\u00edtica positiva na Chrome Web Store."
 	},
 	"ui_install":{
 		"message":"Instalar"
@@ -185,8 +245,11 @@
 	"ui_uninstall":{
 		"message":"Desinstalar"
 	},
+	"ui_uninstall_title":{
+		"message":"Desinstalar Aplica\u00e7\u00e3o"
+	},
 	"ui_confirm_uninstall":{
-		"message":"\ufeffTem a certeza que quer desinstalar a Aplica\u00e7\u00e3o $app$?",
+		"message":"Tem certeza que deseja desinstalar o $app$?",
 		"placeholders":{
 			"app":{
 				"content":"$1",
@@ -204,13 +267,13 @@
 		"message":"Desbloqueie a grade e <b> arraste <\/ b> os widgets instalados para um espa\u00e7o vazio."
 	},
 	"ui_faw_get_more_apps":{
-		"message":"Obter + Aplica\u00e7\u00f5es"
+		"message":"Obter mais Aplica\u00e7\u00f5es"
 	},
 	"ui_faw_get_more_apps_body":{
 		"message":"Obter mais aplica\u00e7\u00f5es em <a href='https:\/\/chrome.google.com\/webstore\/?utm_source=download-apps&utm_medium=awesome-new-tab-page'>Chrome Web Store<\/a>."
 	},
 	"ui_faw_get_more_widgets":{
-		"message":"Obter + widgets"
+		"message":"Obter mais widgets"
 	},
 	"ui_faw_get_more_widgets_body":{
 		"message":"Encontrar mais widgets."
@@ -224,20 +287,23 @@
 	"ui_faw_install":{
 		"message":"Instalar"
 	},
+	"ui_faw_install_body":{
+		"message":"Escolha o bot\u00e3o instalar para adicionar ao Chrome e \u00e0 janela de widgets."
+	},
 	"ui_bmb_ob":{
-		"message":"Outros Marcadores"
+		"message":"Outros Favoritos"
 	},
 	"app_webstore":{
 		"message":"Chrome Web Store"
 	},
 	"ui_shortcut_img":{
-		"message":"O URL da imagem deve ter 128px por 128px, de prefer\u00eancia no formato PNG com transpar\u00eancia. Para repor os valores padr\u00e3o elimine o conte\u00fado do campo."
+		"message":"O endere\u00e7o da imagem deve ter exatamente 128px por 128px e de prefer\u00eancia no formato PNG com transpar\u00eancia alpha. Para resetar, basta apagar tudo no campo."
 	},
 	"notepad_default":{
-		"message":"Escreva qualquer coisa aqui. Tudo o que voc\u00ea digitar ser\u00e3o salvos em cada tecla. Tenha cuidado, por\u00e9m, N\u00c3O H\u00c1 C\u00f3pias de Seguran\u00e7a, e o bot\u00e3o Repor * FAZ * redefinir esse widget!"
+		"message":"Escreva qualquer coisa aqui. Tudo que voc\u00ea digitar ser\u00e1 salvo, entretanto, tome cuidado pois n\u00e3o h\u00e1 nenhum backup dessas informa\u00e7\u00f5es e o bot\u00e3o Reset redefine este widget por completo!"
 	},
 	"ui_resize_reset":{
-		"message":"Repor"
+		"message":"Redefinir"
 	},
 	"ui_resize_center":{
 		"message":"Centro"
@@ -328,5 +394,62 @@
 	},
 	"ui_apps_tip_message":{
 		"message":"Boa! Voc\u00ea acabou de instalar um app. Voc\u00ea pode encontrar todos seus apps instalados aqui."
+	},
+	"ui_tutorial2_next":{
+		"message":"Seguinte"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"Aplica\u00e7\u00f5es Windows"
+	},
+	"ui_tutorial2_app_drawer":{
+		"message":"Aqui encontrar\u00e1 todas as aplica\u00e7\u00f5es que instalou a partir do Chrome Web Store. Pode <b>arrastar<\/b> aplica\u00e7\u00f5es para fora desta janela para sua grelha <b>desbloqueada<\/b>. Pode tamb\u00e9m desinstalar aplica\u00e7\u00f5es atrav\u00e9s dessa janela."
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Janela de widgets"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Aqui encontrar\u00e1 widgets instalados criados por terceiros e projectados especificamente para Awesome New tab Page. Widgets trazem informa\u00e7\u00f5es \u00fateis e din\u00e2micas aos seus novos separadores."
+	},
+	"ui_tutorial2_lock_title":{
+		"message":"Bloquear\/desbloquear Grelha"
+	},
+	"ui_tutorial2_lock_grid":{
+		"message":"Bloqueando e desbloqueando a grelha permite que coloque, mova e remova widgets, aplica\u00e7\u00f5es e atalhos personalizados. <b>Clique no cadeado para continuar<\/b>."
+	},
+	"ui_tutorial2_delete_widget":{
+		"message":"Remover este widget"
+	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"A grade pode ser personalizada como pretender. Pode remover os mosaicos que n\u00e3o quer. Experimente <b>excluir o widget do tutor<\/b>."
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Mosaico vazio da grelha"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"Porqu\u00ea ficar limitado \u00e0s aplica\u00e7\u00f5es da Chrome Web Store? <b>Clique neste mosaico vazio<\/b> para criar um atalho para qualquer lugar na web."
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"Voc\u00ea \u00e9 incr\u00edvel!"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Assim como Awesome. Agora sabe como usar o Awesome New Tab Page para tirar m\u00e1ximo partido do Chrome. Ent\u00e3o, o que vai fazer a seguir?"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Terminar o Tutorial"
+	},
+	"ui_tutorial2_main_welcome":{
+		"message":"Bem-vindo ao"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"\u00c9 impressionante. Como se sente?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"Talvez um pouco impressionante demais para a primeira vez? N\u00e3o se preocupe, o widget tutor ir\u00e1 ajud\u00e1-lo a come\u00e7ar."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Clique nesse bot\u00e3o min\u00fasculo para come\u00e7ar."
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Iniciar Tutorial"
 	}
 }

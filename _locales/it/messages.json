@@ -5,6 +5,9 @@
 	"ui_button_widgets":{
 		"message":"Widget"
 	},
+	"ui_button_widget_browser":{
+		"message":"Browser dei Widget"
+	},
 	"ui_button_unlock":{
 		"message":"Sblocca"
 	},
@@ -17,11 +20,20 @@
 	"ui_button_close":{
 		"message":"Chiudi"
 	},
+	"ui_button_ok":{
+		"message":"OK"
+	},
+	"ui_button_cancel":{
+		"message":"Annulla"
+	},
 	"ui_button_about":{
 		"message":"Informazioni su"
 	},
 	"ui_config":{
 		"message":"Configura"
+	},
+	"ui_button_help":{
+		"message":"Aiuto & Feedback"
 	},
 	"ui_c_learnmore":{
 		"message":"Ulteriori informazioni"
@@ -58,6 +70,12 @@
 	},
 	"ui_te_shfavicon":{
 		"message":"Mostra\/Nascondi Favicon"
+	},
+	"ui_te_search":{
+		"message":"Cerca"
+	},
+	"ui_te_search_desc":{
+		"message":"Inserisci un URL di ricerca per questo sito. Per esempio:"
 	},
 	"ui_te_bg_colorpicker":{
 		"message":"Apri il contagocce"
@@ -107,8 +125,23 @@
 	"ui_config_general":{
 		"message":"Generale"
 	},
+	"ui_config_shbmb":{
+		"message":"Mostra la barra dei segnalibri"
+	},
+	"ui_config_shbmb_tip":{
+		"message":"Mostra la barra dei segnalibri in cima alla pagina"
+	},
 	"ui_config_shtlb":{
 		"message":"Mostra i bottoni a sinistra solo al passaggio del mouse"
+	},
+	"ui_config_shtlb_desc":{
+		"message":"Quando abilitato, i bottoni in alto a sinistra saranno a scomparsa. Per accedervi nuovamente, sposta il mouse dove dovrebbero normalmente essere."
+	},
+	"ui_config_shgrid":{
+		"message":"Mostra la griglia (quando sbloccato)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Quando abilitato, la griglia verr\u00e0 mostrata sempre."
 	},
 	"ui_config_amazonlocale":{
 		"message":"Per il link <i>stock<\/i> di Amazon, seleziona il tuo stato."
@@ -136,6 +169,42 @@
 	},
 	"ui_config_bgimg2":{
 		"message":"Esempio (NO, punto e virgola!):"
+	},
+	"ui_config_onoff_on":{
+		"message":"ON"
+	},
+	"ui_config_onoff_off":{
+		"message":"OFF"
+	},
+	"ui_config_hide_scrollbar":{
+		"message":"Nascondi la barra di scorrimento"
+	},
+	"ui_config_hide_scrollbar_tip":{
+		"message":"Nasconde la barra di scorrimento in fondo alla pagina."
+	},
+	"ui_config_advanced":{
+		"message":"Avanzato"
+	},
+	"ui_config_advanced_tip":{
+		"message":"Qui ci sono opzioni avanzate che, se usate impropriamente, possono portare ad un'esperienza utente degradata. Usa le seguenti opzioni a tuo rischio e pericolo."
+	},
+	"ui_config_advanced_grid_width":{
+		"message":"Imposta la larghezza della griglia"
+	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"Sostituisce la generazione automatica della griglia. Usare questa opzione pu\u00f2 risultare in delle tile non caricate. L'impostazione di questo valore troppo grande potrebbe influire sulle prestazioni. Minimo: 4. Massimo: 50 <b>Cancella il numero per disabilitare!<\/b>"
+	},
+	"ui_config_advanced_grid_height":{
+		"message":"Imposta l'altezza della griglia"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"Sostituisce la generazione automatica della griglia. Usare questa opzione pu\u00f2 risultare in delle tile non caricate. L'impostazione di questo valore troppo grande potrebbe influire sulle prestazioni. Minimo: 3. Massimo: 25 <b>Cancella il numero per disabilitare!<\/b>"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Disattiva lo scorrimento orizzontale"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar_tip":{
+		"message":"Disattiva lo scorrimento orizzontale, permettendolo in verticale."
 	},
 	"ui_about":{
 		"message":"Informazioni su"
@@ -170,6 +239,15 @@
 	"ui_about_rate_desc":{
 		"message":"Ti piace questa estensione? Prendi un minuto per dare una recensione positiva su Chrome Web Store."
 	},
+	"ui_install":{
+		"message":"Installa"
+	},
+	"ui_uninstall":{
+		"message":"Disinstalla"
+	},
+	"ui_uninstall_title":{
+		"message":"Disinstalla App"
+	},
 	"ui_confirm_uninstall":{
 		"message":"Sei sicuro di che voler disinstallare questa $app$?",
 		"placeholders":{
@@ -196,6 +274,21 @@
 	},
 	"ui_faw_get_more_widgets":{
 		"message":"Ottieni pi\u00f9 Widget"
+	},
+	"ui_faw_get_more_widgets_body":{
+		"message":"Trova pi\u00f9 widget."
+	},
+	"ui_faw_pick":{
+		"message":"Scegli"
+	},
+	"ui_faw_pick_body":{
+		"message":"Scegli i widget qui sotto che vorresti installare."
+	},
+	"ui_faw_install":{
+		"message":"Installa"
+	},
+	"ui_faw_install_body":{
+		"message":"Clicca il pulsante Installa per aggiungerlo a Chrome e alla finestra dei widget."
 	},
 	"ui_bmb_ob":{
 		"message":"Altri segnalibri"
@@ -292,5 +385,71 @@
 	},
 	"ui_import_export_btn_restore":{
 		"message":"Ripristina"
+	},
+	"ui_drag_widget_message":{
+		"message":"Per posizionare un widget, clicca e trascina il widget in una tile vuota."
+	},
+	"ui_apps_tip_message_title":{
+		"message":"Nuova App installata"
+	},
+	"ui_apps_tip_message":{
+		"message":"Bravo! Hai appena installato un'App. Puoi trovare tutte le tue App installate qui."
+	},
+	"ui_tutorial2_next":{
+		"message":"Successivo"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"Finestra delle Apps"
+	},
+	"ui_tutorial2_app_drawer":{
+		"message":"Qui troverai tutte le App che hai installato dal Chrome Web Store. Puoi <b>trascinare<\/b> le Apps fuori da questa finestra nella tua griglia <b>sbloccata<\/b>. Puoi anche disinstallare le Apps da questa finestra."
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Finestra dei Widget"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Qui trovi i widget installati creati da sviluppatori di terze parti appositamente progettati per Awesome New Tab Page. I widget portano informazioni dinamiche e utili direttamente sulla tua nuova pagina di Nuova scheda."
+	},
+	"ui_tutorial2_lock_title":{
+		"message":"Blocca\/Sblocca la Griglia"
+	},
+	"ui_tutorial2_lock_grid":{
+		"message":"Bloccare e sbloccare la griglia ti permette di posizionare, muovere e rimuovere widgets, apps e link personalizzati. <b>Clicca il lucchetto per continuare<\/b>."
+	},
+	"ui_tutorial2_delete_widget":{
+		"message":"Cancella questo widget"
+	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"La griglia \u00e8 personalizzabile a piacimento. Puoi rimuovere le tiles che non vuoi. Vai avanti ed <b>elimina il widget del tutorial<\/b>."
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Svuota la Griglia"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"Perch\u00e9 limitarsi alle Apps trovate nel Chrome Web Store? <b>Clicca su questa tile vuota<\/b> per creare un link personalizzato ovunque nel web."
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"Sei fantastico!"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Sul serio, davvero fantastico. Ora sai come usare Awesome New Tab Page per avere il meglio dalla tua esperienza Chrome. Cosa farai ora?"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Finisci il Tutorial"
+	},
+	"ui_tutorial2_main_welcome":{
+		"message":"Benvenuto a"
+	},
+	"ui_tutorial2_main_feels":{
+		"message":"Hai appena aggiornato ad impressionarti. Come ti senti?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"Forse troppo impressionante tutto in una volta? Non ti preoccupare, il widget Tutorial ti aiuter\u00e0 ad iniziare."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Clicca su quel piccolo pulsante per andare avanti."
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Inizia il Tutorial"
 	}
 }

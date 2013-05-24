@@ -3,7 +3,7 @@
 		"message":"Alkalmaz\u00e1sok"
 	},
 	"ui_button_widgets":{
-		"message":"Widget-ek"
+		"message":"Widgetek"
 	},
 	"ui_button_widget_browser":{
 		"message":"Widget b\u00f6ng\u00e9sz\u0151"
@@ -19,6 +19,12 @@
 	},
 	"ui_button_close":{
 		"message":"Bez\u00e1r\u00e1s"
+	},
+	"ui_button_ok":{
+		"message":"OK"
+	},
+	"ui_button_cancel":{
+		"message":"M\u00e9gse"
 	},
 	"ui_button_about":{
 		"message":"N\u00e9vjegy"
@@ -122,6 +128,9 @@
 	"ui_config_shbmb":{
 		"message":"K\u00f6nyvjelz\u0151 eszk\u00f6zt\u00e1r mutat\u00e1sa"
 	},
+	"ui_config_shbmb_tip":{
+		"message":"K\u00f6nyvjelz\u0151 eszk\u00f6zt\u00e1r megjelen\u00edt\u00e9se az oldal tetej\u00e9n"
+	},
 	"ui_config_shtlb":{
 		"message":"A bal oldali gombok csak az eg\u00e9r odah\u00faz\u00e1s\u00e1val jelenik meg"
 	},
@@ -173,6 +182,9 @@
 	"ui_config_hide_scrollbar_tip":{
 		"message":"Elrejti a g\u00f6rget\u0151t az oldal alj\u00e1n."
 	},
+	"ui_config_advanced":{
+		"message":"Halad\u00f3"
+	},
 	"ui_about":{
 		"message":"N\u00e9vjegy"
 	},
@@ -211,6 +223,9 @@
 	},
 	"ui_uninstall":{
 		"message":"Elt\u00e1vol\u00edt\u00e1s"
+	},
+	"ui_uninstall_title":{
+		"message":"Uninstal\u00e1l\u00f3 alkalmaz\u00e1s"
 	},
 	"ui_confirm_uninstall":{
 		"message":"Biztos, hogy el szeretn\u00e9 t\u00e1vol\u00edtani a(z) $app$-t?",
@@ -358,5 +373,23 @@
 	},
 	"ui_apps_tip_message":{
 		"message":"Remek! Telep\u00edtett\u00e9l egy alkalmaz\u00e1st. Az \u00f6sszes telep\u00edtett alkalmaz\u00e1st itt megtal\u00e1lhatod."
+	},
+	"ui_tutorial2_next":{
+		"message":"K\u00f6vetkez\u0151"
+	},
+	"ui_tutorial2_app_window_title":{
+		"message":"Alkalmaz\u00e1sok ablak"
+	},
+	"ui_tutorial2_widgets_window_title":{
+		"message":"Widgetek ablak"
+	},
+	"ui_tutorial2_completed_title":{
+		"message":"Te fantasztikus vagy!"
+	},
+	"ui_tutorial2_finish_string":{
+		"message":"Bemutat\u00f3 befejez\u00e9se"
+	},
+	"ui_tutorial2_main_start":{
+		"message":"Bemutat\u00f3 ind\u00edt\u00e1sa"
 	}
 }
