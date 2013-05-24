@@ -1,6 +1,6 @@
 /** Awesome New Tab Page
   *   antp.co
-  *   Copyright 2011-2012 Michael Hart (h4r7.me)
+  *   Copyright 2011-2013 Michael Hart (h4r7.me)
   * Want to make it even more awesome?
   *   github.antp.co
   *
@@ -9,12 +9,14 @@
   *   Further Restrictions:
   *     To make use of or modify the below code in any way:
   *     - You agree to leave this copyright and license notice intact without
-  *       modification; and
+  *       modification.
   *     - You agree to mark your modified versions as modified from the original
-  *       version; and
+  *       version.
   *     - You agree not to misrepresent the origin of this material or your
   *       relationship with the authors of this project or the project itself.
-***/
+  *       You agree not to use the "Awesome New Tab Page" name (or a confusingly
+  *       similar name) or logo.
+  **/
 
 
 /* START :: Windows */
@@ -350,6 +352,31 @@
 
   /* END :: Hide Scrollbar */
 
+/* START :: Hide RCTM */
+
+  $(window).bind("antp-config-first-open", function() {
+    var
+      hideRCTM = $("#hideRCTM"),
+      option = preference.get("hideRCTM");
+    hideRCTM.prop("checked", option);
+
+    $(document).on("change", "#hideRCTM", updateRCTMVisibility);
+  });
+
+  function updateRCTMVisibility(e) {
+    if ( e )
+      preference.set("hideRCTM", $(this).is(":checked"));
+
+    if ( preference.get("hideRCTM") ) {
+      $("#recently-closed-tabs").hide();
+    } else {
+      $("#recently-closed-tabs").show();
+    }
+  }
+  updateRCTMVisibility();
+
+  /* END :: Hide RCTM */
+
 function colorPickerLoaded() {
   // background color picker
   $("#colorselector-bg").ColorPicker({
@@ -439,10 +466,12 @@ function showAppsWindow () {
   });
 }
 
-$('div[title]').qtip({
-  style: {
-    classes: 'qtip-light qtip-shadow qtip-bootstrap'
-  }
+$(document).ready(function() {
+  $('div[title]').qtip({
+    style: {
+      classes: 'qtip-light qtip-shadow qtip-bootstrap'
+    }
+  });
 });
 
 function qTipAlert(title, message, buttonText) {

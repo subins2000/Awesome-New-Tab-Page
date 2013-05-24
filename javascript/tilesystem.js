@@ -1,6 +1,6 @@
 /** Awesome New Tab Page
   *   antp.co
-  *   Copyright 2011-2012 Michael Hart (h4r7.me)
+  *   Copyright 2011-2013 Michael Hart (h4r7.me)
   * Want to make it even more awesome?
   *   github.antp.co
   *
@@ -9,12 +9,15 @@
   *   Further Restrictions:
   *     To make use of or modify the below code in any way:
   *     - You agree to leave this copyright and license notice intact without
-  *       modification; and
+  *       modification.
   *     - You agree to mark your modified versions as modified from the original
-  *       version; and
+  *       version.
   *     - You agree not to misrepresent the origin of this material or your
   *       relationship with the authors of this project or the project itself.
-***/
+  *       You agree not to use the "Awesome New Tab Page" name (or a confusingly
+  *       similar name) or logo.
+  **/
+
 
 /* START :: Online/Offline status */
 
@@ -472,7 +475,7 @@ $(window).mouseup("mouseup", function(e) {
 
     return {
       "width" : obj.width,
-      "new_x" : Math.ceil( obj.width / (GRID_TILE_SIZE + (GRID_TILE_PADDING * 2)) )
+      "new_x" : Math.round( obj.width / (GRID_TILE_SIZE + (GRID_TILE_PADDING * 2)) )
     };
   }
 
@@ -490,7 +493,7 @@ $(window).mouseup("mouseup", function(e) {
 
     return {
       "height" : obj.height,
-      "new_y" : Math.ceil( obj.height / (GRID_TILE_SIZE + (GRID_TILE_PADDING * 2)) )
+      "new_y" : Math.round( obj.height / (GRID_TILE_SIZE + (GRID_TILE_PADDING * 2)) )
     };
   }
 
@@ -509,7 +512,7 @@ $(window).mouseup("mouseup", function(e) {
     var column, bracket;
     for (var col = 1; col < 50; col++) {
       bracket = ((GRID_TILE_SIZE * (col-0)) + (GRID_TILE_PADDING * 2) * (col-0)) + 6;
-      if ( bracket > left+5 ) {
+      if ( bracket > left + 103 ) {
         new_left  = ((GRID_TILE_SIZE * (col-1)) + (GRID_TILE_PADDING * 2) * (col-1)) + 6;
 
         column = col - 1;
@@ -525,7 +528,7 @@ $(window).mouseup("mouseup", function(e) {
     var row;
     for (var _row = 1; _row < 50; _row++) {
       bracket = ((GRID_TILE_SIZE * (_row-0)) + (GRID_TILE_PADDING * 2) * (_row-0)) + 6;
-      if ( bracket > top+5 ) {
+      if ( bracket > top + 103 ) {
         new_top  = ((GRID_TILE_SIZE * (_row-1)) + (GRID_TILE_PADDING * 2) * (_row-1)) + 6;
 
         row = _row - 1;
@@ -853,6 +856,7 @@ $(window).mouseup("mouseup", function(e) {
 // Add widget to localStorage then refresh
 function addWidget(widget_id, tile_location) {
   widgets = JSON.parse(localStorage.getItem("widgets"));
+  var extensionID = chrome.extension.getURL("").substr(19, 32);
 
   var scope = angular.element("#widgets").scope(),
       installedWidgets = scope.widgets,
@@ -887,7 +891,7 @@ function addWidget(widget_id, tile_location) {
     if (obj.v2 && obj.v2.resize)
       widget.resize = obj.v2.resize;
     widget.v2 = obj.v2;
-    if ( widget.id === "mgmiemnjjchgkmgbeljfocdjjnpjnmcg" )
+    if ( widget.id === extensionID )
       widget.id = widget_id.replace("zStock_", "");
 
     // assing new id to multiplacable widgets

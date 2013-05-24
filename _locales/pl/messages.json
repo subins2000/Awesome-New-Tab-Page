@@ -57,7 +57,7 @@
 		"message":"Poka\u017c \/ ukryj nazw\u0119"
 	},
 	"ui_te_pin":{
-		"message":"Przypnij kart\u0119 po otwarciu"
+		"message":"Przypnij kart\u0119 po klikni\u0119ciu"
 	},
 	"ui_te_newtab":{
 		"message":"Otw\u00f3rz na nowej karcie lewym klikni\u0119ciem"
@@ -96,7 +96,7 @@
 		"message":"Ikony i t\u0142o"
 	},
 	"ui_te_ib_desc":{
-		"message":"Wprowad\u017a adres URL dla obrazka, skorzystaj z opcji \"Przegl\u0105daj\" lub przeci\u0105gnij i upu\u015b\u0107 aby zmieni\u0107 ikon\u0119."
+		"message":"Wprowad\u017a adres URL dla obrazka, skorzystaj z opcji \"Przegl\u0105daj\" lub przeci\u0105gnij i upu\u015b\u0107 obrazek, aby zmieni\u0107 ikon\u0119."
 	},
 	"ui_te_ib_browse":{
 		"message":"Przegl\u0105daj"

@@ -26,6 +26,12 @@
   "ui_button_cancel": {
     "message": "Cancel"
   },
+  "ui_button_yes": {
+    "message": "Yes"
+  },
+  "ui_button_no": {
+    "message": "No"
+  },
   "ui_button_about": {
     "message": "About"
   },
@@ -207,6 +213,12 @@
   "ui_config_advanced_disable_horizontal_scrollbar_tip": {
     "message": "Disables horizontal scrolling, allowing verical scrolling."
   },
+  "ui_config_advanced_hide_rctm": {
+    "message": "Hide Recently Closed Tab Menu button"
+  },
+  "ui_config_advanced_hide_rctm_tip": {
+    "message": "Hides the Recently Closed Tab Menu button from the left."
+  },
   "ui_about": {
     "message": "About"
   },
@@ -360,6 +372,9 @@
   "ui_import_export_header": {
     "message": "Import/Export"
   },
+  "ui_online_backups_header": {
+    "message": "Online Backups"
+  },
   "ui_import_export_confirm_restore_title": {
     "message": "Confirm Restore"
   },
@@ -387,8 +402,68 @@
   "ui_import_export_btn_restore": {
     "message": "Restore"
   },
+  "ui_online_backup_btn_save_backup": {
+    "message": "Save Backup"
+  }, 
+  "ui_online_backup_name_placeholder": {
+    "message": "Enter backup name"
+  }, 
+  "ui_online_backup_sync_writes_exceeded_title": {
+    "message": "Too many operations!"
+  }, 
+  "ui_online_backup_sync_writes_exceeded": {
+    "message": "You've exceeded maximum write operations limit per minute. Please try again in a few seconds."
+  }, 
+  "ui_online_backup_sync_size_exceeded_title": {
+    "message": "Size exceeded!"
+  }, 
+  "ui_online_backup_sync_size_exceeded": {
+    "message": "Too large to be stored in online storage."
+  }, 
+  "ui_online_backup_invalid_backup_name_title": {
+    "message": "Invalid backup name!"
+  }, 
+  "ui_online_backup_invalid_backup_name": {
+    "message": "Backup name should be atleast one character long."
+  }, 
+  "ui_online_backup_backup_already_exist_title": {
+    "message": "Name already exist!"
+  }, 
+  "ui_online_backup_backup_already_exist": {
+    "message": "A backup with this name already exist. Please type a unique database name."
+  }, 
+  "ui_online_backup_confirm_delete_backup_title": {
+    "message": "Are you sure?"
+  }, 
+  "ui_online_backup_confirm_delete_backup": {
+    "message": "Are you sure you want to remove the backup? Once removed, you won't be able to recover it."
+  }, 
+  "ui_online_backup_confirm_load_backup_title": {
+    "message": "Are you sure?"
+  }, 
+  "ui_online_backup_confirm_load_backup": {
+    "message": "Do you want to import this backup? If you import the backup, your current settings would be lost."
+  }, 
+  "ui_online_backup_backup_imported_title": {
+    "message": "Backup imported"
+  }, 
+  "ui_online_backup_backup_imported": {
+    "message": "Backup has been imported successfully."
+  }, 
+  "ui_online_backup_load_backup": {
+    "message": "Load Backup"
+  }, 
+  "ui_online_remove_load_backup": {
+    "message": "Remove Backup"
+  }, 
   "ui_drag_widget_message": {
     "message": "To place a widget, click and drag the widget to an empty tile."
+  },
+  "ui_online_backups_desc": {
+    "message": "Online backups are stored in chrome sync storage and have limited space of 100KB. You can access these backups over multiple computers which are logged in with same Google Chrome account."
+  },
+  "ui_online_backups_warning": {
+    "message": "<b>Warning: </b> You need to be signed in to Google Chrome account syncronize backups online otherwise these backups will be stored offline."
   },
   "ui_apps_tip_message_title": {
     "message": "New App Installed"

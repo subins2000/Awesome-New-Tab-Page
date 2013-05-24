@@ -17,11 +17,20 @@
 	"ui_button_close":{
 		"message":"Zapri"
 	},
+	"ui_button_ok":{
+		"message":"V redu"
+	},
+	"ui_button_cancel":{
+		"message":"Prekli\u010di"
+	},
 	"ui_button_about":{
 		"message":"O raz\u0161iritvi"
 	},
 	"ui_config":{
 		"message":"Nastavitev"
+	},
+	"ui_button_help":{
+		"message":"Pomo\u010d & povratne informacije"
 	},
 	"ui_c_learnmore":{
 		"message":"Preberite ve\u010d"
@@ -58,6 +67,9 @@
 	},
 	"ui_te_shfavicon":{
 		"message":"Poka\u017ei \/ skrij ikono zaznamka"
+	},
+	"ui_te_search":{
+		"message":"I\u0161\u010di"
 	},
 	"ui_te_bg_colorpicker":{
 		"message":"Odpri izbirnik barv"
@@ -137,6 +149,18 @@
 	"ui_config_bgimg2":{
 		"message":"Primer (BREZ kon\u010dnega podpi\u010dja!):"
 	},
+	"ui_config_onoff_on":{
+		"message":"VKLJU\u010cENO"
+	},
+	"ui_config_onoff_off":{
+		"message":"IZKLJU\u010cENO"
+	},
+	"ui_config_advanced":{
+		"message":"Napredno"
+	},
+	"ui_config_advanced_disable_horizontal_scrollbar":{
+		"message":"Onemogo\u010di horizontalno pomikanje"
+	},
 	"ui_about":{
 		"message":"O raz\u0161iritvi"
 	},
@@ -170,6 +194,15 @@
 	"ui_about_rate_desc":{
 		"message":"Vam je v\u0161e\u010d ta raz\u0161iritev? Vzemite si minuto in jo pozitivno ocenite v Spletni trgovini Chrome."
 	},
+	"ui_install":{
+		"message":"Namestite"
+	},
+	"ui_uninstall":{
+		"message":"Odstranite"
+	},
+	"ui_uninstall_title":{
+		"message":"Odstranite aplikacijo"
+	},
 	"ui_confirm_uninstall":{
 		"message":"Ali ste prepri\u010dani, da \u017eelite odstraniti $app$?",
 		"placeholders":{
@@ -196,6 +229,18 @@
 	},
 	"ui_faw_get_more_widgets":{
 		"message":"Pridobite gradnike"
+	},
+	"ui_faw_get_more_widgets_body":{
+		"message":"Poi\u0161\u010di ve\u010d pripomo\u010dkov."
+	},
+	"ui_faw_pick":{
+		"message":"Izberi"
+	},
+	"ui_faw_pick_body":{
+		"message":"Izberite pripomo\u010dke, ki jih \u017eelite namestiti spodaj."
+	},
+	"ui_faw_install":{
+		"message":"Namestite"
 	},
 	"ui_bmb_ob":{
 		"message":"Drugi zaznamki"
@@ -292,5 +337,11 @@
 	},
 	"ui_import_export_btn_restore":{
 		"message":"Obnovitev"
+	},
+	"ui_apps_tip_message_title":{
+		"message":"Nova aplikacija name\u0161\u010dena"
+	},
+	"ui_tutorial2_next":{
+		"message":"Naprej"
 	}
 }

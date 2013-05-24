@@ -21,7 +21,7 @@
 		"message":"Cerrar"
 	},
 	"ui_button_ok":{
-		"message":"Vale"
+		"message":"Ok"
 	},
 	"ui_button_cancel":{
 		"message":"Cancelar"
@@ -134,6 +134,15 @@
 	"ui_config_shtlb":{
 		"message":"Mostrar los botones de la izquierda s\u00f3lo en el \u00e1rea activada"
 	},
+	"ui_config_shtlb_desc":{
+		"message":"Cuando habilitado, los botones del costado izquierdo se ir\u00e1n. Para acceder a ellos nuevamente, simplemente ubique el cursor sobre donde normalmente est\u00e1n."
+	},
+	"ui_config_shgrid":{
+		"message":"Mostrar cuadr\u00edcula (cuando desbloqueado)"
+	},
+	"ui_config_shgrid_desc":{
+		"message":"Cuando habilitado, la cuadricula se mostrara en todo momento."
+	},
 	"ui_config_amazonlocale":{
 		"message":"Para el <i>stock<\/i> Amazon acceso directo, selecciona tu pa\u00eds."
 	},
@@ -175,6 +184,21 @@
 	},
 	"ui_config_advanced":{
 		"message":"Avanzado"
+	},
+	"ui_config_advanced_tip":{
+		"message":"A continuaci\u00f3n hay opciones avanzadas que, si usadas incorrectamente, pueden llevar a una experiencia de usuario menos agradable. Utilice las siguientes opciones a su propio riesgo."
+	},
+	"ui_config_advanced_grid_width":{
+		"message":"Marcar ancho de la cuadricula"
+	},
+	"ui_config_advanced_grid_width_tip":{
+		"message":"Reemplaza la generaci\u00f3n autom\u00e1tica de la red. Con este valor puede resultar en sus azulejos no est\u00e1n cargadas. Este valor de ajuste demasiado grande puede afectar la performance. Min: 4. m\u00e1ximo: 50. <b>Borrar n\u00famero para desactivar!<\/b>"
+	},
+	"ui_config_advanced_grid_height":{
+		"message":"Altura del conjunto de la red"
+	},
+	"ui_config_advanced_grid_height_tip":{
+		"message":"Reemplaza la generaci\u00f3n autom\u00e1tica de la red. Con este valor puede resultar en sus azulejos no est\u00e1n cargadas. Este valor de ajuste demasiado grande puede afectar la performance. Min: 4. m\u00e1ximo: 50. <b>Borrar n\u00famero para desactivar!<\/b>"
 	},
 	"ui_config_advanced_disable_horizontal_scrollbar":{
 		"message":"Desactivar el desplazamiento horizontal"
@@ -327,7 +351,7 @@
 		"message":"Importar: Sobrescribe la configuraci\u00f3n actual con una cadena v\u00e1lida exportada. <b>ADVERTENCIA<\/b>: Todas las preferencias actuales se perder\u00e1n de forma definitiva. No hay ninguna manera de deshacer esta operaci\u00f3n. Las im\u00e1genes subidas no se exportaran; son im\u00e1genes de la web."
 	},
 	"ui_import_export_installed_warning":{
-		"message":"No se importaran o exportaran complementos, extensiones y aplicaciones instaladas. Las extensiones no pueden instalar otras aplicaciones o extensiones. Si lo que busca es esa funci\u00f3n, use <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'> Chrome Sync<\/a> como alternativa."
+		"message":"Installed apps, extensions, and widgets are not imported or exported. Extensions can't install other apps or extensions. Use <a href='http:\/\/support.google.com\/chrome\/bin\/answer.py?answer=165139'>Chrome Sync<\/a> instead."
 	},
 	"ui_import_export_desc_restore":{
 		"message":"Restaurar: Le permite deshacer la \u00faltima importaci\u00f3n. Su estado actual tambi\u00e9n ser\u00e1 guardado para posteriores restauraciones."
@@ -377,14 +401,38 @@
 	"ui_tutorial2_app_window_title":{
 		"message":"Ventana de aplicaciones"
 	},
+	"ui_tutorial2_app_drawer":{
+		"message":"Aqu\u00ed encontrar\u00e1s todas las aplicaciones que has instalado desde la Chrome Web Store. Usted puede <b>arrastrar<\/b> aplicaciones fuera de esta ventana hacia su rejilla <b>desbloqueado<\/b>. Tambi\u00e9n puede desinstalar aplicaciones desde esta ventana."
+	},
 	"ui_tutorial2_widgets_window_title":{
 		"message":"Ventana de widgets"
+	},
+	"ui_tutorial2_widget_drawer":{
+		"message":"Aqu\u00ed encontrar\u00e1s widgets instalados por desarrolladores de terceros dise\u00f1ados espec\u00edficamente para la impresionante nueva pesta\u00f1a p\u00e1gina. Widgets traen informaci\u00f3n \u00fatil y din\u00e1mica derecho a tu p\u00e1gina nueva pesta\u00f1a."
+	},
+	"ui_tutorial2_lock_title":{
+		"message":"Bloquear\/desbloquear red"
+	},
+	"ui_tutorial2_lock_grid":{
+		"message":"Bloquear y desbloquear la red permite colocar, mover y eliminar m\u00e9todos abreviados personalizados, widgets y aplicaciones. <b>Haga clic en el candado para continuar<\/b>."
 	},
 	"ui_tutorial2_delete_widget":{
 		"message":"Eliminar este widget"
 	},
+	"ui_tutorial2_delete_widget_string":{
+		"message":"La red es suya para personalizar como mejor le parezca. Usted puede quitar los azulejos que no desea. Vaya por delante y <b> eliminar el tutorial widget de <\/ b> ."
+	},
+	"ui_tutorial2_empty_grid_title":{
+		"message":"Casilla de cuadricula vacia"
+	},
+	"ui_tutorial2_empty_grid_string":{
+		"message":"\u00bfPor qu\u00e9 limitarse a aplicaciones encontradas en Chrome Web Store?<b> Haga click en esta casilla vacia<\/b> para crear un acceso directo personalizado a cualquier lugar en la web."
+	},
 	"ui_tutorial2_completed_title":{
 		"message":"\u00a1Eres impresionante!"
+	},
+	"ui_tutorial2_completed_string":{
+		"message":"Bueno, es realmente increible. Ahora sabes como usar Awesome Net Tab Page, para conseguir mucho m\u00e1s en tu experiencia de Chrome. Asi que, \u00bfQue har\u00e1s a continuaci\u00f3n?"
 	},
 	"ui_tutorial2_finish_string":{
 		"message":"Finalizar tutorial"
@@ -394,6 +442,12 @@
 	},
 	"ui_tutorial2_main_feels":{
 		"message":"Acabas de ascender a Impresionante. \u00bfC\u00f3mo te sientes?"
+	},
+	"ui_tutorial2_main_getstarted":{
+		"message":"\u00bfQuizas es un poco impresionante todo a la vez? No te preocutes, el tutorial de Widget the ayudar\u00e1 a comenzar."
+	},
+	"ui_tutorial2_main_click":{
+		"message":"Haga click en ese peque\u00f1o boton de ahi abajo para empezar."
 	},
 	"ui_tutorial2_main_start":{
 		"message":"Iniciar tutorial"

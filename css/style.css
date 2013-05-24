@@ -176,6 +176,9 @@ body {
   bottom: 5px;
   right: 7px;
 }
+.ui-2#editor .checkbox {
+  height: 30px;
+}
 #widget-holder > .app > a {
   position: absolute;
   top: 0; bottom: 0;
@@ -500,6 +503,9 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 /* UI-2 */
 .option-container {
   max-width: 80%;
+}
+.tile-edit-title-margin {
+  margin-top: 6px;
 }
 
 .ui-2 h3 {
@@ -1214,3 +1220,94 @@ body > .widget-drawer-app img {
   font-size: 25px;
   outline: none;
  }
+
+/**
+ * Online backups
+ */
+
+ .list-wrapper {
+  width: 470px;
+  margin-top: 28px;
+ }
+ #backups-list {
+  z-index: 1;
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 3px solid gray;
+  width: 100%;
+  max-height: 300px;
+  min-height: 200px;
+  margin-top: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#backups-list .backup-name {
+  overflow: hidden;
+}
+
+.list-wrapper .space-stats {
+  margin-top: -22px;
+  color: gray;
+  font-size: 90%;
+  float: right;
+}
+
+#backups-list .dim {
+  color: gray;
+  font-size: 90%;
+}
+
+#backups-list .buttons {
+  float: right;
+  margin: 0;
+}
+
+#backups-list .button {
+  width: 20px;
+  height: 18px;
+  opacity: .4;
+  -webkit-transition: opacity .2s ease-in-out;
+  cursor: pointer;
+  padding-right: 2px;
+}
+#backups-list .button:hover {
+  opacity: .7;
+}
+
+#backups-list .online-backup {
+  display: block;
+  white-space: nowrap;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+}
+#backups-list .online-backup:nth-child(even) {
+  background-color: #EEEEEE;
+}
+#backups-list .online-backup:hover {
+  background-color: #DDDDDD;
+}
+#backups-list .item-link {
+  display: inline-block;
+}
+#backups-list .item-link {
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+#backup-name {
+  margin-top: 15px;
+  margin-right: 8px;
+  width: 180px !important;
+  height: 26px;
+  padding-left: 6px;
+  padding-right: 6px;
+}

@@ -1,3 +1,24 @@
+/** Awesome New Tab Page
+  *   antp.co
+  *   Copyright 2011-2013 Michael Hart (h4r7.me)
+  * Want to make it even more awesome?
+  *   github.antp.co
+  *
+  * Licensed under GPL v3:
+  *   http://www.gnu.org/licenses/gpl-3.0.txt
+  *   Further Restrictions:
+  *     To make use of or modify the below code in any way:
+  *     - You agree to leave this copyright and license notice intact without
+  *       modification.
+  *     - You agree to mark your modified versions as modified from the original
+  *       version.
+  *     - You agree not to misrepresent the origin of this material or your
+  *       relationship with the authors of this project or the project itself.
+  *       You agree not to use the "Awesome New Tab Page" name (or a confusingly
+  *       similar name) or logo.
+  **/
+
+
 storageFunctions = {};
 
 storageFunctions.onLeftClickUpdate = function() {
@@ -40,7 +61,7 @@ storageFunctions.updateOldPaths = function() {
         }
       }
     } else if (widgets[i].id === "tabs" || widgets[i].path === "widgets/tabs.html"
-      || widgets[i].path === "chrome-extension://mgmiemnjjchgkmgbeljfocdjjnpjnmcg/widgets/tabs.html") {
+      || widgets[i].path === "chrome-extension://" + chrome.extension.getURL("").substr(19, 32) + "/widgets/tabs.html") {
       pathChanged = true;
       widgets[i].path = "widgets/tabs/tabs.html";
     }
