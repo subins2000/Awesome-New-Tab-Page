@@ -33,9 +33,9 @@ Further Restrictions:
 
 > To make use of or modify the below code in any way:
 >
-> * You agree to leave this copyright and license notice intact without modification; and
-> * You agree to mark your modified versions as modified from the original version; and
-> * You agree not to misrepresent the origin of this material or your relationship with the authors of this project or the project itself.
+> * You agree to leave this copyright and license notice intact without modification.
+> * You agree to mark your modified versions as modified from the original version.
+> * You agree not to misrepresent the origin of this material or your relationship with the authors of this project or the project itself. You agree not to use the "Awesome New Tab Page" name (or a confusingly similar name) or logo.
 
 Who can contribute?
 -------------------
@@ -44,11 +44,3 @@ Everyone who is willing to agree to allow me to publish submitted code under the
 Translating / Internationalization
 ----------------------------------
 Want to help ensure Awesome New Tab Page works great in your native language? Head over here to help translate: [crowdwin.net/project/antp](https://crowdin.net/project/antp/).
-
-Do widgets need to be licensed under GPL v3+?
----------------------------------------------
-I'm not a lawyer (and of course can not provide legal advice, so take this with a grain of salt), but I do not believe widgets _need_ to be as they are separate "programs" (packaged and installed separately). However, I do recommend that all widgets be GPL v3+ licensed. However, in simplest terms: __no__.
-
-This is, of course, unless you include something GPL licensed in your code (jQuery here being excluded, as it is [dual licensed MIT and GPL](http://jquery.org/license/)).
-
-For more information, please see the [GPL FAQ](http://www.gnu.org/licenses/gpl-faq.html).

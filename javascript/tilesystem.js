@@ -1,6 +1,6 @@
 /** Awesome New Tab Page
   *   antp.co
-  *   Copyright 2011-2012 Michael Hart (h4r7.me)
+  *   Copyright 2011-2013 Michael Hart (h4r7.me)
   * Want to make it even more awesome?
   *   github.antp.co
   *
@@ -9,12 +9,15 @@
   *   Further Restrictions:
   *     To make use of or modify the below code in any way:
   *     - You agree to leave this copyright and license notice intact without
-  *       modification; and
+  *       modification.
   *     - You agree to mark your modified versions as modified from the original
-  *       version; and
+  *       version.
   *     - You agree not to misrepresent the origin of this material or your
   *       relationship with the authors of this project or the project itself.
-***/
+  *       You agree not to use the "Awesome New Tab Page" name (or a confusingly
+  *       similar name) or logo.
+  **/
+
 
 /* START :: Online/Offline status */
 

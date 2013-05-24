@@ -1,3 +1,24 @@
+/** Awesome New Tab Page
+  *   antp.co
+  *   Copyright 2011-2013 Michael Hart (h4r7.me)
+  * Want to make it even more awesome?
+  *   github.antp.co
+  *
+  * Licensed under GPL v3:
+  *   http://www.gnu.org/licenses/gpl-3.0.txt
+  *   Further Restrictions:
+  *     To make use of or modify the below code in any way:
+  *     - You agree to leave this copyright and license notice intact without
+  *       modification.
+  *     - You agree to mark your modified versions as modified from the original
+  *       version.
+  *     - You agree not to misrepresent the origin of this material or your
+  *       relationship with the authors of this project or the project itself.
+  *       You agree not to use the "Awesome New Tab Page" name (or a confusingly
+  *       similar name) or logo.
+  **/
+
+
 required("/javascript/base64.js?nocache=12");
 $("#run-import-btn").hide(); // hide Apply button instantly. (won't work properly if done from CSS)
 
@@ -53,7 +74,7 @@ $("#export-btn").bind("click", function() {
 
 // upon click on Save Backup online
 $("#save-backup-btn").bind("click", function() {
-  
+
 });
 
 function buildExportString() {
@@ -61,7 +82,7 @@ function buildExportString() {
   var locStor = localStorage;
   for(var i=0, len=locStor.length; i<len; i++) {
     var key = locStor.key(i);
-    if (key != "backupBeforeImport" && key != "installed_widgets" && 
+    if (key != "backupBeforeImport" && key != "installed_widgets" &&
         key != "open_tabs" && key != "recently_closed") { // don't export restore data and installed_widgets
       var value = locStor[key];
       exportDataObj[key] = value;
