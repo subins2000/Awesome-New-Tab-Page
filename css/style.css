@@ -697,6 +697,9 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 .ui-2#config #import-export-contents a {
   border-bottom: 1px dotted #CCC;
 }
+.ui-2#config .online-backups a {
+  border-bottom: 1px dotted #CCC;
+}
 
 /* UI-2 Apps & Widgets */
 .ui-2#apps,
@@ -1231,7 +1234,7 @@ body > .widget-drawer-app img {
  }
  #backups-list {
   z-index: 1;
-  overflow: -moz-scrollbars-vertical; 
+  overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
   overflow-x: hidden;
   border: 3px solid gray;

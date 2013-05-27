@@ -720,9 +720,8 @@ var
     var self = this;
     $scope.backups = [];
 
-    function addBackupToList(backup) {      
+    function addBackupToList(backup) {
       var keys = backup.keys;
-      keys.push(key);
       chrome.storage.sync.getBytesInUse(keys, function(bytesInUse) {
         if (!chrome.runtime.lastError) {
           backup.size = bytesInUse;
@@ -773,7 +772,7 @@ var
 
   // break up string into chunks of specified size
   function makeChunks(key, str, chunkSize) {
-    var chunkNo = 0, 
+    var chunkNo = 0,
         currIndex = 0;
         chunks = {};
 
@@ -794,7 +793,7 @@ var
   // returns arrray of keys in an object
   function getKeys(obj) {
     var keys = [];
-    for(var k in obj) 
+    for(var k in obj)
       keys.push(k);
     return keys;
   }
@@ -828,8 +827,8 @@ var
 
         var backupKey = "backup_" + backupName;
         chunks[backupKey] = {
-          "name": backupName, 
-          "keys": keys, 
+          "name": backupName,
+          "keys": keys,
           "time": (new Date()).toJSON()
         };
 
@@ -858,14 +857,14 @@ var
 
   function combineChunks(chunks) {
     var backupString = "";
-    for (var chunk in chunks) 
+    for (var chunk in chunks)
       backupString += chunks[chunk];
     return backupString;
   }
 
   $scope.loadBackup = function(name) {
     name = "backup_" + name;
-    qTipConfirm(chrome.i18n.getMessage('ui_online_backup_confirm_load_backup_title'), chrome.i18n.getMessage('ui_online_backup_confirm_load_backup'), chrome.i18n.getMessage("ui_button_yes"), chrome.i18n.getMessage("ui_button_no"), 
+    qTipConfirm(chrome.i18n.getMessage('ui_online_backup_confirm_load_backup_title'), chrome.i18n.getMessage('ui_online_backup_confirm_load_backup'), chrome.i18n.getMessage("ui_button_yes"), chrome.i18n.getMessage("ui_button_no"),
       function(yes) {
         if (yes) {
           chrome.storage.sync.get(name, function(backup) {
@@ -909,4 +908,4 @@ var
 }
 
 /* END :: List directive */
- 
+
