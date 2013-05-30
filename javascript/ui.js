@@ -250,6 +250,10 @@
 
   $(".bg-color").css("background-color", "#" + (localStorage.getItem("color-bg") || "221f20"));
 
+  $(document).ready(function($) {
+    $(".bg-color").css("background-color", "#" + (localStorage.getItem("color-bg") || "221f20"));
+  });
+
   $(document).on("keyup change", "#bg-img-css", function() {
     $("body").css("background", "" );
     $("body").css("background", $(this).val() );

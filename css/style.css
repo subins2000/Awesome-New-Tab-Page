@@ -407,7 +407,7 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   margin-left: 5px;
   width: 32px;
   height: 32px;
-  -webkit-transition: left .2s ease-in-out, top .2s ease-in-out;
+  -webkit-transition: left .2s ease-in-out, top .2s ease-in-out, -webkit-filter .7s ease;
   margin-top: 2px;
   margin-bottom: 2px;
   display: block;
@@ -416,19 +416,23 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
 
   position: relative;
 }
-#logo-button {
-  margin-top: 0px;
-  margin-bottom: 4px;
-}
 #top-buttons > div:hover {
   opacity: 1;
 }
 #logo-button {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  -webkit-filter: grayscale(100%);
+  height: 22px !important;
+
   background-color: transparent;
   background-image: url("/images/antp.png");
-  background-position: -4px -4px;
-  background-size: 40px;
+  background-position: 0px -4px;
+  background-size: 32px;
   background-repeat: no-repeat;
+}
+#logo-button:hover {
+  -webkit-filter: grayscale(0%);
 }
 #config-button {
   background-color: transparent;
@@ -695,6 +699,9 @@ body.offline #widget-holder .app:not(.shortcut):not(.offline-enabled) {
   margin-right: 55px;
 }
 .ui-2#config #import-export-contents a {
+  border-bottom: 1px dotted #CCC;
+}
+.ui-2#config .online-backups a {
   border-bottom: 1px dotted #CCC;
 }
 
@@ -1231,7 +1238,7 @@ body > .widget-drawer-app img {
  }
  #backups-list {
   z-index: 1;
-  overflow: -moz-scrollbars-vertical; 
+  overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
   overflow-x: hidden;
   border: 3px solid gray;
